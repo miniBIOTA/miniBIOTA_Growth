@@ -41,7 +41,7 @@ description: Plan partner categories, outreach strategy, sales materials, relati
 1. Identify whether the task is category planning, outreach strategy, sales materials, relationship mapping, or next-step planning.
 2. Separate active relationships from target categories and speculative opportunities.
 3. Identify needed assets such as business plan, media kit, sponsorship package, proof assets, founder narrative, or website surfaces.
-4. Define next steps with approval gates for outreach, pricing, offers, terms, and record writes.
+4. Define next steps with approval gates for outreach, pricing, offers, terms, public claims, commitments, and record writes.
 5. Keep sensitive relationship details in this repo or authorized structured systems.
 
 ## Expected Output
@@ -63,3 +63,4 @@ description: Plan partner categories, outreach strategy, sales materials, relati
 - Do not invent partner commitments, terms, pricing, obligations, or sponsor benefits.
 - Do not treat a target category as an active relationship.
 - Do not create offers or obligations without explicit approval.
+- Do not move sensitive contact, sponsor, outreach, or pipeline details into Brain summaries unless explicitly requested.

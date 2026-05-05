@@ -29,14 +29,19 @@ description: Plan Kickstarter, launch, campaign sequencing, reward ideas, campai
 
 ## Workflow
 1. Identify campaign type, audience, and current approval status.
-2. Separate draft campaign ideas from approved public promises.
+2. Separate current facts, assumptions, draft campaign ideas, recommendations, approved strategy, approved public promises, and commitments.
 3. Review rewards, messaging, timeline, dependencies, risks, and fulfillment load.
 4. Flag legal, financial, platform, hardware, public-claim, and delivery risks.
 5. Recommend sequencing and approval gates before any public or platform action.
 
 ## Expected Output
 - Campaign framing.
-- Draft ideas versus approved commitments.
+- Current facts.
+- Assumptions.
+- Draft ideas.
+- Recommendations.
+- Approved strategy, if any source explicitly verifies it.
+- Approved commitments, if any source explicitly verifies them.
 - Risk and dependency review.
 - Recommended next steps.
 - Decisions or approvals needed.

@@ -35,4 +35,6 @@ This directory is the durable memory layer for the miniBIOTA Growth Agent. Load 
 | `skills/growth-closeout/SKILL.md` | Close a Growth session or decide whether follow-ups, Brain brief updates, records, or tasks are implicated |
 
 ## Migration Status
-Phase 1 creates the memory and skill architecture only. Existing `docs/` files remain active and have not been moved or archived. Later phases should absorb stable material into `memory/`, `skills/`, and `skills/*/reference/`, then archive superseded docs only after explicit approval.
+Phase 1 created the memory and skill architecture. Phase 2 Batch 1 absorbed `docs/agent_protocol.md` into active Growth routing and archived it at `archive/superseded/agent_protocol.md`.
+
+Remaining `docs/` files stay active during migration when exact reference material still lives there. Later phases should absorb stable material into `memory/`, `skills/`, and `skills/*/reference/`, then archive superseded docs only after explicit approval.

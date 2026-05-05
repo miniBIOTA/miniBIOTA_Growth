@@ -21,7 +21,6 @@ description: Review a growth plan, commercial direction, audience/revenue path, 
 - `memory/07-recurring-decisions.md`
 
 ## Required Docs Or References
-- `docs/agent_protocol.md` while migration is incomplete.
 - Relevant source docs from `docs/` when the exact detail has not yet moved into memory or this skill's `reference/` folder.
 - Brain `growth_brief.md` when strategy-level current state is needed.
 
@@ -34,7 +33,7 @@ description: Review a growth plan, commercial direction, audience/revenue path, 
 
 ## Workflow
 1. Identify the plan, option, or direction being reviewed.
-2. Separate current facts, assumptions, opportunities, risks, dependencies, and recommendations.
+2. Separate current facts, assumptions, draft ideas, opportunities, risks, dependencies, recommendations, approved strategy, and commitments.
 3. Check whether the option crosses sponsorship, campaign, pricing, legal, financial, public-claim, or launch-commitment boundaries.
 4. Compare the option against the current commercial operating model and known dependencies.
 5. Recommend next steps with approval gates where needed.

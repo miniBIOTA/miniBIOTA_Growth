@@ -27,10 +27,10 @@ If working manually:
 2. Read `memory/00-index.md`.
 3. Load only the relevant `memory/` files for the request.
 4. Use the matching `skills/*/SKILL.md` playbook when a request matches a skill.
-5. Read `docs/agent_protocol.md` while migration is still in progress or when protocol details are needed.
+5. Use `docs/` only while migration is incomplete or when exact reference material still lives there.
 6. Read `M:\miniBIOTA\miniBIOTA_Brain\_system\agent_memory.md` when Brain-wide agent rules matter.
 7. Read `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\growth_brief.md` for strategy-level current state.
-8. Use Supabase only when current structured records matter to the task.
+8. Use Supabase only when current structured records matter to the task and record work is approved.
 
 For revenue sequencing, use `skills/revenue-planning/SKILL.md` and current source material in `memory/` plus `docs/revenue_acceleration_plan.md` while migration is incomplete.
 
@@ -72,11 +72,10 @@ Use this hierarchy when sources disagree:
 1. User direction in the current session.
 2. `AGENTS.md`, `memory/00-index.md`, and relevant `memory/` files.
 3. Matching `skills/*/SKILL.md` playbooks for task workflow and boundaries.
-4. `docs/agent_protocol.md` for legacy protocol details while migration is incomplete.
-5. Brain `growth_brief.md` for strategy-level current state.
-6. Local `docs/` files for detailed commercial and growth truth not yet absorbed into memory or skill references.
-7. Supabase for structured/queryable records when current structured state matters.
-8. Brain mirrored docs and compiled exports as reference artifacts only.
+4. Brain `growth_brief.md` for strategy-level current state.
+5. Local `docs/` files for detailed commercial and growth truth not yet absorbed into memory or skill references.
+6. Supabase for structured/queryable records when current structured state matters and record work is approved.
+7. Brain mirrored docs and compiled exports as reference artifacts only.
 
 Chat history and private model memory are never source of truth. Durable project memory belongs in Markdown in this repo/vault, in Brain, or in Supabase when it is structured data.
 
@@ -94,9 +93,11 @@ Chat history and private model memory are never source of truth. Durable project
 - Keep individual-support channels, business sponsorships, crowdfunding, affiliate paths, speaking, and grants distinct unless the user explicitly asks to merge messaging.
 - Ground sponsorship, campaign, and revenue recommendations in current financial context and actual audience/channel state.
 - Label assumptions, draft options, projections, dependencies, risks, and recommendations clearly.
+- Keep commercial reality, draft ideas, recommendations, approved strategy, and commitments clearly separated.
 - Do not rewrite aspirational plans as approved strategy.
 - Do not invent partner commitments, sponsor claims, campaign launch dates, pricing, legal promises, financial promises, roadmap promises, or public claims from memory.
-- Do not make commitments, offers, prices, campaign claims, partner promises, sponsor obligations, public claims, or launch targets without explicit user approval.
+- Do not make commitments, offers, prices, pricing claims, campaign claims, partner promises, sponsor obligations, public claims, launch targets, roadmap commitments, sales commitments, financial commitments, or legal commitments without explicit user approval.
+- Treat contact lists, sponsor outreach, partner outreach, and pipeline details as operationally sensitive. Keep detailed working material here unless the user requests a specific authorized destination.
 
 ## Brain Relationship
 This repo reports to the Strategy Agent through:
@@ -114,6 +115,15 @@ Do not push full pitch drafts, raw contact lists, detailed outreach research, or
 
 If the user explicitly says not to update the Brain growth brief, honor that instruction and note the deferral in closeout.
 
+## Cross-Domain Dependencies
+- **Financials:** revenue targets, debt pressure, profitability timeline, pricing assumptions, and estimated value assumptions.
+- **Brand:** sponsor-facing positioning, public voice, founder narrative, and campaign framing.
+- **Content:** proof assets, video hooks, field notes, visuals, campaign updates, and audience trust.
+- **Web:** donation, events, signup, course/waitlist, campaign, affiliate, and newsletter conversion surfaces.
+- **Company Operations:** business plan, priorities, legal/business decisions, and public commitment context.
+- **Hardware:** build feasibility and concrete deliverables behind campaign or sponsor claims.
+- **App:** internal operator surfaces stay separate from public growth messaging unless explicitly scoped.
+
 ## Docs
 The original `docs/` files remain active during migration:
 
@@ -124,11 +134,12 @@ The original `docs/` files remain active during migration:
 | `docs/commercial_systems_backlog.md` | Build queue and minimum relationship pipeline structure |
 | `docs/revenue_acceleration_plan.md` | Sequenced profitability and revenue plan |
 | `docs/kickstarter_estuary_campaign.md` | Kickstarter strategy for the estuary build |
-| `docs/agent_protocol.md` | Codex operating protocol for Growth sessions |
 
 Docs are mirrored read-only into `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\docs\` by Brain `sync_docs.ps1`. Edit source docs here, not the Brain mirror.
 
 During migration, do not archive or move docs until the user explicitly authorizes that phase.
+
+The former `docs/agent_protocol.md` was absorbed into active Growth routing and archived at `archive/superseded/agent_protocol.md` during Phase 2 Batch 1.
 
 ## Write Policy
 Respect `MINIBIOTA_WRITE_MODE` from Brain when available:
@@ -149,6 +160,7 @@ For documentation-only sessions:
 - Run `git diff --name-only` or equivalent.
 - Run `git status --short --branch`.
 - Confirm no app behavior, database records, structured records, public site behavior, Brain mirrored docs, or Brain growth brief changed unless explicitly authorized.
+- If local docs changed and Brain mirrors need refreshing later, ask the Brain Agent or user to run Brain `_system/sync_docs.ps1`; do not update Brain mirrors from here unless explicitly authorized.
 
 For live growth/ops sessions:
 - Verify current structured records before acting on sponsorships, contacts, newsletter lists, campaign timing, or pipeline state.

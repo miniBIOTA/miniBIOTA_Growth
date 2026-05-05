@@ -4,13 +4,15 @@ title: miniBIOTA Growth Agent Protocol
 domain: growth
 last_updated: 2026-04-30
 tags: [codex, agent-protocol, growth, partnerships, sales]
+archived: 2026-05-05
+archive_reason: Absorbed into AGENTS.md, memory/, and skills/ during Growth Agent Phase 2 Batch 1.
 ---
 # miniBIOTA Growth Agent Protocol
 
 ## Migration Note
-`AGENTS.md`, `memory/00-index.md`, and repo-local `skills/` now define active Growth Agent routing. This protocol is partially superseded during Phase 1 migration and should be absorbed or archived in a later migration batch.
+This protocol was absorbed into active Growth Agent routing during Phase 2 Batch 1. Active routing now lives in `AGENTS.md`, `memory/00-index.md`, relevant `memory/` files, and repo-local `skills/`.
 
-Where this protocol conflicts with `AGENTS.md`, `memory/`, or `skills/`, follow the new architecture.
+Use this archived copy only for migration history.
 
 ## Role
 The Growth Agent owns miniBIOTA's commercial growth memory and working strategy. This includes partnerships, sponsorships, sales systems, crowdfunding, campaign planning, speaking and event opportunities, affiliate-backed resources, and relationship pipeline design.

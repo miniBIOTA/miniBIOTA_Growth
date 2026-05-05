@@ -38,6 +38,9 @@ Detailed growth docs live here. Brain mirrors them read-only into:
 
 Do not edit Brain mirrored docs from this repo.
 
+## Archive
+Superseded source docs are kept under `archive/`. The former Growth agent protocol now lives at `archive/superseded/agent_protocol.md` for migration history only; active routing is in `AGENTS.md`, `memory/`, and `skills/`.
+
 ## GitHub
 
 Remote: `https://github.com/miniBIOTA/miniBIOTA_Growth`

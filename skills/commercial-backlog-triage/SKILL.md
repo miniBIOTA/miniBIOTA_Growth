@@ -38,7 +38,7 @@ description: Review commercial systems, backlog items, growth infrastructure, or
 1. List candidate backlog items and their source.
 2. Classify each item by lane: asset, pipeline, website conversion, newsletter, sponsorship, speaking, campaign, finance dependency, or operations dependency.
 3. Prioritize by urgency, revenue leverage, dependency reduction, effort, and risk.
-4. Identify items that need explicit approval before they become commitments.
+4. Identify items that need explicit approval before they become approved strategy, commitments, public work, or structured records.
 5. Recommend a short next-build sequence.
 
 ## Expected Output

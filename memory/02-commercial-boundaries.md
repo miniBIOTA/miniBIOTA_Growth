@@ -25,6 +25,13 @@ When working with commercial ideas, clearly label:
 - Dependencies.
 - Decisions needed.
 - Recommendations.
+- Approved strategy, only when explicitly verified.
+- Commitments, only when explicitly approved and documented.
+
+## Operational Sensitivity
+- Treat contact lists, sponsor outreach, partner outreach, and relationship pipeline details as operationally sensitive.
+- Keep detailed working materials in this repo or another explicitly authorized destination.
+- Summarize only manager-facing strategy to Brain when Brain updates are authorized and needed.
 
 ## Revenue And Projection Rules
 - Treat numbers from planning docs as assumptions unless freshly verified.

@@ -20,7 +20,6 @@ description: Close Growth sessions and decide whether Brain growth brief updates
 - `memory/07-recurring-decisions.md`
 
 ## Required Docs Or References
-- `docs/agent_protocol.md` while migration is incomplete.
 - `_system/codex_session_close.ps1` when command-line closeout context is needed.
 - Brain `growth_brief.md` only when the user has not deferred Brain updates and manager-facing state may have changed.
 
@@ -30,8 +29,9 @@ description: Close Growth sessions and decide whether Brain growth brief updates
 3. Run `git diff --name-only`.
 4. Run `git status --short --branch`.
 5. Decide whether Brain growth brief updates, domain follow-ups, structured records, or future tasks are implicated.
-6. Confirm what was not changed: Supabase, structured records, app behavior, public site behavior, Brain mirrored docs, Brain growth brief, test data, and public/commercial commitments as relevant.
-7. Give the standard closeout report.
+6. If local docs changed and Brain mirrors may need refreshing later, note that sync is implicated; do not update Brain mirrors unless explicitly authorized.
+7. Confirm what was not changed: Supabase, structured records, app behavior, public site behavior, Brain mirrored docs, Brain growth brief, test data, and public/commercial commitments as relevant.
+8. Give the standard closeout report.
 
 ## Expected Output
 ```markdown
@@ -57,3 +57,4 @@ Unresolved questions:
 - Do not skip verification for documentation-only sessions.
 - Do not create follow-up records without approval.
 - Do not imply public claims, commitments, pricing, campaign promises, partner offers, sponsor obligations, legal commitments, financial commitments, launch dates, roadmap commitments, or sales commitments were made unless explicitly approved.
+- Do not treat recommendations or approved internal strategy as public commitments.

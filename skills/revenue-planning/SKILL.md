@@ -40,7 +40,7 @@ description: Evaluate revenue ideas, sponsorship models, crowdfunding, subscript
 1. Identify each revenue path under consideration.
 2. Keep channels distinct: individual support, business sponsorship, crowdfunding, subscriptions, affiliates, product sales, grants, speaking, and other revenue.
 3. Label numbers as verified facts, inherited assumptions, or new assumptions.
-4. Note dependencies, risks, time-to-first-dollar, operational load, and approval needs.
+4. Note dependencies, risks, time-to-first-dollar, operational load, cross-domain inputs, and approval needs.
 5. Present scenarios as planning models, not guarantees.
 6. Recommend sequencing and next validation steps.
 

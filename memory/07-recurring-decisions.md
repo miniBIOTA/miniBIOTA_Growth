@@ -11,8 +11,11 @@ This file tracks decision areas that recur across Growth sessions. It is not an 
 - Whether a relationship tracker should live in Markdown, Supabase, or another CRM-like system.
 - Whether newsletter capture should remain capture-only or connect to an external email platform.
 - Whether Brain growth brief updates are appropriate at closeout or explicitly deferred.
+- Whether a local docs change should trigger a later Brain mirror sync request.
+- Whether a proposed commercial plan is still a draft, a recommendation, an approved strategy, or a commitment.
 
 ## Decision Handling
 - Verify the latest user direction and durable source before treating any decision as approved.
 - Capture unresolved decisions in closeout.
 - Do not turn a planning option into strategy language without approval.
+- Do not treat approved strategy as a public commitment unless the user explicitly makes or authorizes that commitment.
