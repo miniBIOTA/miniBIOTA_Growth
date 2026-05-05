@@ -10,6 +10,7 @@ It keeps current-state commercial signals separate from future-state commercial 
 - Brand and public storytelling are intended to attract audiences, partners, donors, sponsors, and media attention.
 - Website strategy and information architecture expose public conversion surfaces through donation, events, build/resource, subscription, signup, and newsletter paths.
 - The web platform captures newsletter signups into `email_signups`, but external provider sync remains an open operational step.
+- Partner and sales work is early but no longer blank: commercial signals exist across operations, brand, web, and content planning, but they are not yet organized into one complete operating system.
 
 ## Current Commercial Surfaces
 - `/donate` gives the public web layer a direct support surface.
@@ -51,6 +52,7 @@ These lanes are internal model categories. Treat them as draft/planned lanes unt
 - Pricing, sponsorship tiers, and partner package terms are not approved here.
 - Owner, cadence, and CRM-style workflow still need explicit definition.
 - Newsletter handoff and relationship-management workflow still need operational design.
+- Partner pipeline status, sponsor interest, partner interest, and sales conversations must be verified before being treated as active.
 
 ## Exact Reference
 Detailed model material absorbed from the old source doc now lives in `skills/growth-strategy-review/reference/commercial-operating-model.md`.

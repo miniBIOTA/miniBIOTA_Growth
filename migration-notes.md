@@ -9,7 +9,7 @@ Phase 1 created the initial Growth Agent memory and playbook architecture:
 - `archive/` for later migration phases.
 
 ## Docs Status
-At Phase 1, old docs were not archived yet. As of Phase 2 Batch 2, `docs/agent_protocol.md` and `docs/commercial_operating_model.md` have been absorbed and archived. Remaining files under `docs/` stay active source material during migration.
+At Phase 1, old docs were not archived yet. As of Phase 2 Batch 3, `docs/agent_protocol.md`, `docs/commercial_operating_model.md`, and `docs/partners_and_sales_overview.md` have been absorbed and archived. Remaining files under `docs/` stay active source material during migration.
 
 Future phases should absorb stable material from `docs/` into:
 
@@ -55,6 +55,23 @@ Preserved material included:
 - Source-note provenance for Brand and Web strategy inputs.
 
 The superseded source doc is archived at `archive/superseded/commercial_operating_model.md` for migration history only. It is no longer an active required reference.
+
+No other docs were moved or archived in this batch.
+
+## Phase 2 Batch 3 - Partners And Sales Overview Absorbed
+`docs/partners_and_sales_overview.md` was absorbed into `memory/05-partners-and-sales-context.md`, related boundary/source/decision memory, and `skills/partner-and-sales-planning/reference/partners-and-sales-overview.md`.
+
+Preserved material included:
+- Partner and sales scope.
+- Current early-but-not-blank state.
+- Commercial signals across operations, brand, web, and content.
+- Known near-term deliverables as needs, not approved execution.
+- Website and audience-capture surfaces as signals, not offers.
+- Key commercial readiness facts.
+- Priorities around operating model, business plan, media kit, sponsorship package, relationship pipeline, newsletter capture, website conversion, brand messaging, and content proof.
+- Risks and gaps around missing commercial system, newsletter sync, relationship management, ownership, and sequencing.
+
+The superseded source doc is archived at `archive/superseded/partners_and_sales_overview.md` for migration history only. It is no longer an active required reference.
 
 No other docs were moved or archived in this batch.
 

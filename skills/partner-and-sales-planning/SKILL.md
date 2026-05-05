@@ -24,7 +24,7 @@ description: Plan partner categories, outreach strategy, sales materials, relati
 - `memory/07-recurring-decisions.md`
 
 ## Required Docs Or References
-- `docs/partners_and_sales_overview.md` while migration is incomplete.
+- `skills/partner-and-sales-planning/reference/partners-and-sales-overview.md` when partner/sales scope, current state, priorities, risks, or readiness context are central.
 - `memory/04-commercial-operating-model.md` for current commercial surfaces, planned lanes, dependencies, and unknowns.
 - `docs/commercial_systems_backlog.md` when pipeline structure or systems are in scope.
 - Brain `growth_brief.md` when current strategy-level partner context is needed.
@@ -39,7 +39,7 @@ description: Plan partner categories, outreach strategy, sales materials, relati
 
 ## Workflow
 1. Identify whether the task is category planning, outreach strategy, sales materials, relationship mapping, or next-step planning.
-2. Separate active relationships from target categories and speculative opportunities.
+2. Separate leads, target categories, prospects, interested parties, confirmed relationships, and speculative opportunities.
 3. Identify needed assets such as business plan, media kit, sponsorship package, proof assets, founder narrative, website surfaces, or relationship pipeline structure.
 4. Define next steps with approval gates for outreach, pricing, offers, terms, public claims, commitments, and record writes.
 5. Keep sensitive relationship details in this repo or authorized structured systems.
@@ -64,3 +64,5 @@ description: Plan partner categories, outreach strategy, sales materials, relati
 - Do not treat a target category as an active relationship.
 - Do not create offers or obligations without explicit approval.
 - Do not move sensitive contact, sponsor, outreach, or pipeline details into Brain summaries unless explicitly requested.
+- Do not treat outreach strategy as approved outreach execution.
+- Do not create public-facing sales language unless explicitly requested and claim-reviewed.

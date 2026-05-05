@@ -32,6 +32,9 @@ When working with commercial ideas, clearly label:
 - Treat contact lists, sponsor outreach, partner outreach, and relationship pipeline details as operationally sensitive.
 - Keep detailed working materials in this repo or another explicitly authorized destination.
 - Summarize only manager-facing strategy to Brain when Brain updates are authorized and needed.
+- Treat leads, target categories, prospects, interested parties, and confirmed relationships as different statuses. Do not upgrade status without a verified source.
+- Draft outreach strategy is not approved outreach execution.
+- Internal sponsor or partner package ideas are not public offer language.
 
 ## Internal Model Boundaries
 - Treat commercial surfaces, lanes, and operating models as internal planning context unless a source explicitly says they are approved public strategy.

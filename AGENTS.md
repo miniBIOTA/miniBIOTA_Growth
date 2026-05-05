@@ -129,7 +129,6 @@ The original `docs/` files remain active during migration:
 
 | File | Contents |
 |---|---|
-| `docs/partners_and_sales_overview.md` | Original Brain Partners & Sales overview, retained as migrated context |
 | `docs/commercial_systems_backlog.md` | Build queue and minimum relationship pipeline structure |
 | `docs/revenue_acceleration_plan.md` | Sequenced profitability and revenue plan |
 | `docs/kickstarter_estuary_campaign.md` | Kickstarter strategy for the estuary build |
@@ -141,6 +140,8 @@ During migration, do not archive or move docs until the user explicitly authoriz
 The former `docs/agent_protocol.md` was absorbed into active Growth routing and archived at `archive/superseded/agent_protocol.md` during Phase 2 Batch 1.
 
 The former `docs/commercial_operating_model.md` was absorbed into `memory/04-commercial-operating-model.md`, commercial boundaries, recurring decisions, and `skills/growth-strategy-review/reference/commercial-operating-model.md`, then archived at `archive/superseded/commercial_operating_model.md` during Phase 2 Batch 2.
+
+The former `docs/partners_and_sales_overview.md` was absorbed into `memory/05-partners-and-sales-context.md`, related boundary/source/decision memory, and `skills/partner-and-sales-planning/reference/partners-and-sales-overview.md`, then archived at `archive/superseded/partners_and_sales_overview.md` during Phase 2 Batch 3.
 
 ## Write Policy
 Respect `MINIBIOTA_WRITE_MODE` from Brain when available:

@@ -4,8 +4,23 @@ title: 7. Partners & Sales
 domain: partners_and_sales
 last_updated: 2026-04-03
 tags: [partnerships, sales, sponsorships, business-development, outreach]
+archived: 2026-05-05
+archive_reason: Absorbed into memory and skill reference material during Growth Agent Phase 2 Batch 3.
 ---
 # 7. Partners & Sales
+
+## Migration Note
+This document was absorbed into active Growth Agent memory and skill reference material during Phase 2 Batch 3.
+
+Active material now lives in:
+- `memory/05-partners-and-sales-context.md`
+- `memory/02-commercial-boundaries.md`
+- `memory/03-source-of-truth-hierarchy.md`
+- `memory/04-commercial-operating-model.md`
+- `memory/07-recurring-decisions.md`
+- `skills/partner-and-sales-planning/reference/partners-and-sales-overview.md`
+
+Use this archived copy only for migration history.
 
 ## Scope
 - Defines how miniBIOTA turns public interest, technical credibility, and storytelling into durable business support.
@@ -33,11 +48,10 @@ tags: [partnerships, sales, sponsorships, business-development, outreach]
 - Ownership and sequencing can blur because this function spans multiple domains.
 
 ## Files In This Folder
-- `Commercial Operating Model.md` — how miniBIOTA converts interest into business support
-- `Commercial Systems Backlog.md` — immediate build queue and pipeline structure needed
-
+- `Commercial Operating Model.md` - how miniBIOTA converts interest into business support
+- `Commercial Systems Backlog.md` - immediate build queue and pipeline structure needed
 
 ## Vault Sync Status
-- Last verified: —
+- Last verified: not recorded
 - Known divergences: none noted
 - Next sync check: flag during relevant domain session

@@ -22,6 +22,7 @@ description: Review a growth plan, commercial direction, audience/revenue path, 
 
 ## Required Docs Or References
 - `skills/growth-strategy-review/reference/commercial-operating-model.md` when commercial model fit, lanes, surfaces, dependencies, or unknowns are central.
+- `skills/partner-and-sales-planning/reference/partners-and-sales-overview.md` when partner/sales readiness, commercial signals, priorities, or risks are central to strategic fit.
 - Relevant source docs from `docs/` when the exact detail has not yet moved into memory or this skill's `reference/` folder.
 - Brain `growth_brief.md` when strategy-level current state is needed.
 
