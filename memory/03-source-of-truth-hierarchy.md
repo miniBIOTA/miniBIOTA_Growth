@@ -10,7 +10,7 @@ Use this order when sources disagree:
 5. Local `skills/*/reference/` files for exact migrated reference material.
 6. `archive/superseded/` only for historical context, migration review, or provenance.
 7. Supabase for structured/queryable records when current structured state matters and record work is approved.
-8. Brain mirrored docs and compiled exports as reference artifacts only.
+8. Brain growth brief and compiled exports as reference artifacts only.
 
 ## Non-Sources
 Chat history and private model memory are not durable project truth. Use them only as conversational context, then verify against durable sources before acting.
@@ -32,7 +32,7 @@ Use the final Growth structure this way:
 - Brain `growth_brief.md` carries manager-facing, strategy-level current state.
 - Supabase is used only when current structured records matter and record work is approved.
 
-Brain mirrored docs are read-only reference artifacts and should not be edited here.
+Brain no longer keeps a Growth docs mirror. Do not edit Brain mirrored docs directly.
 
 ## Historical Sources
 The following archived files are historical only. Do not treat them as active sources unless reviewing migration history or provenance:

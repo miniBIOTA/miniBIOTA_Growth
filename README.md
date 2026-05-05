@@ -30,9 +30,9 @@ Then route work through:
 
 This repo reports to the Strategy Agent through:
 
-`M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\growth_brief.md`
+`M:\miniBIOTA\miniBIOTA_Brain\7. miniBIOTA_Growth\growth_brief.md`
 
-Detailed Growth memory and references live here. Do not edit Brain mirrored docs from this repo.
+Detailed Growth memory and references live here. Brain no longer keeps a Growth docs mirror; do not edit Brain mirrored docs from this repo.
 
 ## Archive
 Superseded source docs are kept under `archive/`. Active routing and migrated reference material now live in `AGENTS.md`, `memory/`, and `skills/`.

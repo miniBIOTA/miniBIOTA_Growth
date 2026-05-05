@@ -111,4 +111,4 @@ These remain decision areas, not approved actions.
 - Financial baseline from `2. Financials/financials_overview.md`.
 - Kickstarter detail from `skills/campaign-planning/reference/kickstarter-estuary-campaign.md`.
 - Distribution strategy from `4. Brand & Marketing/reach_and_distribution_strategy.md`.
-- Commercial model from former `7. Partners & Sales/Commercial Operating Model.md`.
+- Commercial model from former `7. miniBIOTA_Growth/Commercial Operating Model.md`.

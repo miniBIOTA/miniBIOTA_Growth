@@ -11,7 +11,7 @@ Codex is the primary operating interface for this repo. Durable operating rules 
 - Reusable Growth Agent playbooks under `skills/`.
 - Legacy and superseded materials live under `archive/` after explicit migration approval.
 - Active Growth reference material lives in `memory/` and `skills/*/reference/`.
-- Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\growth_brief.md`.
+- Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\7. miniBIOTA_Growth\growth_brief.md`.
 - Supabase, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`, for tasks, domain history, and structured relationship records when needed.
 
 ## Startup Sequence
@@ -29,7 +29,7 @@ If working manually:
 4. Use the matching `skills/*/SKILL.md` playbook when a request matches a skill.
 5. Use relevant `skills/*/reference/` files when exact migrated reference material is needed.
 6. Read `M:\miniBIOTA\miniBIOTA_Brain\_system\agent_memory.md` when Brain-wide agent rules matter.
-7. Read `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\growth_brief.md` for strategy-level current state.
+7. Read `M:\miniBIOTA\miniBIOTA_Brain\7. miniBIOTA_Growth\growth_brief.md` for strategy-level current state.
 8. Use Supabase only when current structured records matter to the task and record work is approved.
 
 For revenue sequencing, use `skills/revenue-planning/SKILL.md`, current source material in `memory/`, and `skills/revenue-planning/reference/revenue-acceleration-plan.md`.
@@ -75,7 +75,7 @@ Use this hierarchy when sources disagree:
 4. Brain `growth_brief.md` for strategy-level current state.
 5. Local `skills/*/reference/` files for exact migrated commercial and growth reference material.
 6. Supabase for structured/queryable records when current structured state matters and record work is approved.
-7. Brain mirrored docs and compiled exports as reference artifacts only.
+7. Brain growth brief and compiled exports as reference artifacts only.
 
 Chat history and private model memory are never source of truth. Durable project memory belongs in Markdown in this repo/vault, in Brain, or in Supabase when it is structured data.
 
@@ -103,7 +103,7 @@ Chat history and private model memory are never source of truth. Durable project
 ## Brain Relationship
 This repo reports to the Strategy Agent through:
 
-`M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\growth_brief.md`
+`M:\miniBIOTA\miniBIOTA_Brain\7. miniBIOTA_Growth\growth_brief.md`
 
 Update that brief at session end when any of these changed:
 - Current growth strategy or commercial operating model.
@@ -160,7 +160,7 @@ For documentation-only sessions:
 - Read every new or changed doc end to end.
 - Run `git diff --name-only` or equivalent.
 - Run `git status --short --branch`.
-- Confirm no app behavior, database records, structured records, public site behavior, Brain mirrored docs, or Brain growth brief changed unless explicitly authorized.
+- Confirm no app behavior, database records, structured records, public site behavior, Brain docs mirrors, or Brain growth brief changed unless explicitly authorized.
 
 For live growth/ops sessions:
 - Verify current structured records before acting on sponsorships, contacts, newsletter lists, campaign timing, or pipeline state.
