@@ -24,6 +24,7 @@ description: Review a growth plan, commercial direction, audience/revenue path, 
 - `skills/growth-strategy-review/reference/commercial-operating-model.md` when commercial model fit, lanes, surfaces, dependencies, or unknowns are central.
 - `skills/partner-and-sales-planning/reference/partners-and-sales-overview.md` when partner/sales readiness, commercial signals, priorities, or risks are central to strategic fit.
 - `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md` when backlog/system readiness affects strategic feasibility.
+- `skills/revenue-planning/reference/revenue-acceleration-plan.md` when revenue sequencing, monetization assumptions, or financial pressure affect strategic feasibility.
 - Relevant source docs from `docs/` when the exact detail has not yet moved into memory or this skill's `reference/` folder.
 - Brain `growth_brief.md` when strategy-level current state is needed.
 

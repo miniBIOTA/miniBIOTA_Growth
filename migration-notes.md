@@ -9,7 +9,7 @@ Phase 1 created the initial Growth Agent memory and playbook architecture:
 - `archive/` for later migration phases.
 
 ## Docs Status
-At Phase 1, old docs were not archived yet. As of Phase 2 Batch 4, `docs/agent_protocol.md`, `docs/commercial_operating_model.md`, `docs/partners_and_sales_overview.md`, and `docs/commercial_systems_backlog.md` have been absorbed and archived. Remaining files under `docs/` stay active source material during migration.
+At Phase 1, old docs were not archived yet. As of Phase 2 Batch 5, `docs/agent_protocol.md`, `docs/commercial_operating_model.md`, `docs/partners_and_sales_overview.md`, `docs/commercial_systems_backlog.md`, and `docs/revenue_acceleration_plan.md` have been absorbed and archived. Remaining files under `docs/` stay active source material during migration.
 
 Future phases should absorb stable material from `docs/` into:
 
@@ -89,6 +89,21 @@ Preserved material included:
 - Source-note provenance for Web and Executive Brain Build Plan inputs.
 
 The superseded source doc is archived at `archive/superseded/commercial_systems_backlog.md` for migration history only. It is no longer an active required reference.
+
+No other docs were moved or archived in this batch.
+
+## Phase 2 Batch 5 - Revenue Acceleration Plan Absorbed
+`docs/revenue_acceleration_plan.md` was absorbed into commercial model memory, revenue boundaries, recurring decisions, and `skills/revenue-planning/reference/revenue-acceleration-plan.md`.
+
+Preserved material included:
+- Revenue channels and sequencing logic.
+- Financial gap context as historical planning assumptions requiring verification before current use.
+- Patreon, Ko-fi, sponsorship, course/pre-sale, Kickstarter, course ongoing, merch, speaking, press, Reddit, Substack, and native-site-comments ideas.
+- Prices, projections, targets, conversion rates, timelines, and launch/campaign timing as non-binding scenario assumptions.
+- Dependencies and approval gates for course pricing, sponsorship outreach, Kickstarter timing, and merch direction.
+- Source-note provenance for Financials, Kickstarter, Distribution, and Commercial model inputs.
+
+The superseded source doc is archived at `archive/superseded/revenue_acceleration_plan.md` for migration history only. It is no longer an active required reference.
 
 No other docs were moved or archived in this batch.
 

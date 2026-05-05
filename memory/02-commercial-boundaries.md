@@ -49,6 +49,10 @@ When working with commercial ideas, clearly label:
 - Do not present projections as guaranteed.
 - Ground recommendations in known financial context and actual audience/channel state when available.
 - Flag stale or unverified inputs before using them for concrete action.
+- Treat revenue goals, prices, targets, conversion rates, timelines, and time-to-first-dollar claims as scenario assumptions unless a current Financials, Brain, Supabase, or user-approved source verifies them.
+- Do not turn revenue scenarios into approved strategy, public offers, pricing, sponsor terms, partner obligations, launch commitments, or financial commitments.
+- Verify current financial values before presenting them as current. Historical planning numbers may be cited only as historical assumptions.
+- Separate revenue channels before combining them: individual support, business sponsorship, crowdfunding, subscriptions, affiliates, product/course sales, grants, speaking, merch, tips, and other revenue.
 
 ## Campaign And Sponsorship Rules
 - Distinguish draft campaign ideas from approved public promises.

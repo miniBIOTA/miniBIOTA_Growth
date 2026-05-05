@@ -50,7 +50,7 @@ Treat these as planned internal lanes unless a higher-priority source explicitly
 - No explicit rule yet defines how email capture, website conversion, and outbound partner follow-up connect operationally.
 
 ## Related Active Docs Still In Migration
-- `docs/revenue_acceleration_plan.md`: sequenced profitability plan with timelines and projections. Treat numbers as assumptions unless verified.
+- `skills/revenue-planning/reference/revenue-acceleration-plan.md`: migrated sequenced revenue plan with timelines and projections. Treat numbers as assumptions unless verified.
 - `docs/kickstarter_estuary_campaign.md`: Kickstarter strategy for the estuary biome build. Treat campaign material as draft/reference unless explicitly approved.
 
 ## Related Migrated References

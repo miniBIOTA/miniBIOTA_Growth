@@ -5,6 +5,9 @@ This file tracks decision areas that recur across Growth sessions. It is not an 
 
 ## Known Recurring Decisions
 - Whether revenue work should prioritize individual support, sponsorship, course/pre-sale, crowdfunding, affiliate paths, grants, speaking, or product sales.
+- Whether a revenue number is verified current fact, historical planning assumption, scenario assumption, recommendation, approved strategy, or commitment.
+- Whether a price, target, projection, or timeline can be mentioned at all, and if so whether it must be labeled as an assumption.
+- Whether revenue sequencing should be based on time-to-first-dollar, dependency load, operational risk, or strategic fit.
 - Whether sponsorship packaging is ready for concrete pricing or should remain conceptual.
 - Whether campaign timing is approved or still exploratory.
 - Whether partner categories are approved for outreach or only being researched.
@@ -31,3 +34,5 @@ This file tracks decision areas that recur across Growth sessions. It is not an 
 - Do not treat public web surfaces as offers, prices, sponsor packages, partner obligations, or campaign commitments without explicit approval.
 - Do not treat target categories as partner interest or sponsor interest without verification.
 - Do not treat backlog items as tasks, active projects, scheduled work, funded work, approved roadmap, or commitments without explicit approval.
+- Do not treat revenue projections, prices, targets, timelines, or monetization ideas as approved commitments without explicit approval.
+- Verify current financial and audience values before using them as current.

@@ -24,7 +24,7 @@ description: Plan Kickstarter, launch, campaign sequencing, reward ideas, campai
 
 ## Required Docs Or References
 - `docs/kickstarter_estuary_campaign.md` while migration is incomplete.
-- `docs/revenue_acceleration_plan.md` when campaign revenue sequencing is in scope.
+- `skills/revenue-planning/reference/revenue-acceleration-plan.md` when campaign revenue sequencing or Kickstarter revenue assumptions are in scope.
 - Brain `growth_brief.md` when current strategy-level campaign state is needed.
 
 ## Workflow
@@ -54,4 +54,5 @@ description: Plan Kickstarter, launch, campaign sequencing, reward ideas, campai
 ## Do-Not-Do Boundaries
 - Do not promise launch dates, reward delivery, sponsor treatment, backer benefits, stretch goals, or public claims without approval.
 - Do not present draft tier prices or campaign goals as approved commitments.
+- Do not treat migrated revenue sequencing, funding ranges, projections, or launch timing as approved campaign strategy without verification and explicit approval.
 - Do not create test data.

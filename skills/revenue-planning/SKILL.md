@@ -24,7 +24,7 @@ description: Evaluate revenue ideas, sponsorship models, crowdfunding, subscript
 - `memory/07-recurring-decisions.md`
 
 ## Required Docs Or References
-- `docs/revenue_acceleration_plan.md` while migration is incomplete.
+- `skills/revenue-planning/reference/revenue-acceleration-plan.md` when revenue channels, sequencing, historical assumptions, projections, or scenario details are central.
 - `docs/kickstarter_estuary_campaign.md` when crowdfunding or campaign revenue is in scope.
 - Brain `growth_brief.md` when current strategy-level revenue priorities are needed.
 - Supabase only when current structured records are relevant and record access has been approved.
@@ -39,10 +39,11 @@ description: Evaluate revenue ideas, sponsorship models, crowdfunding, subscript
 ## Workflow
 1. Identify each revenue path under consideration.
 2. Keep channels distinct: individual support, business sponsorship, crowdfunding, subscriptions, affiliates, product sales, grants, speaking, and other revenue.
-3. Label numbers as verified facts, inherited assumptions, or new assumptions.
+3. Label numbers as verified current facts, historical planning assumptions, inherited assumptions, scenario assumptions, or new assumptions.
 4. Note dependencies, risks, time-to-first-dollar, operational load, cross-domain inputs, and approval needs.
 5. Present scenarios as planning models, not guarantees.
-6. Recommend sequencing and next validation steps.
+6. Flag prices, targets, timelines, projections, offers, sponsor terms, partner obligations, campaign goals, and launch timing that require explicit approval before external use.
+7. Recommend sequencing and next validation steps.
 
 ## Expected Output
 - Revenue paths considered.
@@ -64,3 +65,5 @@ description: Evaluate revenue ideas, sponsorship models, crowdfunding, subscript
 - Do not imply a sponsor, donor, backer, customer, grantmaker, or platform has committed.
 - Do not create legal, financial, sales, or campaign commitments.
 - Do not merge revenue channels unless the user asks for an integrated strategy.
+- Do not treat historical revenue plan numbers as current without verification.
+- Do not create public offers, prices, launch targets, active projects, tasks, or approved strategy from revenue scenarios.

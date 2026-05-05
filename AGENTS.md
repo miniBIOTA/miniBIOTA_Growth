@@ -32,7 +32,7 @@ If working manually:
 7. Read `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\growth_brief.md` for strategy-level current state.
 8. Use Supabase only when current structured records matter to the task and record work is approved.
 
-For revenue sequencing, use `skills/revenue-planning/SKILL.md` and current source material in `memory/` plus `docs/revenue_acceleration_plan.md` while migration is incomplete.
+For revenue sequencing, use `skills/revenue-planning/SKILL.md`, current source material in `memory/`, and `skills/revenue-planning/reference/revenue-acceleration-plan.md`.
 
 For sponsorships and pipeline systems, use `skills/partner-and-sales-planning/SKILL.md` or `skills/commercial-backlog-triage/SKILL.md`, `memory/04-commercial-operating-model.md`, and `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`.
 
@@ -129,7 +129,6 @@ The original `docs/` files remain active during migration:
 
 | File | Contents |
 |---|---|
-| `docs/revenue_acceleration_plan.md` | Sequenced profitability and revenue plan |
 | `docs/kickstarter_estuary_campaign.md` | Kickstarter strategy for the estuary build |
 
 Docs are mirrored read-only into `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\docs\` by Brain `sync_docs.ps1`. Edit source docs here, not the Brain mirror.
@@ -143,6 +142,8 @@ The former `docs/commercial_operating_model.md` was absorbed into `memory/04-com
 The former `docs/partners_and_sales_overview.md` was absorbed into `memory/05-partners-and-sales-context.md`, related boundary/source/decision memory, and `skills/partner-and-sales-planning/reference/partners-and-sales-overview.md`, then archived at `archive/superseded/partners_and_sales_overview.md` during Phase 2 Batch 3.
 
 The former `docs/commercial_systems_backlog.md` was absorbed into `memory/07-recurring-decisions.md`, `memory/04-commercial-operating-model.md`, commitment boundaries, and `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`, then archived at `archive/superseded/commercial_systems_backlog.md` during Phase 2 Batch 4.
+
+The former `docs/revenue_acceleration_plan.md` was absorbed into revenue memory, commercial boundaries, recurring decisions, and `skills/revenue-planning/reference/revenue-acceleration-plan.md`, then archived at `archive/superseded/revenue_acceleration_plan.md` during Phase 2 Batch 5.
 
 ## Write Policy
 Respect `MINIBIOTA_WRITE_MODE` from Brain when available:

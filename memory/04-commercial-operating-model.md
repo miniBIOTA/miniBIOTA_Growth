@@ -26,8 +26,15 @@ These surfaces are current product or web signals. They do not by themselves app
 - Audience-supported revenue paths such as donations, Patreon-adjacent membership, and newsletter-driven conversion.
 - Affiliate-backed build resources where hardware/resource content can support monetization-adjacent education.
 - Crowdfunding and campaign paths for major build milestones when approved.
+- Product/course revenue, merch, tips, grants, and other revenue paths may be evaluated as scenarios when relevant.
 
 These lanes are internal model categories. Treat them as draft/planned lanes until a higher-priority source explicitly approves strategy, outreach, pricing, launch, or public commitments.
+
+## Revenue Sequencing Principles
+- Revenue planning should sequence channels by time-to-first-dollar, dependency load, operational risk, and fit with current audience/channel state.
+- Financial baseline values, revenue targets, projections, prices, timelines, and conversion assumptions must be verified before being treated as current.
+- Immediate support, sponsorship, course/pre-sale, crowdfunding, merch, affiliate, tips, grants, speaking, and product/service ideas are distinct channels unless the user explicitly asks for an integrated scenario.
+- A sequenced revenue scenario does not create public offers, launch targets, sponsor terms, partner obligations, campaign commitments, active projects, or tasks.
 
 ## Dependencies
 - A real business plan is needed so commercial outreach is tied to operating reality rather than generic pitch language.
@@ -60,9 +67,10 @@ These lanes are internal model categories. Treat them as draft/planned lanes unt
 - Newsletter handoff and relationship-management workflow still need operational design.
 - Partner pipeline status, sponsor interest, partner interest, and sales conversations must be verified before being treated as active.
 - Business plan, media kit, sponsorship package, speaking/pitching workflow, relationship tracker, and newsletter handoff remain backlog needs until explicitly completed or approved elsewhere.
+- Current revenue baseline, debt pressure, audience numbers, email list size, Patreon revenue, sponsorship value, course pricing, campaign funding goals, and merch revenue assumptions require verification before use as current values.
 
 ## Exact Reference
 Detailed model material absorbed from the old source doc now lives in `skills/growth-strategy-review/reference/commercial-operating-model.md`.
 
 ## Migration Note
-The former `docs/commercial_operating_model.md` was absorbed during Phase 2 Batch 2 and archived at `archive/superseded/commercial_operating_model.md`. The former `docs/commercial_systems_backlog.md` was absorbed during Phase 2 Batch 4 and archived at `archive/superseded/commercial_systems_backlog.md`.
+The former `docs/commercial_operating_model.md` was absorbed during Phase 2 Batch 2 and archived at `archive/superseded/commercial_operating_model.md`. The former `docs/commercial_systems_backlog.md` was absorbed during Phase 2 Batch 4 and archived at `archive/superseded/commercial_systems_backlog.md`. The former `docs/revenue_acceleration_plan.md` was absorbed during Phase 2 Batch 5 and archived at `archive/superseded/revenue_acceleration_plan.md`.

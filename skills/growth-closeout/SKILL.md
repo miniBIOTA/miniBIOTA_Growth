@@ -31,8 +31,9 @@ description: Close Growth sessions and decide whether Brain growth brief updates
 5. Decide whether Brain growth brief updates, domain follow-ups, structured records, or future tasks are implicated.
 6. If local docs changed and Brain mirrors may need refreshing later, note that sync is implicated; do not update Brain mirrors unless explicitly authorized.
 7. Confirm that backlog references were not converted into active projects, tasks, approved roadmap, owner assignments, dates, or commitments unless explicitly approved.
-8. Confirm what was not changed: Supabase, structured records, app behavior, public site behavior, Brain mirrored docs, Brain growth brief, test data, and public/commercial commitments as relevant.
-9. Give the standard closeout report.
+8. Confirm that revenue scenarios were not converted into public offers, prices, campaign promises, sponsor obligations, partner offers, financial commitments, launch dates, approved strategy, active projects, tasks, or revenue commitments unless explicitly approved.
+9. Confirm what was not changed: Supabase, structured records, app behavior, public site behavior, Brain mirrored docs, Brain growth brief, test data, and public/commercial commitments as relevant.
+10. Give the standard closeout report.
 
 ## Expected Output
 ```markdown
@@ -60,3 +61,4 @@ Unresolved questions:
 - Do not imply public claims, commitments, pricing, campaign promises, partner offers, sponsor obligations, legal commitments, financial commitments, launch dates, roadmap commitments, or sales commitments were made unless explicitly approved.
 - Do not treat recommendations or approved internal strategy as public commitments.
 - Do not create tasks or active-project follow-ups from backlog material without explicit approval.
+- Do not create revenue follow-up records, tasks, or public/commercial commitments from scenario material without explicit approval.
