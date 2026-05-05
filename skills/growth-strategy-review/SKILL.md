@@ -26,8 +26,10 @@ description: Review a growth plan, commercial direction, audience/revenue path, 
 - `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md` when backlog/system readiness affects strategic feasibility.
 - `skills/revenue-planning/reference/revenue-acceleration-plan.md` when revenue sequencing, monetization assumptions, or financial pressure affect strategic feasibility.
 - `skills/campaign-planning/reference/kickstarter-estuary-campaign.md` when campaign concept, campaign risk, launch sequencing, reward strategy, or estuary Kickstarter positioning affects strategic feasibility.
-- Relevant source docs from `docs/` when the exact detail has not yet moved into memory or this skill's `reference/` folder.
+- Relevant memory files and `skills/*/reference/` files when exact migrated detail matters.
 - Brain `growth_brief.md` when strategy-level current state is needed.
+- Supabase only when current structured records matter and record access has been approved.
+- `archive/superseded/` only for historical context, migration review, or provenance.
 
 ## Routing Clarification
 - Use this skill when commercial direction, strategic fit, audience path, or tradeoffs are central.

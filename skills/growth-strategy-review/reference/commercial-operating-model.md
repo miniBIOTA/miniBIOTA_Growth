@@ -49,11 +49,9 @@ Treat these as planned internal lanes unless a higher-priority source explicitly
 - No standard owner, cadence, or CRM-style workflow is defined here.
 - No explicit rule yet defines how email capture, website conversion, and outbound partner follow-up connect operationally.
 
-## Related Active Docs Still In Migration
+## Related Migrated References
 - `skills/revenue-planning/reference/revenue-acceleration-plan.md`: migrated sequenced revenue plan with timelines and projections. Treat numbers as assumptions unless verified.
 - `skills/campaign-planning/reference/kickstarter-estuary-campaign.md`: migrated Kickstarter strategy for the estuary biome build. Treat campaign material as draft/reference unless explicitly approved.
-
-## Related Migrated References
 - `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`: commercial systems build queue and pipeline structure.
 
 ## Source Notes

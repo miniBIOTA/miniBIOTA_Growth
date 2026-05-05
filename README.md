@@ -8,7 +8,7 @@ Commercial growth, partnerships, sponsorships, sales, fundraising strategy, and 
 - `skills/` contains active Growth workflows.
 - `skills/*/reference/` is reserved for exact references needed by specific skills.
 - `archive/` stores historical or superseded material after explicit migration approval.
-- `docs/` is no longer required for migrated Growth source material; use `memory/` and `skills/*/reference/`.
+- Migrated Growth source material now lives in `memory/` and `skills/*/reference/`.
 
 ## Start
 
@@ -22,7 +22,7 @@ Then route work through:
 2. Read `memory/00-index.md`.
 3. Load only the relevant memory files.
 4. Use the matching `skills/*/SKILL.md`.
-5. Use `skills/*/reference/` for exact migrated reference material; use `docs/` only if a future active doc is explicitly added.
+5. Use `skills/*/reference/` for exact migrated reference material.
 6. Verify Brain current strategy state only when strategy-level state matters.
 7. Use Supabase only when current structured records matter and record work is approved.
 
@@ -32,11 +32,7 @@ This repo reports to the Strategy Agent through:
 
 `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\growth_brief.md`
 
-Detailed growth docs live here. Brain mirrors them read-only into:
-
-`M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\docs\`
-
-Do not edit Brain mirrored docs from this repo.
+Detailed Growth memory and references live here. Do not edit Brain mirrored docs from this repo.
 
 ## Archive
 Superseded source docs are kept under `archive/`. Active routing and migrated reference material now live in `AGENTS.md`, `memory/`, and `skills/`.

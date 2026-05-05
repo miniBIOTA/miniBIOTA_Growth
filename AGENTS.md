@@ -10,7 +10,7 @@ Codex is the primary operating interface for this repo. Durable operating rules 
 - Growth memory under `memory/`.
 - Reusable Growth Agent playbooks under `skills/`.
 - Legacy and superseded materials live under `archive/` after explicit migration approval.
-- Active Growth reference material lives in `memory/` and `skills/*/reference/`; `docs/` is no longer required for the migrated Growth docs.
+- Active Growth reference material lives in `memory/` and `skills/*/reference/`.
 - Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\growth_brief.md`.
 - Supabase, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`, for tasks, domain history, and structured relationship records when needed.
 
@@ -27,7 +27,7 @@ If working manually:
 2. Read `memory/00-index.md`.
 3. Load only the relevant `memory/` files for the request.
 4. Use the matching `skills/*/SKILL.md` playbook when a request matches a skill.
-5. Use `docs/` only while migration is incomplete or when exact reference material still lives there.
+5. Use relevant `skills/*/reference/` files when exact migrated reference material is needed.
 6. Read `M:\miniBIOTA\miniBIOTA_Brain\_system\agent_memory.md` when Brain-wide agent rules matter.
 7. Read `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\growth_brief.md` for strategy-level current state.
 8. Use Supabase only when current structured records matter to the task and record work is approved.
@@ -73,7 +73,7 @@ Use this hierarchy when sources disagree:
 2. `AGENTS.md`, `memory/00-index.md`, and relevant `memory/` files.
 3. Matching `skills/*/SKILL.md` playbooks for task workflow and boundaries.
 4. Brain `growth_brief.md` for strategy-level current state.
-5. Local skill reference files and any remaining `docs/` files for detailed commercial and growth truth not yet absorbed into memory or skill references.
+5. Local `skills/*/reference/` files for exact migrated commercial and growth reference material.
 6. Supabase for structured/queryable records when current structured state matters and record work is approved.
 7. Brain mirrored docs and compiled exports as reference artifacts only.
 
@@ -82,7 +82,8 @@ Chat history and private model memory are never source of truth. Durable project
 ## Routing Rules
 - Start with `memory/00-index.md`; load the lightest memory set that can safely answer the request.
 - Use a matching skill when the user asks for a review, plan, campaign, revenue scenario, partner/sales workflow, backlog triage, or closeout.
-- Use `docs/` only during migration or when exact reference still lives there; use `skills/*/reference/` for migrated exact reference material.
+- Use `skills/*/reference/` for exact migrated reference material.
+- Use `archive/superseded/` only for historical context, migration review, or provenance.
 - Use the Brain growth brief for manager-facing current state, cross-domain dependencies, and high-level strategy.
 - Use Supabase only when current structured records matter, such as live tasks, domain history, relationship records, or verified pipeline state.
 - Before acting on live outreach, verify the latest contact, campaign, platform, and financial state.
@@ -124,12 +125,10 @@ If the user explicitly says not to update the Brain growth brief, honor that ins
 - **Hardware:** build feasibility and concrete deliverables behind campaign or sponsor claims.
 - **App:** internal operator surfaces stay separate from public growth messaging unless explicitly scoped.
 
-## Docs
-The original Growth `docs/` files have been absorbed into `memory/`, `skills/`, and `skills/*/reference/` across Phase 2 migration batches.
+## Migrated Docs
+The original Growth docs have been absorbed into `memory/`, `skills/`, and `skills/*/reference/` across Phase 2 migration batches. Historical source copies live under `archive/superseded/`.
 
-Docs are mirrored read-only into `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\docs\` by Brain `sync_docs.ps1`. Edit source docs here, not the Brain mirror.
-
-Do not archive or move any additional docs unless the user explicitly authorizes that phase.
+Do not archive or move any additional source material unless the user explicitly authorizes that phase.
 
 The former `docs/agent_protocol.md` was absorbed into active Growth routing and archived at `archive/superseded/agent_protocol.md` during Phase 2 Batch 1.
 
@@ -162,7 +161,6 @@ For documentation-only sessions:
 - Run `git diff --name-only` or equivalent.
 - Run `git status --short --branch`.
 - Confirm no app behavior, database records, structured records, public site behavior, Brain mirrored docs, or Brain growth brief changed unless explicitly authorized.
-- If local docs changed and Brain mirrors need refreshing later, ask the Brain Agent or user to run Brain `_system/sync_docs.ps1`; do not update Brain mirrors from here unless explicitly authorized.
 
 For live growth/ops sessions:
 - Verify current structured records before acting on sponsorships, contacts, newsletter lists, campaign timing, or pipeline state.
@@ -185,4 +183,4 @@ Unresolved questions:
 - item or "None"
 ```
 
-If local docs changed in a way the Strategy Agent needs, update the Brain growth brief before closing unless the user explicitly defers it.
+If local Growth memory or strategy changed in a way the Strategy Agent needs, update the Brain growth brief before closing unless the user explicitly defers it.

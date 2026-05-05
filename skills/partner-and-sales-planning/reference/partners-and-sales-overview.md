@@ -48,9 +48,7 @@ Treat these as priorities and operating needs, not approved outreach execution, 
 - A sponsor or partner package idea is not an approved offer.
 - A website route or conversion surface is not a public promise or sponsor deliverable.
 
-## Related Active Docs Still In Migration
+## Related Migrated References
 - `skills/revenue-planning/reference/revenue-acceleration-plan.md`: migrated revenue plan with assumptions, projections, and timing language. Treat numbers as assumptions unless verified.
 - `skills/campaign-planning/reference/kickstarter-estuary-campaign.md`: migrated campaign strategy with draft/reference campaign material. Treat campaign content as draft unless explicitly approved.
-
-## Related Migrated References
 - `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`: commercial systems build queue and pipeline structure.

@@ -19,6 +19,21 @@ Future phases should place stable material in:
 
 After any future source-doc absorption is reviewed and approved, superseded docs can be archived in a later phase.
 
+## Final Structure Note
+The original Growth docs have been absorbed into `memory/`, `skills/`, and `skills/*/reference/`, with historical source copies archived under `archive/superseded/`.
+
+`docs/` has no active Growth sources. Growth now routes through:
+
+- `AGENTS.md` for hard operating rules.
+- `memory/` for durable Growth context, source hierarchy, boundaries, operating model, campaign context, partner/sales context, and recurring decisions.
+- `skills/` for active repeatable workflows.
+- `skills/*/reference/` for exact migrated reference material.
+- `archive/superseded/` for historical material only.
+- Brain `growth_brief.md` for manager-facing strategy-level current state.
+- Supabase only when current structured records matter and record work is approved.
+
+The next structural step is the Team tab update.
+
 ## Phase 1 Audit Note
 The Phase 1 audit passed with no blocking issues. The audit found stale startup and closeout routing in `README.md`, `_system/codex_session_start.ps1`, `_system/codex_session_close.ps1`, and the then-active `docs/agent_protocol.md`; those routing notes were patched after approval.
 
