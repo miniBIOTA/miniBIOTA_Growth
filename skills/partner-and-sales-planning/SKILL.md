@@ -26,7 +26,7 @@ description: Plan partner categories, outreach strategy, sales materials, relati
 ## Required Docs Or References
 - `skills/partner-and-sales-planning/reference/partners-and-sales-overview.md` when partner/sales scope, current state, priorities, risks, or readiness context are central.
 - `memory/04-commercial-operating-model.md` for current commercial surfaces, planned lanes, dependencies, and unknowns.
-- `docs/commercial_systems_backlog.md` when pipeline structure or systems are in scope.
+- `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md` when pipeline structure or systems are in scope.
 - Brain `growth_brief.md` when current strategy-level partner context is needed.
 - Supabase only when current structured relationship records matter and record access has been approved.
 

@@ -9,7 +9,7 @@ Phase 1 created the initial Growth Agent memory and playbook architecture:
 - `archive/` for later migration phases.
 
 ## Docs Status
-At Phase 1, old docs were not archived yet. As of Phase 2 Batch 3, `docs/agent_protocol.md`, `docs/commercial_operating_model.md`, and `docs/partners_and_sales_overview.md` have been absorbed and archived. Remaining files under `docs/` stay active source material during migration.
+At Phase 1, old docs were not archived yet. As of Phase 2 Batch 4, `docs/agent_protocol.md`, `docs/commercial_operating_model.md`, `docs/partners_and_sales_overview.md`, and `docs/commercial_systems_backlog.md` have been absorbed and archived. Remaining files under `docs/` stay active source material during migration.
 
 Future phases should absorb stable material from `docs/` into:
 
@@ -72,6 +72,23 @@ Preserved material included:
 - Risks and gaps around missing commercial system, newsletter sync, relationship management, ownership, and sequencing.
 
 The superseded source doc is archived at `archive/superseded/partners_and_sales_overview.md` for migration history only. It is no longer an active required reference.
+
+No other docs were moved or archived in this batch.
+
+## Phase 2 Batch 4 - Commercial Systems Backlog Absorbed
+`docs/commercial_systems_backlog.md` was absorbed into `memory/07-recurring-decisions.md`, related commercial model and boundary memory, and `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`.
+
+Preserved material included:
+- Commercial system backlog items as planning reference.
+- Minimum relationship pipeline fields.
+- Cross-functional inputs from Company Operations, Brand & Marketing, Content Production, Web & Digital Presence, and Finance & Budget.
+- Completion signals as evaluation criteria, not claims of completion.
+- Notes that the backlog is about building the commercial operating system, not claiming it exists.
+- Sequencing caution that target partner categories and active outreach sequences come after basics exist.
+- CFO/financial readiness linkage.
+- Source-note provenance for Web and Executive Brain Build Plan inputs.
+
+The superseded source doc is archived at `archive/superseded/commercial_systems_backlog.md` for migration history only. It is no longer an active required reference.
 
 No other docs were moved or archived in this batch.
 

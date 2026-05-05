@@ -49,6 +49,8 @@ Treat these as priorities and operating needs, not approved outreach execution, 
 - A website route or conversion surface is not a public promise or sponsor deliverable.
 
 ## Related Active Docs Still In Migration
-- `docs/commercial_systems_backlog.md`: commercial systems build queue and pipeline structure, still pending migration.
 - `docs/revenue_acceleration_plan.md`: revenue plan with assumptions, projections, and timing language. Treat numbers as assumptions unless verified.
 - `docs/kickstarter_estuary_campaign.md`: campaign strategy with draft/reference campaign material. Treat campaign content as draft unless explicitly approved.
+
+## Related Migrated References
+- `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`: commercial systems build queue and pipeline structure.

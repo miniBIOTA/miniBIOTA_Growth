@@ -52,7 +52,9 @@ Treat these as planned internal lanes unless a higher-priority source explicitly
 ## Related Active Docs Still In Migration
 - `docs/revenue_acceleration_plan.md`: sequenced profitability plan with timelines and projections. Treat numbers as assumptions unless verified.
 - `docs/kickstarter_estuary_campaign.md`: Kickstarter strategy for the estuary biome build. Treat campaign material as draft/reference unless explicitly approved.
-- `docs/commercial_systems_backlog.md`: commercial systems build queue and pipeline structure, still pending migration.
+
+## Related Migrated References
+- `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`: commercial systems build queue and pipeline structure.
 
 ## Source Notes
 - `4. Brand & Marketing/04_brand_and_marketing_ceo_source.md`

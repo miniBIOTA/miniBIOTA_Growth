@@ -4,8 +4,22 @@ title: Commercial Systems Backlog
 domain: partners_and_sales
 last_updated: 2026-04-13
 tags: [commercial, backlog, build-queue, pipeline, partnerships]
+archived: 2026-05-05
+archive_reason: Absorbed into memory and skill reference material during Growth Agent Phase 2 Batch 4.
 ---
 # Commercial Systems Backlog
+
+## Migration Note
+This document was absorbed into active Growth Agent memory and skill reference material during Phase 2 Batch 4.
+
+Active material now lives in:
+- `memory/07-recurring-decisions.md`
+- `memory/04-commercial-operating-model.md`
+- `memory/02-commercial-boundaries.md`
+- `skills/commercial-backlog-triage/SKILL.md`
+- `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`
+
+Use this archived copy only for migration history.
 
 ## Immediate Build Queue
 - Build a business plan that aligns operations, funding, storytelling, and hardware development.

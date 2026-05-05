@@ -40,6 +40,8 @@ When working with commercial ideas, clearly label:
 - Treat commercial surfaces, lanes, and operating models as internal planning context unless a source explicitly says they are approved public strategy.
 - A public conversion surface, such as a donation, events, build/resource, subscribe, or signup route, is not the same thing as an approved offer, sponsorship package, price, partner commitment, or campaign promise.
 - A planned revenue or partnership lane is not a commitment to launch, price, sell, pitch, or fulfill anything.
+- A backlog item is not an approved task, active project, scheduled work, funded work, roadmap item, owner assignment, launch target, partner promise, or sales commitment.
+- A completion signal is evaluation criteria, not proof that the item is complete.
 - A dependency or open unknown should remain visible until verified, resolved, or explicitly approved.
 
 ## Revenue And Projection Rules

@@ -37,6 +37,12 @@ These lanes are internal model categories. Treat them as draft/planned lanes unt
 - Donation, events, affiliate, campaign, and newsletter capture surfaces are needed from Web.
 - Hardware feasibility and concrete deliverables are needed before campaign or sponsor claims.
 - A lightweight relationship pipeline is needed so commercial follow-through is not lost across chats and scattered notes.
+- Newsletter handoff from `email_signups` to an external email platform remains a commercial systems dependency until a downstream workflow is explicitly defined.
+
+## Backlog Principles
+- Commercial systems backlog items are planning references for building the operating system behind commercial activity.
+- Backlog items do not create active work, tasks, owner assignments, deadlines, roadmap commitments, launch targets, partner promises, sponsor obligations, or sales commitments.
+- Prioritize backlog work by dependency reduction, revenue leverage, operational risk, cross-functional readiness, and the need to prevent commercial follow-through from being lost.
 
 ## Cross-Domain Relationship Rules
 - Financials supplies revenue targets, debt pressure, profitability timelines, pricing assumptions, and estimated value assumptions; Growth should not invent or harden those numbers without verification.
@@ -53,9 +59,10 @@ These lanes are internal model categories. Treat them as draft/planned lanes unt
 - Owner, cadence, and CRM-style workflow still need explicit definition.
 - Newsletter handoff and relationship-management workflow still need operational design.
 - Partner pipeline status, sponsor interest, partner interest, and sales conversations must be verified before being treated as active.
+- Business plan, media kit, sponsorship package, speaking/pitching workflow, relationship tracker, and newsletter handoff remain backlog needs until explicitly completed or approved elsewhere.
 
 ## Exact Reference
 Detailed model material absorbed from the old source doc now lives in `skills/growth-strategy-review/reference/commercial-operating-model.md`.
 
 ## Migration Note
-The former `docs/commercial_operating_model.md` was absorbed during Phase 2 Batch 2 and archived at `archive/superseded/commercial_operating_model.md`. Detailed backlog source material remains in `docs/commercial_systems_backlog.md` until a later migration phase absorbs it into memory and skill references.
+The former `docs/commercial_operating_model.md` was absorbed during Phase 2 Batch 2 and archived at `archive/superseded/commercial_operating_model.md`. The former `docs/commercial_systems_backlog.md` was absorbed during Phase 2 Batch 4 and archived at `archive/superseded/commercial_systems_backlog.md`.

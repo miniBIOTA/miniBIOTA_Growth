@@ -13,6 +13,9 @@ This file tracks decision areas that recur across Growth sessions. It is not an 
 - Whether a sponsor/partner package idea is internal model language or approved public offer language.
 - Whether a relationship tracker should live in Markdown, Supabase, or another CRM-like system.
 - Whether newsletter capture should remain capture-only or connect to an external email platform.
+- Whether a commercial systems item is merely backlog, proposed work, active work, approved roadmap, or a commitment.
+- Whether a business plan, media kit, sponsorship package, speaking/pitching workflow, relationship tracker, or newsletter handoff has actually been completed or remains a backlog need.
+- Whether a backlog item needs Company Operations, Brand, Content, Web, Financials, or Hardware input before it can be recommended.
 - Whether an existing web surface is merely a current signal or is ready for an approved conversion workflow.
 - Whether a planned commercial lane is still draft/planned, ready for recommendation, or approved for execution.
 - Whether sponsorships, speaking, audience support, affiliate-backed resources, crowdfunding, or newsletter-driven conversion should be evaluated separately or together.
@@ -27,3 +30,4 @@ This file tracks decision areas that recur across Growth sessions. It is not an 
 - Do not treat approved strategy as a public commitment unless the user explicitly makes or authorizes that commitment.
 - Do not treat public web surfaces as offers, prices, sponsor packages, partner obligations, or campaign commitments without explicit approval.
 - Do not treat target categories as partner interest or sponsor interest without verification.
+- Do not treat backlog items as tasks, active projects, scheduled work, funded work, approved roadmap, or commitments without explicit approval.
