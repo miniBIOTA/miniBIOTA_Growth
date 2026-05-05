@@ -1,0 +1,55 @@
+---
+name: partner-and-sales-planning
+description: Plan partner categories, outreach strategy, sales materials, relationship maps, or sponsor/partner next steps for miniBIOTA.
+---
+# Partner And Sales Planning Skill
+
+## Trigger Phrases
+- "partner strategy"
+- "sales planning"
+- "sponsorship outreach"
+- "relationship map"
+- "sales materials"
+- "sponsor next steps"
+- "partner categories"
+- "media kit"
+
+## Required Memory
+- `memory/00-index.md`
+- `memory/01-agent-purpose.md`
+- `memory/02-commercial-boundaries.md`
+- `memory/03-source-of-truth-hierarchy.md`
+- `memory/04-commercial-operating-model.md`
+- `memory/05-partners-and-sales-context.md`
+- `memory/07-recurring-decisions.md`
+
+## Required Docs Or References
+- `docs/partners_and_sales_overview.md` while migration is incomplete.
+- `docs/commercial_operating_model.md` while migration is incomplete.
+- `docs/commercial_systems_backlog.md` when pipeline structure or systems are in scope.
+- Brain `growth_brief.md` when current strategy-level partner context is needed.
+- Supabase only when current structured relationship records matter and record access has been approved.
+
+## Workflow
+1. Identify whether the task is category planning, outreach strategy, sales materials, relationship mapping, or next-step planning.
+2. Separate active relationships from target categories and speculative opportunities.
+3. Identify needed assets such as business plan, media kit, sponsorship package, proof assets, founder narrative, or website surfaces.
+4. Define next steps with approval gates for outreach, pricing, offers, terms, and record writes.
+5. Keep sensitive relationship details in this repo or authorized structured systems.
+
+## Expected Output
+- Partner/sponsor category map or planning summary.
+- Current facts versus assumptions.
+- Asset gaps.
+- Recommended next steps.
+- Approval gates.
+
+## Write And Approval Rules
+- Do not write CRM, partner, sponsor, sales, task, or domain-history records without explicit approval.
+- Do not send or prepare live outreach for execution without approval.
+- Documentation edits must follow the repo write policy.
+
+## Do-Not-Do Boundaries
+- Do not invent partner commitments, terms, pricing, obligations, or sponsor benefits.
+- Do not treat a target category as an active relationship.
+- Do not create offers or obligations without explicit approval.

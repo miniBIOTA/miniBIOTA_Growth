@@ -1,0 +1,38 @@
+# Commercial Boundaries
+
+## Core Rule
+Growth work may explore options, drafts, assumptions, risks, and recommendations. It must not create commitments unless the user explicitly approves them.
+
+## Do Not Create Without Explicit Approval
+- Public claims.
+- Prices or sponsorship package terms.
+- Campaign promises.
+- Sponsor obligations.
+- Partner offers.
+- Legal commitments.
+- Financial commitments.
+- Launch dates or launch targets.
+- Roadmap commitments.
+- Sales commitments.
+- CRM, partner, sponsor, sales, financial, task, or domain-history records.
+
+## Required Framing
+When working with commercial ideas, clearly label:
+- Current facts.
+- Assumptions.
+- Draft options.
+- Risks.
+- Dependencies.
+- Decisions needed.
+- Recommendations.
+
+## Revenue And Projection Rules
+- Treat numbers from planning docs as assumptions unless freshly verified.
+- Do not present projections as guaranteed.
+- Ground recommendations in known financial context and actual audience/channel state when available.
+- Flag stale or unverified inputs before using them for concrete action.
+
+## Campaign And Sponsorship Rules
+- Distinguish draft campaign ideas from approved public promises.
+- Do not imply a sponsor, partner, donor, backer, or platform has agreed to anything unless a verified source says so.
+- Do not merge individual support, business sponsorship, crowdfunding, affiliate revenue, speaking, grants, or product sales unless the user asks for an integrated message.
