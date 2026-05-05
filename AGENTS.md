@@ -9,8 +9,8 @@ Codex is the primary operating interface for this repo. Durable operating rules 
 - Markdown vault as durable growth and commercial memory.
 - Growth memory under `memory/`.
 - Reusable Growth Agent playbooks under `skills/`.
-- Legacy and superseded materials will move to `archive/` only in a later migration phase.
-- Growth reference docs currently remain under `docs/`.
+- Legacy and superseded materials live under `archive/` after explicit migration approval.
+- Active Growth reference material lives in `memory/` and `skills/*/reference/`; `docs/` is no longer required for the migrated Growth docs.
 - Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\growth_brief.md`.
 - Supabase, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`, for tasks, domain history, and structured relationship records when needed.
 
@@ -36,7 +36,7 @@ For revenue sequencing, use `skills/revenue-planning/SKILL.md`, current source m
 
 For sponsorships and pipeline systems, use `skills/partner-and-sales-planning/SKILL.md` or `skills/commercial-backlog-triage/SKILL.md`, `memory/04-commercial-operating-model.md`, and `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`.
 
-For crowdfunding and launch campaign planning, use `skills/campaign-planning/SKILL.md` plus `docs/kickstarter_estuary_campaign.md` while migration is incomplete.
+For crowdfunding and launch campaign planning, use `skills/campaign-planning/SKILL.md`, `memory/06-campaign-context.md`, and `skills/campaign-planning/reference/kickstarter-estuary-campaign.md` when exact migrated campaign detail is needed.
 
 ## Phase 1 Architecture
 `memory/` is the durable operating memory layer for this Growth Agent:
@@ -64,7 +64,7 @@ For crowdfunding and launch campaign planning, use `skills/campaign-planning/SKI
 | `skills/commercial-backlog-triage/SKILL.md` | Prioritize commercial systems and growth infrastructure |
 | `skills/growth-closeout/SKILL.md` | Close Growth sessions and identify follow-up implications |
 
-`archive/` is present for later migration phases. Do not move or archive existing docs until the user explicitly starts an archive/migration phase.
+`archive/` stores superseded source docs after explicit migration approval. Do not move or archive additional docs unless the user explicitly starts an archive/migration phase.
 
 ## Source Of Truth
 Use this hierarchy when sources disagree:
@@ -73,7 +73,7 @@ Use this hierarchy when sources disagree:
 2. `AGENTS.md`, `memory/00-index.md`, and relevant `memory/` files.
 3. Matching `skills/*/SKILL.md` playbooks for task workflow and boundaries.
 4. Brain `growth_brief.md` for strategy-level current state.
-5. Local `docs/` files for detailed commercial and growth truth not yet absorbed into memory or skill references.
+5. Local skill reference files and any remaining `docs/` files for detailed commercial and growth truth not yet absorbed into memory or skill references.
 6. Supabase for structured/queryable records when current structured state matters and record work is approved.
 7. Brain mirrored docs and compiled exports as reference artifacts only.
 
@@ -82,7 +82,7 @@ Chat history and private model memory are never source of truth. Durable project
 ## Routing Rules
 - Start with `memory/00-index.md`; load the lightest memory set that can safely answer the request.
 - Use a matching skill when the user asks for a review, plan, campaign, revenue scenario, partner/sales workflow, backlog triage, or closeout.
-- Use `docs/` only during migration or when the exact reference still lives there.
+- Use `docs/` only during migration or when exact reference still lives there; use `skills/*/reference/` for migrated exact reference material.
 - Use the Brain growth brief for manager-facing current state, cross-domain dependencies, and high-level strategy.
 - Use Supabase only when current structured records matter, such as live tasks, domain history, relationship records, or verified pipeline state.
 - Before acting on live outreach, verify the latest contact, campaign, platform, and financial state.
@@ -125,15 +125,11 @@ If the user explicitly says not to update the Brain growth brief, honor that ins
 - **App:** internal operator surfaces stay separate from public growth messaging unless explicitly scoped.
 
 ## Docs
-The original `docs/` files remain active during migration:
-
-| File | Contents |
-|---|---|
-| `docs/kickstarter_estuary_campaign.md` | Kickstarter strategy for the estuary build |
+The original Growth `docs/` files have been absorbed into `memory/`, `skills/`, and `skills/*/reference/` across Phase 2 migration batches.
 
 Docs are mirrored read-only into `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sales\docs\` by Brain `sync_docs.ps1`. Edit source docs here, not the Brain mirror.
 
-During migration, do not archive or move docs until the user explicitly authorizes that phase.
+Do not archive or move any additional docs unless the user explicitly authorizes that phase.
 
 The former `docs/agent_protocol.md` was absorbed into active Growth routing and archived at `archive/superseded/agent_protocol.md` during Phase 2 Batch 1.
 
@@ -144,6 +140,8 @@ The former `docs/partners_and_sales_overview.md` was absorbed into `memory/05-pa
 The former `docs/commercial_systems_backlog.md` was absorbed into `memory/07-recurring-decisions.md`, `memory/04-commercial-operating-model.md`, commitment boundaries, and `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`, then archived at `archive/superseded/commercial_systems_backlog.md` during Phase 2 Batch 4.
 
 The former `docs/revenue_acceleration_plan.md` was absorbed into revenue memory, commercial boundaries, recurring decisions, and `skills/revenue-planning/reference/revenue-acceleration-plan.md`, then archived at `archive/superseded/revenue_acceleration_plan.md` during Phase 2 Batch 5.
+
+The former `docs/kickstarter_estuary_campaign.md` was absorbed into campaign memory, campaign boundaries, recurring decisions, and `skills/campaign-planning/reference/kickstarter-estuary-campaign.md`, then archived at `archive/superseded/kickstarter_estuary_campaign.md` during Phase 2 Batch 6.
 
 ## Write Policy
 Respect `MINIBIOTA_WRITE_MODE` from Brain when available:

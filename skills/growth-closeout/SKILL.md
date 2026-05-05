@@ -32,8 +32,9 @@ description: Close Growth sessions and decide whether Brain growth brief updates
 6. If local docs changed and Brain mirrors may need refreshing later, note that sync is implicated; do not update Brain mirrors unless explicitly authorized.
 7. Confirm that backlog references were not converted into active projects, tasks, approved roadmap, owner assignments, dates, or commitments unless explicitly approved.
 8. Confirm that revenue scenarios were not converted into public offers, prices, campaign promises, sponsor obligations, partner offers, financial commitments, launch dates, approved strategy, active projects, tasks, or revenue commitments unless explicitly approved.
-9. Confirm what was not changed: Supabase, structured records, app behavior, public site behavior, Brain mirrored docs, Brain growth brief, test data, and public/commercial commitments as relevant.
-10. Give the standard closeout report.
+9. Confirm that campaign references were not converted into public claims, prices, campaign promises, reward promises, stretch-goal promises, fulfillment promises, launch dates, approved strategy, active projects, tasks, or revenue commitments unless explicitly approved.
+10. Confirm what was not changed: Supabase, structured records, app behavior, public site behavior, Brain mirrored docs, Brain growth brief, test data, and public/commercial commitments as relevant.
+11. Give the standard closeout report.
 
 ## Expected Output
 ```markdown
@@ -62,3 +63,4 @@ Unresolved questions:
 - Do not treat recommendations or approved internal strategy as public commitments.
 - Do not create tasks or active-project follow-ups from backlog material without explicit approval.
 - Do not create revenue follow-up records, tasks, or public/commercial commitments from scenario material without explicit approval.
+- Do not create campaign follow-up records, tasks, public claims, reward promises, stretch-goal promises, fulfillment promises, launch dates, or public campaign commitments from draft campaign material without explicit approval.

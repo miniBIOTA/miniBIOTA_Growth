@@ -10,6 +10,9 @@ This file tracks decision areas that recur across Growth sessions. It is not an 
 - Whether revenue sequencing should be based on time-to-first-dollar, dependency load, operational risk, or strategic fit.
 - Whether sponsorship packaging is ready for concrete pricing or should remain conceptual.
 - Whether campaign timing is approved or still exploratory.
+- Whether a campaign concept is an idea, draft campaign plan, recommendation, approved campaign strategy, or public promise.
+- Whether campaign goals, reward tiers, prices, add-ons, backer benefits, launch sequences, stretch goals, or fulfillment notes are historical assumptions, draft ideas, approved strategy, or commitments.
+- Whether campaign messaging or scientific hook language has passed Brand and claim review before public use.
 - Whether partner categories are approved for outreach or only being researched.
 - Whether a relationship is a lead, target, prospect, interested party, or confirmed relationship.
 - Whether an outreach plan is still draft strategy or approved for execution.
@@ -35,4 +38,5 @@ This file tracks decision areas that recur across Growth sessions. It is not an 
 - Do not treat target categories as partner interest or sponsor interest without verification.
 - Do not treat backlog items as tasks, active projects, scheduled work, funded work, approved roadmap, or commitments without explicit approval.
 - Do not treat revenue projections, prices, targets, timelines, or monetization ideas as approved commitments without explicit approval.
+- Do not treat campaign goals, reward tiers, prices, add-ons, launch sequences, stretch goals, fulfillment notes, backer benefits, or campaign copy as approved commitments without explicit approval.
 - Verify current financial and audience values before using them as current.

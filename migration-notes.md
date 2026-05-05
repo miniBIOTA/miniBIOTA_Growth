@@ -9,15 +9,15 @@ Phase 1 created the initial Growth Agent memory and playbook architecture:
 - `archive/` for later migration phases.
 
 ## Docs Status
-At Phase 1, old docs were not archived yet. As of Phase 2 Batch 5, `docs/agent_protocol.md`, `docs/commercial_operating_model.md`, `docs/partners_and_sales_overview.md`, `docs/commercial_systems_backlog.md`, and `docs/revenue_acceleration_plan.md` have been absorbed and archived. Remaining files under `docs/` stay active source material during migration.
+At Phase 1, old docs were not archived yet. As of Phase 2 Batch 6, `docs/agent_protocol.md`, `docs/commercial_operating_model.md`, `docs/partners_and_sales_overview.md`, `docs/commercial_systems_backlog.md`, `docs/revenue_acceleration_plan.md`, and `docs/kickstarter_estuary_campaign.md` have been absorbed and archived.
 
-Future phases should absorb stable material from `docs/` into:
+Future phases should place stable material in:
 
 - `memory/`
 - `skills/`
 - `skills/*/reference/`
 
-After that absorption is reviewed and approved, superseded docs can be archived in a later phase.
+After any future source-doc absorption is reviewed and approved, superseded docs can be archived in a later phase.
 
 ## Phase 1 Audit Note
 The Phase 1 audit passed with no blocking issues. The audit found stale startup and closeout routing in `README.md`, `_system/codex_session_start.ps1`, `_system/codex_session_close.ps1`, and the then-active `docs/agent_protocol.md`; those routing notes were patched after approval.
@@ -104,6 +104,28 @@ Preserved material included:
 - Source-note provenance for Financials, Kickstarter, Distribution, and Commercial model inputs.
 
 The superseded source doc is archived at `archive/superseded/revenue_acceleration_plan.md` for migration history only. It is no longer an active required reference.
+
+No other docs were moved or archived in this batch.
+
+## Phase 2 Batch 6 - Kickstarter Estuary Campaign Absorbed
+`docs/kickstarter_estuary_campaign.md` was absorbed into campaign memory, campaign boundaries, commercial decision principles, recurring decisions, and `skills/campaign-planning/reference/kickstarter-estuary-campaign.md`.
+
+Preserved material included:
+- Campaign concept and positioning.
+- Estuary campaign context and draft scientific hook language.
+- Audience/supporter assumptions.
+- Launch sequence ideas.
+- Reward tier ideas, add-on ideas, prices, limits, and backer benefits.
+- Funding goal ideas and revenue scenarios.
+- Stretch goal ideas and unlock language.
+- Fulfillment notes and zero-physical-fulfillment concepts.
+- Campaign video structure and warmup content ideas.
+- Post-campaign sequencing ideas.
+- Source-note provenance for AI exploration notes, Josue's estuary build concept, and audience conversion assumptions.
+
+All campaign goals, tiers, rewards, prices, launch sequences, timelines, stretch goals, fulfillment language, campaign copy, public claims, and revenue ranges were preserved as draft/reference material only. They are not approved campaign strategy, public promises, launch commitments, reward promises, stretch-goal promises, fulfillment promises, active projects, tasks, or financial commitments.
+
+The superseded source doc is archived at `archive/superseded/kickstarter_estuary_campaign.md` for migration history only. It is no longer an active required reference.
 
 No other docs were moved or archived in this batch.
 

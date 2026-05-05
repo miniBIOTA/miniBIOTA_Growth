@@ -25,7 +25,7 @@ description: Evaluate revenue ideas, sponsorship models, crowdfunding, subscript
 
 ## Required Docs Or References
 - `skills/revenue-planning/reference/revenue-acceleration-plan.md` when revenue channels, sequencing, historical assumptions, projections, or scenario details are central.
-- `docs/kickstarter_estuary_campaign.md` when crowdfunding or campaign revenue is in scope.
+- `skills/campaign-planning/reference/kickstarter-estuary-campaign.md` when crowdfunding, Kickstarter, campaign funding, reward pricing, or campaign revenue assumptions are in scope.
 - Brain `growth_brief.md` when current strategy-level revenue priorities are needed.
 - Supabase only when current structured records are relevant and record access has been approved.
 
@@ -66,4 +66,5 @@ description: Evaluate revenue ideas, sponsorship models, crowdfunding, subscript
 - Do not create legal, financial, sales, or campaign commitments.
 - Do not merge revenue channels unless the user asks for an integrated strategy.
 - Do not treat historical revenue plan numbers as current without verification.
+- Do not treat migrated Kickstarter goals, tiers, prices, reward assumptions, stretch goals, launch timing, fulfillment notes, or revenue ranges as approved commitments.
 - Do not create public offers, prices, launch targets, active projects, tasks, or approved strategy from revenue scenarios.

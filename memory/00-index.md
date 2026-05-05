@@ -8,7 +8,7 @@ This directory is the durable memory layer for the miniBIOTA Growth Agent. Load 
 2. Read this index.
 3. Load relevant memory files.
 4. Use the matching `skills/*/SKILL.md`.
-5. Use `docs/` only while migration is incomplete or when exact reference material still lives there.
+5. Use `skills/*/reference/` for migrated exact reference material; use `docs/` only if a future active doc is explicitly added.
 6. Use Brain `growth_brief.md` for strategy-level current state.
 7. Use Supabase only when current structured records matter and the user has authorized record work.
 
@@ -35,6 +35,6 @@ This directory is the durable memory layer for the miniBIOTA Growth Agent. Load 
 | `skills/growth-closeout/SKILL.md` | Close a Growth session or decide whether follow-ups, Brain brief updates, records, or tasks are implicated |
 
 ## Migration Status
-Phase 1 created the memory and skill architecture. Phase 2 Batch 1 absorbed `docs/agent_protocol.md` into active Growth routing and archived it at `archive/superseded/agent_protocol.md`. Phase 2 Batch 2 absorbed `docs/commercial_operating_model.md` into memory and skill reference material, then archived it at `archive/superseded/commercial_operating_model.md`. Phase 2 Batch 3 absorbed `docs/partners_and_sales_overview.md` into partner/sales memory and skill reference material, then archived it at `archive/superseded/partners_and_sales_overview.md`. Phase 2 Batch 4 absorbed `docs/commercial_systems_backlog.md` into backlog memory and skill reference material, then archived it at `archive/superseded/commercial_systems_backlog.md`. Phase 2 Batch 5 absorbed `docs/revenue_acceleration_plan.md` into revenue memory and skill reference material, then archived it at `archive/superseded/revenue_acceleration_plan.md`.
+Phase 1 created the memory and skill architecture. Phase 2 Batch 1 absorbed `docs/agent_protocol.md` into active Growth routing and archived it at `archive/superseded/agent_protocol.md`. Phase 2 Batch 2 absorbed `docs/commercial_operating_model.md` into memory and skill reference material, then archived it at `archive/superseded/commercial_operating_model.md`. Phase 2 Batch 3 absorbed `docs/partners_and_sales_overview.md` into partner/sales memory and skill reference material, then archived it at `archive/superseded/partners_and_sales_overview.md`. Phase 2 Batch 4 absorbed `docs/commercial_systems_backlog.md` into backlog memory and skill reference material, then archived it at `archive/superseded/commercial_systems_backlog.md`. Phase 2 Batch 5 absorbed `docs/revenue_acceleration_plan.md` into revenue memory and skill reference material, then archived it at `archive/superseded/revenue_acceleration_plan.md`. Phase 2 Batch 6 absorbed `docs/kickstarter_estuary_campaign.md` into campaign memory and skill reference material, then archived it at `archive/superseded/kickstarter_estuary_campaign.md`.
 
-Remaining `docs/` files stay active during migration when exact reference material still lives there. Later phases should absorb stable material into `memory/`, `skills/`, and `skills/*/reference/`, then archive superseded docs only after explicit approval.
+The original Growth docs have been migrated into `memory/`, `skills/`, and `skills/*/reference/`. Later phases should only add or archive docs after explicit approval.

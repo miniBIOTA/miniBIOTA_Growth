@@ -56,5 +56,9 @@ When working with commercial ideas, clearly label:
 
 ## Campaign And Sponsorship Rules
 - Distinguish draft campaign ideas from approved public promises.
+- Treat campaign goals, tiers, rewards, prices, launch sequences, campaign timelines, stretch goals, fulfillment language, backer benefits, and campaign copy as draft/reference unless explicitly approved.
+- Do not imply a Kickstarter campaign is approved, scheduled, live, funded, or ready to launch unless a current authoritative source and the user explicitly approve that status.
+- Do not create reward promises, stretch-goal promises, fulfillment promises, campaign pages, platform records, backer records, or public campaign copy without explicit approval.
+- Keep public-facing campaign claims subject to Brand and claim review before use.
 - Do not imply a sponsor, partner, donor, backer, or platform has agreed to anything unless a verified source says so.
 - Do not merge individual support, business sponsorship, crowdfunding, affiliate revenue, speaking, grants, or product sales unless the user asks for an integrated message.

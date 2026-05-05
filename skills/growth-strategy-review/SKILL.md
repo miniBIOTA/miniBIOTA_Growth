@@ -25,6 +25,7 @@ description: Review a growth plan, commercial direction, audience/revenue path, 
 - `skills/partner-and-sales-planning/reference/partners-and-sales-overview.md` when partner/sales readiness, commercial signals, priorities, or risks are central to strategic fit.
 - `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md` when backlog/system readiness affects strategic feasibility.
 - `skills/revenue-planning/reference/revenue-acceleration-plan.md` when revenue sequencing, monetization assumptions, or financial pressure affect strategic feasibility.
+- `skills/campaign-planning/reference/kickstarter-estuary-campaign.md` when campaign concept, campaign risk, launch sequencing, reward strategy, or estuary Kickstarter positioning affects strategic feasibility.
 - Relevant source docs from `docs/` when the exact detail has not yet moved into memory or this skill's `reference/` folder.
 - Brain `growth_brief.md` when strategy-level current state is needed.
 
@@ -61,4 +62,5 @@ description: Review a growth plan, commercial direction, audience/revenue path, 
 - Do not create commitments.
 - Do not invent partner, sponsor, customer, donor, or campaign status.
 - Do not present projections as guaranteed.
+- Do not treat campaign goals, launch sequences, tiers, rewards, stretch goals, fulfillment notes, or campaign copy as approved strategy or public commitments.
 - Do not turn aspirational plans into approved strategy.

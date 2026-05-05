@@ -36,6 +36,12 @@ These lanes are internal model categories. Treat them as draft/planned lanes unt
 - Immediate support, sponsorship, course/pre-sale, crowdfunding, merch, affiliate, tips, grants, speaking, and product/service ideas are distinct channels unless the user explicitly asks for an integrated scenario.
 - A sequenced revenue scenario does not create public offers, launch targets, sponsor terms, partner obligations, campaign commitments, active projects, or tasks.
 
+## Campaign Decision Principles
+- Crowdfunding can be evaluated as a commercial lane only when campaign concept, audience readiness, hardware feasibility, fulfillment load, claim risk, and financial assumptions are clearly separated.
+- Campaign planning must separate draft concept, draft rewards, draft pricing, draft launch sequence, draft stretch goals, draft fulfillment notes, recommendations, approved campaign strategy, and public promises.
+- A campaign reference or revenue scenario does not approve a launch date, funding goal, reward tier, price, stretch goal, backer benefit, fulfillment obligation, public claim, active project, task, or roadmap item.
+- Use `skills/campaign-planning/reference/kickstarter-estuary-campaign.md` for exact migrated campaign assumptions. Treat it as draft/reference unless explicitly approved.
+
 ## Dependencies
 - A real business plan is needed so commercial outreach is tied to operating reality rather than generic pitch language.
 - Financial context is needed before evaluating revenue targets, debt pressure, pricing assumptions, or estimated value.
@@ -67,10 +73,10 @@ These lanes are internal model categories. Treat them as draft/planned lanes unt
 - Newsletter handoff and relationship-management workflow still need operational design.
 - Partner pipeline status, sponsor interest, partner interest, and sales conversations must be verified before being treated as active.
 - Business plan, media kit, sponsorship package, speaking/pitching workflow, relationship tracker, and newsletter handoff remain backlog needs until explicitly completed or approved elsewhere.
-- Current revenue baseline, debt pressure, audience numbers, email list size, Patreon revenue, sponsorship value, course pricing, campaign funding goals, and merch revenue assumptions require verification before use as current values.
+- Current revenue baseline, debt pressure, audience numbers, email list size, Patreon revenue, sponsorship value, course pricing, campaign funding goals, campaign launch timing, reward tiers, stretch goals, fulfillment assumptions, and merch revenue assumptions require verification before use as current values.
 
 ## Exact Reference
 Detailed model material absorbed from the old source doc now lives in `skills/growth-strategy-review/reference/commercial-operating-model.md`.
 
 ## Migration Note
-The former `docs/commercial_operating_model.md` was absorbed during Phase 2 Batch 2 and archived at `archive/superseded/commercial_operating_model.md`. The former `docs/commercial_systems_backlog.md` was absorbed during Phase 2 Batch 4 and archived at `archive/superseded/commercial_systems_backlog.md`. The former `docs/revenue_acceleration_plan.md` was absorbed during Phase 2 Batch 5 and archived at `archive/superseded/revenue_acceleration_plan.md`.
+The former `docs/commercial_operating_model.md` was absorbed during Phase 2 Batch 2 and archived at `archive/superseded/commercial_operating_model.md`. The former `docs/commercial_systems_backlog.md` was absorbed during Phase 2 Batch 4 and archived at `archive/superseded/commercial_systems_backlog.md`. The former `docs/revenue_acceleration_plan.md` was absorbed during Phase 2 Batch 5 and archived at `archive/superseded/revenue_acceleration_plan.md`. The former `docs/kickstarter_estuary_campaign.md` was absorbed during Phase 2 Batch 6 and archived at `archive/superseded/kickstarter_estuary_campaign.md`.
