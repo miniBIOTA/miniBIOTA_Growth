@@ -33,6 +33,12 @@ When working with commercial ideas, clearly label:
 - Keep detailed working materials in this repo or another explicitly authorized destination.
 - Summarize only manager-facing strategy to Brain when Brain updates are authorized and needed.
 
+## Internal Model Boundaries
+- Treat commercial surfaces, lanes, and operating models as internal planning context unless a source explicitly says they are approved public strategy.
+- A public conversion surface, such as a donation, events, build/resource, subscribe, or signup route, is not the same thing as an approved offer, sponsorship package, price, partner commitment, or campaign promise.
+- A planned revenue or partnership lane is not a commitment to launch, price, sell, pitch, or fulfill anything.
+- A dependency or open unknown should remain visible until verified, resolved, or explicitly approved.
+
 ## Revenue And Projection Rules
 - Treat numbers from planning docs as assumptions unless freshly verified.
 - Do not present projections as guaranteed.

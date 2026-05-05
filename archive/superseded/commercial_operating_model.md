@@ -4,8 +4,22 @@ title: Commercial Operating Model
 domain: partners_and_sales
 last_updated: 2026-04-13
 tags: [commercial, sponsorship, revenue, partnerships, business-model]
+archived: 2026-05-05
+archive_reason: Absorbed into memory and skill reference material during Growth Agent Phase 2 Batch 2.
 ---
 # Commercial Operating Model
+
+## Migration Note
+This document was absorbed into active Growth Agent memory and skill reference material during Phase 2 Batch 2.
+
+Active material now lives in:
+- `memory/04-commercial-operating-model.md`
+- `memory/02-commercial-boundaries.md`
+- `memory/03-source-of-truth-hierarchy.md`
+- `memory/07-recurring-decisions.md`
+- `skills/growth-strategy-review/reference/commercial-operating-model.md`
+
+Use this archived copy only for migration history.
 
 ## Purpose
 - Define how miniBIOTA turns mission, technical credibility, and public interest into durable business support.
@@ -41,8 +55,8 @@ tags: [commercial, sponsorship, revenue, partnerships, business-model]
 - No explicit rules yet define how email capture, website conversion, and outbound partner follow-up connect operationally.
 
 ## Active Revenue Strategy Documents
-- `revenue_acceleration_plan.md` — sequenced profitability plan with timelines and projections (added 2026-04-17)
-- `kickstarter_estuary_campaign.md` — full Kickstarter strategy for the estuary biome build (added 2026-04-17)
+- `revenue_acceleration_plan.md` - sequenced profitability plan with timelines and projections (added 2026-04-17)
+- `kickstarter_estuary_campaign.md` - full Kickstarter strategy for the estuary biome build (added 2026-04-17)
 
 ## Source Notes
 - 4. Brand & Marketing/04_brand_and_marketing_ceo_source.md

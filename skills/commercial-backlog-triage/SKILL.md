@@ -24,7 +24,7 @@ description: Review commercial systems, backlog items, growth infrastructure, or
 
 ## Required Docs Or References
 - `docs/commercial_systems_backlog.md` while migration is incomplete.
-- `docs/commercial_operating_model.md` while migration is incomplete.
+- `memory/04-commercial-operating-model.md` for current commercial surfaces, planned lanes, dependencies, and unknowns.
 - Brain `growth_brief.md` when current cross-domain priorities are needed.
 
 ## Routing Clarification
@@ -37,7 +37,7 @@ description: Review commercial systems, backlog items, growth infrastructure, or
 ## Workflow
 1. List candidate backlog items and their source.
 2. Classify each item by lane: asset, pipeline, website conversion, newsletter, sponsorship, speaking, campaign, finance dependency, or operations dependency.
-3. Prioritize by urgency, revenue leverage, dependency reduction, effort, and risk.
+3. Prioritize by urgency, revenue leverage, dependency reduction, effort, risk, current surfaces, planned lanes, and open unknowns.
 4. Identify items that need explicit approval before they become approved strategy, commitments, public work, or structured records.
 5. Recommend a short next-build sequence.
 

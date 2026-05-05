@@ -34,7 +34,7 @@ If working manually:
 
 For revenue sequencing, use `skills/revenue-planning/SKILL.md` and current source material in `memory/` plus `docs/revenue_acceleration_plan.md` while migration is incomplete.
 
-For sponsorships and pipeline systems, use `skills/partner-and-sales-planning/SKILL.md` or `skills/commercial-backlog-triage/SKILL.md` plus `docs/commercial_operating_model.md` and `docs/commercial_systems_backlog.md` while migration is incomplete.
+For sponsorships and pipeline systems, use `skills/partner-and-sales-planning/SKILL.md` or `skills/commercial-backlog-triage/SKILL.md`, `memory/04-commercial-operating-model.md`, and `docs/commercial_systems_backlog.md` while migration is incomplete.
 
 For crowdfunding and launch campaign planning, use `skills/campaign-planning/SKILL.md` plus `docs/kickstarter_estuary_campaign.md` while migration is incomplete.
 
@@ -130,7 +130,6 @@ The original `docs/` files remain active during migration:
 | File | Contents |
 |---|---|
 | `docs/partners_and_sales_overview.md` | Original Brain Partners & Sales overview, retained as migrated context |
-| `docs/commercial_operating_model.md` | Commercial surfaces, lanes, dependencies, and unknowns |
 | `docs/commercial_systems_backlog.md` | Build queue and minimum relationship pipeline structure |
 | `docs/revenue_acceleration_plan.md` | Sequenced profitability and revenue plan |
 | `docs/kickstarter_estuary_campaign.md` | Kickstarter strategy for the estuary build |
@@ -140,6 +139,8 @@ Docs are mirrored read-only into `M:\miniBIOTA\miniBIOTA_Brain\7. Partners & Sal
 During migration, do not archive or move docs until the user explicitly authorizes that phase.
 
 The former `docs/agent_protocol.md` was absorbed into active Growth routing and archived at `archive/superseded/agent_protocol.md` during Phase 2 Batch 1.
+
+The former `docs/commercial_operating_model.md` was absorbed into `memory/04-commercial-operating-model.md`, commercial boundaries, recurring decisions, and `skills/growth-strategy-review/reference/commercial-operating-model.md`, then archived at `archive/superseded/commercial_operating_model.md` during Phase 2 Batch 2.
 
 ## Write Policy
 Respect `MINIBIOTA_WRITE_MODE` from Brain when available:

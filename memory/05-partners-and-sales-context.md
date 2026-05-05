@@ -25,4 +25,4 @@ When a relationship tracker is eventually authorized, the minimum structure shou
 - Do not treat a target category as an active prospect unless a source verifies that it is active.
 
 ## Migration Note
-Detailed source material remains in `docs/partners_and_sales_overview.md`, `docs/commercial_operating_model.md`, and `docs/commercial_systems_backlog.md` until later migration phases absorb it into memory and skill references.
+Detailed source material remains in `docs/partners_and_sales_overview.md` and `docs/commercial_systems_backlog.md` until later migration phases absorb it into memory and skill references. The former `docs/commercial_operating_model.md` has been absorbed into `memory/04-commercial-operating-model.md` and `skills/growth-strategy-review/reference/commercial-operating-model.md`.

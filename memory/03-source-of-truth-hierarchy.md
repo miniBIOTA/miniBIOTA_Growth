@@ -24,3 +24,5 @@ Chat history and private model memory are not durable project truth. Use them on
 The Brain growth brief carries manager-facing strategy-level state. The local `docs/` directory still carries detailed source material during migration. Brain mirrored docs are read-only reference artifacts and should not be edited here.
 
 The former `docs/agent_protocol.md` has been absorbed into active Growth routing and archived at `archive/superseded/agent_protocol.md`; do not treat it as an active source unless reviewing migration history.
+
+The former `docs/commercial_operating_model.md` has been absorbed into `memory/04-commercial-operating-model.md` and `skills/growth-strategy-review/reference/commercial-operating-model.md`; do not treat the archived copy as an active source unless reviewing migration history.

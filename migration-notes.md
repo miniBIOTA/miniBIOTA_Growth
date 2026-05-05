@@ -9,7 +9,7 @@ Phase 1 created the initial Growth Agent memory and playbook architecture:
 - `archive/` for later migration phases.
 
 ## Docs Status
-Old docs are not archived yet. Existing files under `docs/` remain active source material during migration.
+At Phase 1, old docs were not archived yet. As of Phase 2 Batch 2, `docs/agent_protocol.md` and `docs/commercial_operating_model.md` have been absorbed and archived. Remaining files under `docs/` stay active source material during migration.
 
 Future phases should absorb stable material from `docs/` into:
 
@@ -40,6 +40,21 @@ Preserved material included:
 - Cross-domain relationship rules.
 
 The superseded protocol is archived at `archive/superseded/agent_protocol.md` for migration history only. It is no longer an active required reference.
+
+No other docs were moved or archived in this batch.
+
+## Phase 2 Batch 2 - Commercial Operating Model Absorbed
+`docs/commercial_operating_model.md` was absorbed into `memory/04-commercial-operating-model.md`, related boundary/source/decision memory, and `skills/growth-strategy-review/reference/commercial-operating-model.md`.
+
+Preserved material included:
+- Commercial operating principles.
+- Current commercial signals and public web surfaces.
+- Planned revenue and partnership lanes as internal draft/planned model categories.
+- Core dependencies and cross-domain relationships.
+- Current unknowns around pricing, sponsorship tiers, partner package structure, owner/cadence, CRM workflow, and email/provider handoff.
+- Source-note provenance for Brand and Web strategy inputs.
+
+The superseded source doc is archived at `archive/superseded/commercial_operating_model.md` for migration history only. It is no longer an active required reference.
 
 No other docs were moved or archived in this batch.
 
