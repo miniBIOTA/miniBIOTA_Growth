@@ -19,6 +19,13 @@ Future phases should absorb stable material from `docs/` into:
 
 After that absorption is reviewed and approved, superseded docs can be archived in a later phase.
 
+## Phase 1 Audit Note
+The Phase 1 audit passed with no blocking issues. The audit found stale startup and closeout routing in `README.md`, `_system/codex_session_start.ps1`, `_system/codex_session_close.ps1`, and the still-active `docs/agent_protocol.md`; those routing notes were patched after approval.
+
+`docs/agent_protocol.md` is now explicitly marked as partially superseded by `AGENTS.md`, `memory/00-index.md`, and repo-local `skills/`. It should be the first doc migration target in a later migration batch.
+
+High-risk commercial docs, especially revenue and Kickstarter material with numbers, tiers, timelines, campaign language, or projected outcomes, must remain draft/reference material until explicitly approved.
+
 ## Phase 1 Non-Changes
 No structured records, commitments, sales promises, or live systems were changed.
 

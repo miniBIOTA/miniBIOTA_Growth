@@ -27,6 +27,13 @@ description: Review commercial systems, backlog items, growth infrastructure, or
 - `docs/commercial_operating_model.md` while migration is incomplete.
 - Brain `growth_brief.md` when current cross-domain priorities are needed.
 
+## Routing Clarification
+- Use this skill when systems, build priorities, infrastructure, backlog sequencing, or operating workflows are central.
+- Use `skills/partner-and-sales-planning/SKILL.md` when relationship strategy is central.
+- Use `skills/revenue-planning/SKILL.md` when money models or revenue scenarios are central.
+- Use `skills/growth-strategy-review/SKILL.md` when commercial direction and fit are central.
+- Skills can be stacked when a request spans more than one workflow.
+
 ## Workflow
 1. List candidate backlog items and their source.
 2. Classify each item by lane: asset, pipeline, website conversion, newsletter, sponsorship, speaking, campaign, finance dependency, or operations dependency.
@@ -36,8 +43,12 @@ description: Review commercial systems, backlog items, growth infrastructure, or
 
 ## Expected Output
 - Prioritized backlog summary.
+- Current facts.
+- Assumptions.
+- Draft ideas.
 - Rationale for priority order.
 - Dependencies and blockers.
+- Approved strategy, if any source explicitly verifies it.
 - Approval gates.
 - Suggested next action.
 

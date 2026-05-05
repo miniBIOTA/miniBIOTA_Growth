@@ -38,4 +38,12 @@ try {
     Write-Host "Git status check failed: $($_.Exception.Message)"
 }
 
-Write-Host "Startup complete. Read AGENTS.md, docs/agent_protocol.md, Brain agent_memory.md, and Brain growth_brief.md before work."
+Write-Host "Startup routing:"
+Write-Host "1. Read AGENTS.md for hard Growth operating rules."
+Write-Host "2. Read memory/00-index.md."
+Write-Host "3. Load only the relevant memory files."
+Write-Host "4. Use the matching skills/*/SKILL.md workflow."
+Write-Host "5. Use docs/ only while migration is incomplete or when exact reference still lives there."
+Write-Host "6. Use Brain growth_brief.md only when current strategy-level state matters."
+Write-Host "7. Use Supabase only when current structured records matter and record work is approved."
+Write-Host "Startup complete."

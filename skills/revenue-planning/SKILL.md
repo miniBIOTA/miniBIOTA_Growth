@@ -29,6 +29,13 @@ description: Evaluate revenue ideas, sponsorship models, crowdfunding, subscript
 - Brain `growth_brief.md` when current strategy-level revenue priorities are needed.
 - Supabase only when current structured records are relevant and record access has been approved.
 
+## Routing Clarification
+- Use this skill when money models, revenue scenarios, pricing assumptions, monetization mechanics, or financial implications are central.
+- Use `skills/growth-strategy-review/SKILL.md` when commercial direction and fit are central.
+- Use `skills/partner-and-sales-planning/SKILL.md` when relationship strategy is central.
+- Use `skills/commercial-backlog-triage/SKILL.md` when systems or build priorities are central.
+- Skills can be stacked when a request spans more than one workflow.
+
 ## Workflow
 1. Identify each revenue path under consideration.
 2. Keep channels distinct: individual support, business sponsorship, crowdfunding, subscriptions, affiliates, product sales, grants, speaking, and other revenue.
@@ -39,9 +46,12 @@ description: Evaluate revenue ideas, sponsorship models, crowdfunding, subscript
 
 ## Expected Output
 - Revenue paths considered.
+- Current facts.
 - Assumptions and verification status.
+- Draft ideas.
 - Dependencies and risks.
 - Recommended sequencing.
+- Approved strategy, if any source explicitly verifies it.
 - Approval gates and decisions needed.
 
 ## Write And Approval Rules

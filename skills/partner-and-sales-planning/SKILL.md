@@ -30,6 +30,13 @@ description: Plan partner categories, outreach strategy, sales materials, relati
 - Brain `growth_brief.md` when current strategy-level partner context is needed.
 - Supabase only when current structured relationship records matter and record access has been approved.
 
+## Routing Clarification
+- Use this skill when relationship strategy, outreach planning, sponsor/partner categories, sales materials, or relationship maps are central.
+- Use `skills/commercial-backlog-triage/SKILL.md` when systems or build priorities are central.
+- Use `skills/revenue-planning/SKILL.md` when money models or revenue scenarios are central.
+- Use `skills/growth-strategy-review/SKILL.md` when commercial direction and fit are central.
+- Skills can be stacked when a request spans more than one workflow.
+
 ## Workflow
 1. Identify whether the task is category planning, outreach strategy, sales materials, relationship mapping, or next-step planning.
 2. Separate active relationships from target categories and speculative opportunities.
@@ -39,9 +46,12 @@ description: Plan partner categories, outreach strategy, sales materials, relati
 
 ## Expected Output
 - Partner/sponsor category map or planning summary.
-- Current facts versus assumptions.
+- Current facts.
+- Assumptions.
+- Draft ideas.
 - Asset gaps.
 - Recommended next steps.
+- Approved strategy, if any source explicitly verifies it.
 - Approval gates.
 
 ## Write And Approval Rules

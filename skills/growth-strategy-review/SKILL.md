@@ -25,6 +25,13 @@ description: Review a growth plan, commercial direction, audience/revenue path, 
 - Relevant source docs from `docs/` when the exact detail has not yet moved into memory or this skill's `reference/` folder.
 - Brain `growth_brief.md` when strategy-level current state is needed.
 
+## Routing Clarification
+- Use this skill when commercial direction, strategic fit, audience path, or tradeoffs are central.
+- Use `skills/revenue-planning/SKILL.md` when money models, revenue scenarios, or monetization mechanics are central.
+- Use `skills/partner-and-sales-planning/SKILL.md` when relationship strategy is central.
+- Use `skills/commercial-backlog-triage/SKILL.md` when systems or build priorities are central.
+- Skills can be stacked when a request spans more than one workflow.
+
 ## Workflow
 1. Identify the plan, option, or direction being reviewed.
 2. Separate current facts, assumptions, opportunities, risks, dependencies, and recommendations.
@@ -35,9 +42,11 @@ description: Review a growth plan, commercial direction, audience/revenue path, 
 ## Expected Output
 - Current facts.
 - Assumptions.
+- Draft ideas.
 - Opportunities.
 - Risks.
 - Recommendations.
+- Approved strategy, if any source explicitly verifies it.
 - Decisions or approvals needed.
 
 ## Write And Approval Rules
