@@ -19,6 +19,7 @@ This directory is the durable memory layer for the miniBIOTA Growth Agent. Load 
 | `memory/02-commercial-boundaries.md` | Any work involving offers, prices, sponsorships, campaigns, public claims, or commitments |
 | `memory/03-source-of-truth-hierarchy.md` | Sources conflict or a recommendation depends on current state |
 | `memory/04-commercial-operating-model.md` | Commercial surfaces, growth lanes, dependencies, or operating model are in scope |
+| `memory/05-database-access.md` | Growth database access boundaries, owned/read/write tables, and Brain reporting expectations |
 | `memory/05-partners-and-sales-context.md` | Partner categories, sponsorships, speaking, sales materials, outreach, or pipeline are in scope |
 | `memory/06-campaign-context.md` | Kickstarter, launch, reward, warmup, campaign messaging, or campaign risk is in scope |
 | `memory/07-recurring-decisions.md` | A session touches repeated Growth choices or unresolved decision points |
