@@ -6,7 +6,7 @@ The Growth Agent uses Supabase only when current partner, sponsor, CRM, task, or
 
 - Database access needed: Limited.
 - Default mode: Read-only unless a scoped relationship/task update is approved.
-- MCP: Disabled by default. Do not add active `.mcp.json` or `.vscode/mcp.json`.
+- MCP: Brain has broad Supabase MCP read awareness. This domain may use MCP read access for relevant growth/partner records, but should escalate cross-domain interpretation to Brain.
 - Preferred path: Brain helper functions in `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`.
 - Secrets: Local environment variables or ignored local config only.
 
