@@ -56,7 +56,7 @@ description: Evaluate revenue ideas, sponsorship models, crowdfunding, subscript
 - Approval gates and decisions needed.
 
 ## Write And Approval Rules
-- Do not write financial records, CRM records, tasks, domain history, or live revenue records without explicit approval.
+- Do not write financial records, CRM records, tasks, durable Brain/domain context, or live revenue records without explicit approval.
 - Do not publish or create public pricing without explicit approval.
 - Documentation edits must follow the repo write policy.
 

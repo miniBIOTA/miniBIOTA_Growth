@@ -32,7 +32,7 @@ Use the final Growth structure this way:
 - Brain `growth_brief.md` carries manager-facing, strategy-level current state.
 - Supabase is used only when current structured records matter and record work is approved.
 
-Brain no longer keeps a Growth docs mirror. Do not edit Brain mirrored docs directly.
+Brain no longer keeps an active Growth docs mirror. Do not edit, sync, or recreate retired Brain docs mirrors.
 
 ## Historical Sources
 The following archived files are historical only. Do not treat them as active sources unless reviewing migration history or provenance:

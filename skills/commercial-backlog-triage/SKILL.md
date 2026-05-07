@@ -57,7 +57,7 @@ description: Review commercial systems, backlog items, growth infrastructure, or
 
 ## Write And Approval Rules
 - Documentation edits must follow the repo write policy.
-- Do not create tasks, CRM records, partner records, sponsor records, sales records, or domain history without explicit approval.
+- Do not create tasks, CRM records, partner records, sponsor records, sales records, or durable Brain/domain context without explicit approval.
 - Do not update public surfaces or live systems without approval.
 - Do not convert backlog items into active projects, scheduled work, approved roadmap, owner assignments, or commitments without explicit approval.
 

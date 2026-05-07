@@ -12,7 +12,7 @@ Codex is the primary operating interface for this repo. Durable operating rules 
 - Legacy and superseded materials live under `archive/` after explicit migration approval.
 - Active Growth reference material lives in `memory/` and `skills/*/reference/`.
 - Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\7. miniBIOTA_Growth\growth_brief.md`.
-- Supabase, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`, for tasks, domain history, and structured relationship records when needed.
+- Supabase, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`, for tasks and structured relationship records when needed.
 
 ## Startup Sequence
 For a full Codex bootstrap, run:
@@ -85,7 +85,7 @@ Chat history and private model memory are never source of truth. Durable project
 - Use `skills/*/reference/` for exact migrated reference material.
 - Use `archive/superseded/` only for historical context, migration review, or provenance.
 - Use the Brain growth brief for manager-facing current state, cross-domain dependencies, and high-level strategy.
-- Use Supabase only when current structured records matter, such as live tasks, domain history, relationship records, or verified pipeline state.
+- Use Supabase only when current structured records matter, such as live tasks, relationship records, or verified pipeline state.
 - Before acting on live outreach, verify the latest contact, campaign, platform, and financial state.
 
 ## Growth Operating Rules
@@ -153,14 +153,14 @@ Respect `MINIBIOTA_WRITE_MODE` from Brain when available:
 
 For this repo, tell the user what files you intend to change before editing. Preserve user changes and keep edits scoped to the active request.
 
-Never write Supabase records, CRM records, sales records, partner records, sponsor records, financial records, tasks, or domain history without explicit user approval and a verified need.
+Never write Supabase records, CRM records, sales records, partner records, sponsor records, financial records, tasks, or durable Brain/domain context without explicit user approval and a verified need.
 
 ## Verification
 For documentation-only sessions:
 - Read every new or changed doc end to end.
 - Run `git diff --name-only` or equivalent.
 - Run `git status --short --branch`.
-- Confirm no app behavior, database records, structured records, public site behavior, Brain docs mirrors, or Brain growth brief changed unless explicitly authorized.
+- Confirm no app behavior, database records, structured records, public site behavior, retired Brain docs mirrors, or Brain growth brief changed unless explicitly authorized.
 
 For live growth/ops sessions:
 - Verify current structured records before acting on sponsorships, contacts, newsletter lists, campaign timing, or pipeline state.

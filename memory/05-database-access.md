@@ -1,6 +1,6 @@
 # Growth Database Access Responsibilities
 
-The Growth Agent uses Supabase only when current partner, sponsor, CRM, task, or domain history records matter. It should not create new commercial commitments or database structures without explicit approval.
+The Growth Agent uses Supabase only when current partner, sponsor, CRM, or task records matter. It should not create new commercial commitments or database structures without explicit approval.
 
 ## Access Model
 
@@ -15,8 +15,8 @@ The Growth Agent uses Supabase only when current partner, sponsor, CRM, task, or
 | Category | Tables |
 |---|---|
 | Owned | None exclusively documented; future CRM or partner tables may be shared with App |
-| Read-only | `partner_opportunities`, CRM/sponsor tables when confirmed, `tasks`, `domain_history`, public support/sponsor records |
-| Controlled write | Partner, sponsor, CRM, `tasks`, and `domain_history` records through scoped helpers if tables and workflow are confirmed |
+| Read-only | `partner_opportunities`, CRM/sponsor tables when confirmed, `tasks`, public support/sponsor records |
+| Controlled write | Partner, sponsor, CRM, and `tasks` records through scoped helpers if tables and workflow are confirmed |
 | Admin/migration | None by default |
 
 ## Approval Boundary

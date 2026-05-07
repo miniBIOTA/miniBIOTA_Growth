@@ -29,11 +29,11 @@ description: Close Growth sessions and decide whether Brain growth brief updates
 3. Run `git diff --name-only`.
 4. Run `git status --short --branch`.
 5. Decide whether Brain growth brief updates, domain follow-ups, structured records, or future tasks are implicated.
-6. If local docs changed and Brain mirrors may need refreshing later, note that sync is implicated; do not update Brain mirrors unless explicitly authorized.
+6. If local docs changed and manager-facing strategy state changed, update or flag the Brain growth brief. Brain docs mirrors are retired for Growth and should not be synced or recreated.
 7. Confirm that backlog references were not converted into active projects, tasks, approved roadmap, owner assignments, dates, or commitments unless explicitly approved.
 8. Confirm that revenue scenarios were not converted into public offers, prices, campaign promises, sponsor obligations, partner offers, financial commitments, launch dates, approved strategy, active projects, tasks, or revenue commitments unless explicitly approved.
 9. Confirm that campaign references were not converted into public claims, prices, campaign promises, reward promises, stretch-goal promises, fulfillment promises, launch dates, approved strategy, active projects, tasks, or revenue commitments unless explicitly approved.
-10. Confirm what was not changed: Supabase, structured records, app behavior, public site behavior, Brain mirrored docs, Brain growth brief, test data, and public/commercial commitments as relevant.
+10. Confirm what was not changed: Supabase, structured records, app behavior, public site behavior, retired Brain docs mirrors, Brain growth brief, test data, and public/commercial commitments as relevant.
 11. Give the standard closeout report.
 
 ## Expected Output
@@ -53,7 +53,7 @@ Unresolved questions:
 
 ## Write And Approval Rules
 - Do not write Brain growth brief updates if the user explicitly deferred them.
-- Do not write records, future tasks, CRM data, domain history, or live structured data without explicit approval.
+- Do not write records, future tasks, CRM data, durable Brain/domain context, or live structured data without explicit approval.
 - Documentation edits must follow the repo write policy.
 
 ## Do-Not-Do Boundaries
