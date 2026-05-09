@@ -8,8 +8,8 @@ Use this order when sources disagree:
 3. Matching `skills/*/SKILL.md` playbooks for workflow and boundaries.
 4. Brain `growth_brief.md` for strategy-level current state.
 5. Local `skills/*/reference/` files for exact migrated reference material.
-6. `archive/superseded/` only for historical context, migration review, or provenance.
-7. Supabase for structured/queryable records when current structured state matters and record work is approved.
+6. Supabase/App Planner for structured/queryable projects, tasks, and relationship records when current structured state matters.
+7. `archive/superseded/` only for historical context, migration review, or provenance.
 8. Brain growth brief and compiled exports as reference artifacts only.
 
 ## Non-Sources
@@ -30,7 +30,10 @@ Use the final Growth structure this way:
 - `skills/*/reference/` stores exact migrated reference material for those workflows.
 - `archive/superseded/` stores historical material only.
 - Brain `growth_brief.md` carries manager-facing, strategy-level current state.
-- Supabase is used only when current structured records matter and record work is approved.
+- Supabase/App Planner is used when current structured records, projects, tasks, or relationship state matter.
+- App Planner/Supabase is the live Growth task-status source under `work_domains.key = sales` / `domain_id = 7`.
+- Planner task status does not establish partner commitments, sponsor promises, outreach actions, pricing, campaign launch dates, public claims, CRM/relationship state, sales commitments, or approved commercial strategy.
+- Markdown memory and skill references may preserve commercial context, decisions, operating rules, and backlog/reference ideas, but they must not override Planner for actionable project/task status.
 
 Brain no longer keeps an active Growth docs mirror. Do not edit, sync, or recreate retired Brain docs mirrors.
 

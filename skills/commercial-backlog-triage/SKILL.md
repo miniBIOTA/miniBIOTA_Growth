@@ -19,6 +19,7 @@ description: Review commercial systems, backlog items, growth infrastructure, or
 - `memory/02-commercial-boundaries.md`
 - `memory/03-source-of-truth-hierarchy.md`
 - `memory/04-commercial-operating-model.md`
+- `memory/05-database-access.md`
 - `memory/05-partners-and-sales-context.md`
 - `memory/07-recurring-decisions.md`
 
@@ -40,9 +41,10 @@ description: Review commercial systems, backlog items, growth infrastructure, or
 3. Prioritize by urgency, revenue leverage, dependency reduction, effort, risk, current surfaces, planned lanes, and open unknowns.
 4. Separate backlog, proposed work, active work, approved roadmap, and commitments.
 5. Identify items that need explicit approval before they become active projects, tasks, approved roadmap, approved strategy, commitments, public work, or structured records.
-6. Check cross-functional inputs required before recommending execution.
-7. Use completion signals only as evaluation criteria, not as claims that the item is complete.
-8. Recommend a short next-build sequence as non-binding planning guidance.
+6. Check whether actionable project/task status should be read from Growth Planner under `work_domains.key = sales` / `domain_id = 7`.
+7. Check cross-functional inputs required before recommending execution.
+8. Use completion signals only as evaluation criteria, not as claims that the item is complete.
+9. Recommend a short next-build sequence as non-binding planning guidance.
 
 ## Expected Output
 - Prioritized backlog summary.
@@ -57,12 +59,14 @@ description: Review commercial systems, backlog items, growth infrastructure, or
 
 ## Write And Approval Rules
 - Documentation edits must follow the repo write policy.
-- Do not create tasks, CRM records, partner records, sponsor records, sales records, or durable Brain/domain context without explicit approval.
+- Do not create tasks, Planner records, CRM records, partner records, sponsor records, sales records, or durable Brain/domain context without explicit approval.
 - Do not update public surfaces or live systems without approval.
 - Do not convert backlog items into active projects, scheduled work, approved roadmap, owner assignments, or commitments without explicit approval.
+- Planner project/task create, edit, status, done/reopen, archive, delete, project-link, subtask, schedule, or recurrence changes are live Supabase writes and require explicit user approval.
 
 ## Do-Not-Do Boundaries
 - Do not turn backlog items into commitments.
+- Do not treat backlog/reference docs as a competing source for live task status; use Planner when actionable Growth project/task status matters.
 - Do not imply ownership, deadlines, pricing, launch targets, or deliverables are approved unless documented.
 - Do not create test data.
 - Do not imply funding, partner promises, sponsor obligations, sales commitments, or roadmap commitments from backlog material.

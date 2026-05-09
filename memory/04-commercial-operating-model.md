@@ -55,6 +55,7 @@ These lanes are internal model categories. Treat them as draft/planned lanes unt
 ## Backlog Principles
 - Commercial systems backlog items are planning references for building the operating system behind commercial activity.
 - Backlog items do not create active work, tasks, owner assignments, deadlines, roadmap commitments, launch targets, partner promises, sponsor obligations, or sales commitments.
+- App Planner/Supabase owns actionable Growth project/task status under `work_domains.key = sales` / `domain_id = 7`; backlog/reference Markdown does not compete with Planner as the live task-status source.
 - Prioritize backlog work by dependency reduction, revenue leverage, operational risk, cross-functional readiness, and the need to prevent commercial follow-through from being lost.
 
 ## Cross-Domain Relationship Rules

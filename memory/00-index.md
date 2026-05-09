@@ -3,6 +3,8 @@
 ## Purpose
 This directory is the durable memory layer for the miniBIOTA Growth Agent. Load the lightest set of files needed for the active request, then use the matching skill playbook when the work has a recurring workflow.
 
+Use Markdown memory for stable Growth context, boundaries, decisions, references, and operating rules. Use App Planner/Supabase for live Growth project/task status when current project management state matters.
+
 ## Startup Routing
 1. Read `AGENTS.md`.
 2. Read this index.
@@ -10,7 +12,19 @@ This directory is the durable memory layer for the miniBIOTA Growth Agent. Load 
 4. Use the matching `skills/*/SKILL.md`.
 5. Use `skills/*/reference/` for migrated exact reference material.
 6. Use Brain `growth_brief.md` for strategy-level current state.
-7. Use Supabase only when current structured records matter and the user has authorized record work.
+7. Use Supabase/App Planner only when current structured records, projects, tasks, or relationship state matter.
+
+## Planner Routing
+App Planner/Supabase is the live Growth work queue when current Growth project or task status matters. Growth Planner records live under `work_domains.key = sales` / `domain_id = 7` in `work_projects` and `tasks`.
+
+Current Growth work projects:
+- `Commercial Assets & Sponsorship Package`
+- `Sponsorship Outreach Pipeline`
+- `Audience Support & Revenue Sequencing`
+- `CRM & Relationship Management System`
+- `Campaign, Course & Merch Decisions`
+
+Use Planner for actionable work status, blockers, scheduling, task/project links, and completion checks. Use Markdown memory and skill references for commercial strategy, partner/sales context, campaign context, recurring decisions, approval boundaries, and non-binding backlog/reference material. Old backlog/reference notes must not act as competing live task-status lists.
 
 ## Memory Files
 | File | Load When |
@@ -19,7 +33,7 @@ This directory is the durable memory layer for the miniBIOTA Growth Agent. Load 
 | `memory/02-commercial-boundaries.md` | Any work involving offers, prices, sponsorships, campaigns, public claims, or commitments |
 | `memory/03-source-of-truth-hierarchy.md` | Sources conflict or a recommendation depends on current state |
 | `memory/04-commercial-operating-model.md` | Commercial surfaces, growth lanes, dependencies, or operating model are in scope |
-| `memory/05-database-access.md` | Growth database access boundaries, owned/read/write tables, and Brain reporting expectations |
+| `memory/05-database-access.md` | Growth database and Planner access boundaries, domain key, owned/read/write tables, and Brain reporting expectations |
 | `memory/05-partners-and-sales-context.md` | Partner categories, sponsorships, speaking, sales materials, outreach, or pipeline are in scope |
 | `memory/06-campaign-context.md` | Kickstarter, launch, reward, warmup, campaign messaging, or campaign risk is in scope |
 | `memory/07-recurring-decisions.md` | A session touches repeated Growth choices or unresolved decision points |

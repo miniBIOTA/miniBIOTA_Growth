@@ -43,6 +43,8 @@ When a relationship tracker is eventually authorized, the minimum structure shou
 ## Important Boundaries
 - Do not invent partner commitments, sponsor commitments, package terms, prices, obligations, or next actions.
 - Do not write CRM, sales, partner, sponsor, task, or domain-history records without approval.
+- Do not treat Planner project/task status as partner commitment, sponsor promise, outreach action, pricing approval, public claim, or CRM/relationship status.
+- Use App Planner/Supabase for actionable Growth task status under `work_domains.key = sales` / `domain_id = 7`; use this Markdown file for partner/sales context and boundaries.
 - Do not treat a target category as an active prospect unless a source verifies that it is active.
 - Do not treat partner targets as interested partners.
 - Do not treat outreach plans as approved outreach execution.

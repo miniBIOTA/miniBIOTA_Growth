@@ -5,6 +5,8 @@
 
 Codex is the primary operating interface for this repo. Durable operating rules and growth memory belong in Markdown in this repo, in the Brain growth brief, or in Supabase when the record is structured.
 
+App Planner/Supabase is the live Growth work queue when current Growth project or task status matters. Growth-owned Planner records live under `work_domains.key = sales` / `domain_id = 7` in `work_projects` and `tasks`. Markdown may keep strategy, context, decisions, references, operating rules, and non-binding backlog ideas, but it must not compete with Planner as the active Growth task-status source.
+
 ## Tech Stack
 - Markdown vault as durable growth and commercial memory.
 - Growth memory under `memory/`.
@@ -12,7 +14,7 @@ Codex is the primary operating interface for this repo. Durable operating rules 
 - Legacy and superseded materials live under `archive/` after explicit migration approval.
 - Active Growth reference material lives in `memory/` and `skills/*/reference/`.
 - Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\7. miniBIOTA_Growth\growth_brief.md`.
-- Supabase, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`, for tasks and structured relationship records when needed.
+- Supabase/App Planner, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py` or approved read paths, for `work_domains`, `work_projects`, `tasks`, and structured relationship records when needed.
 
 ## Startup Sequence
 For a full Codex bootstrap, run:
@@ -30,7 +32,7 @@ If working manually:
 5. Use relevant `skills/*/reference/` files when exact migrated reference material is needed.
 6. Read `M:\miniBIOTA\miniBIOTA_Brain\_system\agent_memory.md` when Brain-wide agent rules matter.
 7. Read `M:\miniBIOTA\miniBIOTA_Brain\7. miniBIOTA_Growth\growth_brief.md` for strategy-level current state.
-8. Use Supabase only when current structured records matter to the task and record work is approved.
+8. Use Supabase/App Planner only when current structured records, projects, tasks, or relationship state matter to the task.
 
 For revenue sequencing, use `skills/revenue-planning/SKILL.md`, current source material in `memory/`, and `skills/revenue-planning/reference/revenue-acceleration-plan.md`.
 
@@ -48,6 +50,7 @@ For crowdfunding and launch campaign planning, use `skills/campaign-planning/SKI
 | `memory/02-commercial-boundaries.md` | Commercial, public claim, commitment, and approval boundaries |
 | `memory/03-source-of-truth-hierarchy.md` | Source hierarchy and conflict resolution |
 | `memory/04-commercial-operating-model.md` | Current commercial operating model summary |
+| `memory/05-database-access.md` | Growth database and Planner access boundaries |
 | `memory/05-partners-and-sales-context.md` | Partner, sponsor, speaking, and pipeline context |
 | `memory/06-campaign-context.md` | Kickstarter and campaign planning context |
 | `memory/07-recurring-decisions.md` | Decisions that recur across Growth sessions |
@@ -74,7 +77,7 @@ Use this hierarchy when sources disagree:
 3. Matching `skills/*/SKILL.md` playbooks for task workflow and boundaries.
 4. Brain `growth_brief.md` for strategy-level current state.
 5. Local `skills/*/reference/` files for exact migrated commercial and growth reference material.
-6. Supabase for structured/queryable records when current structured state matters and record work is approved.
+6. Supabase/App Planner for structured/queryable projects, tasks, and relationship records when current structured state matters.
 7. Brain growth brief and compiled exports as reference artifacts only.
 
 Chat history and private model memory are never source of truth. Durable project memory belongs in Markdown in this repo/vault, in Brain, or in Supabase when it is structured data.
@@ -85,8 +88,18 @@ Chat history and private model memory are never source of truth. Durable project
 - Use `skills/*/reference/` for exact migrated reference material.
 - Use `archive/superseded/` only for historical context, migration review, or provenance.
 - Use the Brain growth brief for manager-facing current state, cross-domain dependencies, and high-level strategy.
-- Use Supabase only when current structured records matter, such as live tasks, relationship records, or verified pipeline state.
+- Use Supabase/App Planner only when current structured records matter, such as live projects, live tasks, relationship records, or verified pipeline state.
 - Before acting on live outreach, verify the latest contact, campaign, platform, and financial state.
+
+## Planner / Project Management
+- App Planner/Supabase is the live Growth work queue for actionable Growth projects and tasks.
+- Growth Planner work lives under `work_domains.key = sales` / `domain_id = 7`.
+- Current Growth work projects are `Commercial Assets & Sponsorship Package`, `Sponsorship Outreach Pipeline`, `Audience Support & Revenue Sequencing`, `CRM & Relationship Management System`, and `Campaign, Course & Merch Decisions`.
+- Read Planner projects/tasks when choosing next Growth work, checking blockers, verifying completion status, or deciding whether completed work maps to an open task.
+- At closeout, if completed work maps clearly to an open Planner task, ask whether to mark that task done unless the user explicitly asked for that live task update.
+- Partner commitments, sponsor promises, outreach actions, prices, public claims, campaign launch dates, and relationship/CRM status remain separate from Planner task status and require their own verified source and explicit approval.
+- Planner project/task create, edit, status, done/reopen, archive, delete, project-link, subtask, schedule, or recurrence changes are live Supabase writes and require explicit user approval.
+- Backlog/reference Markdown may describe candidate commercial work, but Planner owns actionable task status.
 
 ## Growth Operating Rules
 - Treat growth as the bridge between public credibility and durable business support.
@@ -98,6 +111,8 @@ Chat history and private model memory are never source of truth. Durable project
 - Do not rewrite aspirational plans as approved strategy.
 - Do not invent partner commitments, sponsor claims, campaign launch dates, pricing, legal promises, financial promises, roadmap promises, or public claims from memory.
 - Do not make commitments, offers, prices, pricing claims, campaign claims, partner promises, sponsor obligations, public claims, launch targets, roadmap commitments, sales commitments, financial commitments, or legal commitments without explicit user approval.
+- Do not treat Planner project/task status as approval for partner commitments, sponsor promises, outreach execution, pricing, campaign launch dates, public claims, sales commitments, or CRM/relationship state.
+- Creating, editing, linking, scheduling, completing, reopening, archiving, or deleting Planner projects/tasks are live Supabase writes and require explicit user approval.
 - Treat contact lists, sponsor outreach, partner outreach, and pipeline details as operationally sensitive. Keep detailed working material here unless the user requests a specific authorized destination.
 
 ## Brain Relationship
@@ -153,7 +168,7 @@ Respect `MINIBIOTA_WRITE_MODE` from Brain when available:
 
 For this repo, tell the user what files you intend to change before editing. Preserve user changes and keep edits scoped to the active request.
 
-Never write Supabase records, CRM records, sales records, partner records, sponsor records, financial records, tasks, or durable Brain/domain context without explicit user approval and a verified need.
+Never write Supabase records, Planner project/task records, CRM records, sales records, partner records, sponsor records, financial records, tasks, or durable Brain/domain context without explicit user approval and a verified need.
 
 ## Verification
 For documentation-only sessions:

@@ -4,6 +4,13 @@
 This file tracks decision areas that recur across Growth sessions. It is not an approval log. Treat these as prompts to verify current direction before acting.
 
 ## Known Recurring Decisions
+- App Planner/Supabase is the live Growth work queue when current project/task status matters.
+- Growth Planner records live under `work_domains.key = sales` / `domain_id = 7`.
+- Current Growth work projects are `Commercial Assets & Sponsorship Package`, `Sponsorship Outreach Pipeline`, `Audience Support & Revenue Sequencing`, `CRM & Relationship Management System`, and `Campaign, Course & Merch Decisions`.
+- Planner `work_projects` and `tasks` are the structured source for actionable Growth task/project state; do not recreate task truth in Markdown.
+- Planner status is operational work status, not approval for partner commitments, sponsor promises, outreach actions, pricing, campaign launch dates, public claims, CRM/relationship state, or sales commitments.
+- Planner project/task writes are live Supabase writes and require explicit approval.
+- When a session completes work that maps to an open Planner task, ask whether to mark the task done unless the user explicitly requested that update.
 - Whether revenue work should prioritize individual support, sponsorship, course/pre-sale, crowdfunding, affiliate paths, grants, speaking, or product sales.
 - Whether a revenue number is verified current fact, historical planning assumption, scenario assumption, recommendation, approved strategy, or commitment.
 - Whether a price, target, projection, or timeline can be mentioned at all, and if so whether it must be labeled as an assumption.
@@ -37,6 +44,8 @@ This file tracks decision areas that recur across Growth sessions. It is not an 
 - Do not treat public web surfaces as offers, prices, sponsor packages, partner obligations, or campaign commitments without explicit approval.
 - Do not treat target categories as partner interest or sponsor interest without verification.
 - Do not treat backlog items as tasks, active projects, scheduled work, funded work, approved roadmap, or commitments without explicit approval.
+- Do not treat old backlog/reference docs as competing live task-status lists; use Planner when actionable Growth project/task status matters.
+- Do not treat Planner task status as evidence that outreach, pricing, sponsor terms, partner obligations, campaign timing, public claims, CRM state, or relationship status has been approved or executed.
 - Do not treat revenue projections, prices, targets, timelines, or monetization ideas as approved commitments without explicit approval.
 - Do not treat campaign goals, reward tiers, prices, add-ons, launch sequences, stretch goals, fulfillment notes, backer benefits, or campaign copy as approved commitments without explicit approval.
 - Verify current financial and audience values before using them as current.

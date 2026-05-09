@@ -15,6 +15,7 @@ Growth work may explore options, drafts, assumptions, risks, and recommendations
 - Roadmap commitments.
 - Sales commitments.
 - CRM, partner, sponsor, sales, financial, task, or domain-history records.
+- Planner project/task create, edit, status, completion, reopen, archive, delete, scheduling, recurrence, project-link, or subtask records.
 
 ## Required Framing
 When working with commercial ideas, clearly label:
@@ -41,6 +42,7 @@ When working with commercial ideas, clearly label:
 - A public conversion surface, such as a donation, events, build/resource, subscribe, or signup route, is not the same thing as an approved offer, sponsorship package, price, partner commitment, or campaign promise.
 - A planned revenue or partnership lane is not a commitment to launch, price, sell, pitch, or fulfill anything.
 - A backlog item is not an approved task, active project, scheduled work, funded work, roadmap item, owner assignment, launch target, partner promise, or sales commitment.
+- A Planner project/task status is operational work status only. It is not approval for partner commitments, sponsor promises, outreach execution, prices, sponsor terms, campaign launch dates, public claims, CRM/relationship state, sales commitments, roadmap commitments, or fulfillment obligations.
 - A completion signal is evaluation criteria, not proof that the item is complete.
 - A dependency or open unknown should remain visible until verified, resolved, or explicitly approved.
 

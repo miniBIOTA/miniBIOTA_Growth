@@ -8,14 +8,16 @@ status: internal-reference
 ## Use
 Use this reference with `skills/growth-strategy-review/SKILL.md` when reviewing commercial direction, strategic fit, current surfaces, planned lanes, dependencies, or unresolved operating-model questions.
 
-This is internal model context. It does not create offers, prices, sponsor obligations, partner commitments, public claims, launch dates, financial commitments, legal commitments, sales commitments, roadmap commitments, or approved strategy.
+This is internal model context. It does not create offers, prices, sponsor obligations, partner commitments, public claims, launch dates, financial commitments, legal commitments, sales commitments, roadmap commitments, active tasks, owner assignments, deadlines, or approved strategy.
+
+App Planner/Supabase is the live Growth task-status source when actionable project/task state matters. Growth Planner records live under `work_domains.key = sales` / `domain_id = 7`; historical task-list or backlog references here are planning context only.
 
 ## Purpose
 - Define how miniBIOTA turns mission, technical credibility, and public interest into durable business support.
 - Keep current-state commercial signals separate from future-state commercial design.
 
 ## Current Signals
-- The company-level task list calls for a business plan, media kit, sponsorship package, and speaking/pitching activity.
+- Historical company-level planning called for a business plan, media kit, sponsorship package, and speaking/pitching activity.
 - The brand layer frames miniBIOTA as a project that can attract audiences, partners, donors, and media attention.
 - Website strategy and information architecture expose public conversion surfaces through donation, events, build/resource, and newsletter/signup routes.
 - The web platform captures newsletter signups into `email_signups`; external provider sync remains an open operational step.
@@ -52,7 +54,7 @@ Treat these as planned internal lanes unless a higher-priority source explicitly
 ## Related Migrated References
 - `skills/revenue-planning/reference/revenue-acceleration-plan.md`: migrated sequenced revenue plan with timelines and projections. Treat numbers as assumptions unless verified.
 - `skills/campaign-planning/reference/kickstarter-estuary-campaign.md`: migrated Kickstarter strategy for the estuary biome build. Treat campaign material as draft/reference unless explicitly approved.
-- `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`: commercial systems build queue and pipeline structure.
+- `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`: commercial systems planning reference and pipeline structure. Verify Planner for live project/task status.
 
 ## Source Notes
 - `4. Brand & Marketing/04_brand_and_marketing_ceo_source.md`

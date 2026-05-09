@@ -8,7 +8,9 @@ status: internal-reference
 ## Use
 Use this reference with `skills/partner-and-sales-planning/SKILL.md` when planning partner categories, sponsorship thinking, outreach strategy, sales materials, relationship maps, or partner/sponsor next steps.
 
-This is internal operating context. It does not create partner interest, sponsor interest, sales conversations, relationship status, offer terms, pricing, obligations, deliverables, public claims, or approved outreach execution.
+This is internal operating context. It does not create partner interest, sponsor interest, sales conversations, relationship status, offer terms, pricing, obligations, deliverables, public claims, owner assignments, deadlines, active tasks, or approved outreach execution.
+
+App Planner/Supabase is the live Growth task-status source when actionable project/task state matters. Growth Planner records live under `work_domains.key = sales` / `domain_id = 7`; this reference is not a competing live task list.
 
 ## Scope
 - Defines how miniBIOTA turns public interest, technical credibility, and storytelling into durable business support.
@@ -51,4 +53,4 @@ Treat these as priorities and operating needs, not approved outreach execution, 
 ## Related Migrated References
 - `skills/revenue-planning/reference/revenue-acceleration-plan.md`: migrated revenue plan with assumptions, projections, and timing language. Treat numbers as assumptions unless verified.
 - `skills/campaign-planning/reference/kickstarter-estuary-campaign.md`: migrated campaign strategy with draft/reference campaign material. Treat campaign content as draft unless explicitly approved.
-- `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`: commercial systems build queue and pipeline structure.
+- `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md`: commercial systems planning reference and pipeline structure. Verify Planner for live project/task status.

@@ -9,6 +9,7 @@ Commercial growth, partnerships, sponsorships, sales, fundraising strategy, and 
 - `skills/*/reference/` is reserved for exact references needed by specific skills.
 - `archive/` stores historical or superseded material after explicit migration approval.
 - Migrated Growth source material now lives in `memory/` and `skills/*/reference/`.
+- App Planner/Supabase is the live Growth work queue for current project/task status under `work_domains.key = sales` / `domain_id = 7`.
 
 ## Start
 
@@ -24,7 +25,7 @@ Then route work through:
 4. Use the matching `skills/*/SKILL.md`.
 5. Use `skills/*/reference/` for exact migrated reference material.
 6. Verify Brain current strategy state only when strategy-level state matters.
-7. Use Supabase only when current structured records matter and record work is approved.
+7. Use Supabase/App Planner only when current structured records, projects, tasks, or relationship state matter; writes require explicit approval.
 
 ## Brain Relationship
 

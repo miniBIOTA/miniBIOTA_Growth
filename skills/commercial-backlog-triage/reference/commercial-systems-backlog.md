@@ -8,7 +8,9 @@ status: internal-reference
 ## Use
 Use this reference with `skills/commercial-backlog-triage/SKILL.md` when reviewing commercial systems, backlog items, growth infrastructure, or what to build next.
 
-This is planning reference only. It does not create tasks, active projects, scheduled work, approved roadmap items, owners, dates, funding, partner promises, sponsor obligations, sales commitments, public claims, or approved strategy.
+This is planning reference only. It does not create tasks, active projects, scheduled work, approved roadmap items, owners, dates, funding, partner promises, sponsor obligations, sales commitments, public claims, pricing, outreach actions, campaign launch dates, public offers, or approved strategy.
+
+App Planner/Supabase is the live Growth task-status source when actionable project/task status matters. Growth Planner records live under `work_domains.key = sales` / `domain_id = 7`; this reference must not be used as a competing task list.
 
 ## Backlog Items
 - Business plan that aligns operations, funding, storytelling, and hardware development.
@@ -17,7 +19,7 @@ This is planning reference only. It does not create tasks, active projects, sche
 - Speaking and pitching workflow so events are not treated as one-off tasks.
 - Newsletter handoff from `email_signups` to an external email platform.
 
-Treat these as backlog needs unless a higher-priority source explicitly approves active work.
+Treat these as backlog needs unless a higher-priority source explicitly approves active work. If the question is whether work is currently open, blocked, scheduled, linked, or done, verify Planner rather than this reference.
 
 ## Minimum Pipeline Structure
 When a relationship tracker is explicitly authorized, the minimum fields are:
@@ -30,7 +32,7 @@ When a relationship tracker is explicitly authorized, the minimum fields are:
 - Estimated value or strategic importance.
 - Supporting assets needed.
 
-These fields are a proposed structure, not a created CRM, sales, partner, sponsor, task, or domain-history record.
+These fields are a proposed structure, not a created CRM, sales, partner, sponsor, Planner task, owner assignment, deadline, pricing term, sponsor obligation, outreach action, public claim, or domain-history record.
 
 ## Cross-Functional Inputs
 - Company Operations: business plan, priority alignment, and decision context.
@@ -51,6 +53,7 @@ Do not treat a completion signal as complete unless a current source verifies it
 
 ## Notes
 - This backlog is about building the operating system for commercial activity, not claiming that the system already exists.
+- Backlog ideas are not approved commitments, owner assignments, deadlines, sponsor obligations, pricing, public claims, campaign commitments, or outreach execution.
 - Once these basics exist, the next step is prioritizing target partner categories and active outreach sequences.
 - CFO readiness should stay linked to this backlog so partner and sponsorship design is grounded in real cost pressure and revenue goals.
 
