@@ -32,7 +32,7 @@ When working with commercial ideas, clearly label:
 ## Operational Sensitivity
 - Treat contact lists, sponsor outreach, partner outreach, and relationship pipeline details as operationally sensitive.
 - Keep detailed working materials in this repo or another explicitly authorized destination.
-- Summarize only manager-facing strategy to Brain when Brain updates are authorized and needed.
+- Summarize only manager-facing strategy to Company reports when reporting updates are authorized and needed. Brain reports are historical/archive lookup only.
 - Treat leads, target categories, prospects, interested parties, and confirmed relationships as different statuses. Do not upgrade status without a verified source.
 - Draft outreach strategy is not approved outreach execution.
 - Internal sponsor or partner package ideas are not public offer language.

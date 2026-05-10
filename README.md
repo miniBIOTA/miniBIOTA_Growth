@@ -24,14 +24,18 @@ Then route work through:
 3. Load only the relevant memory files.
 4. Use the matching `skills/*/SKILL.md`.
 5. Use `skills/*/reference/` for exact migrated reference material.
-6. Verify Brain current strategy state only when strategy-level state matters.
-7. Use Supabase/App Planner only when current structured records, projects, tasks, or relationship state matter; writes require explicit approval.
+6. Read the Company Growth report when strategy-level current state matters.
+7. Use Brain only for historical/archive lookup, provenance, or recovery context.
+8. Use Supabase/App Planner only when current structured records, projects, tasks, or relationship state matter; writes require explicit approval.
 
-## Brain Relationship
+## Company Transition Link
 
-This repo reports to the Strategy Agent through:
+Company is the active top-level coordination repo. Growth reporting is active at:
 
-`M:\miniBIOTA\miniBIOTA_Brain\7. miniBIOTA_Growth\growth_brief.md`
+- `M:\miniBIOTA\miniBIOTA_Company\domains\growth\growth_overview.md`
+- `M:\miniBIOTA\miniBIOTA_Company\domains\growth\growth_brief.md`
+
+The Brain growth brief is historical/archive lookup only.
 
 Detailed Growth memory and references live here. Brain no longer keeps a Growth docs mirror; do not edit Brain mirrored docs from this repo.
 

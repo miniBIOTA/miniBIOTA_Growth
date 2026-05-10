@@ -25,7 +25,7 @@ description: Plan Kickstarter, launch, campaign sequencing, reward ideas, campai
 ## Required Docs Or References
 - `skills/campaign-planning/reference/kickstarter-estuary-campaign.md` when estuary Kickstarter concept, tiers, launch sequence, stretch goals, fulfillment assumptions, campaign copy, or exact migrated campaign detail is in scope.
 - `skills/revenue-planning/reference/revenue-acceleration-plan.md` when campaign revenue sequencing or Kickstarter revenue assumptions are in scope.
-- Brain `growth_brief.md` when current strategy-level campaign state is needed.
+- Company Growth report when current strategy-level campaign state is needed.
 
 ## Workflow
 1. Identify campaign type, audience, and current approval status.
@@ -50,7 +50,7 @@ description: Plan Kickstarter, launch, campaign sequencing, reward ideas, campai
 
 ## Write And Approval Rules
 - Do not create campaign pages, platform records, public copy, backer records, or public launch materials without explicit approval.
-- Do not update Brain, structured records, or public surfaces unless authorized.
+- Do not update Company reports, structured records, or public surfaces unless authorized. Brain reports are historical/archive lookup only.
 - Keep public-facing campaign claims subject to Brand and claim review before use.
 - Documentation edits must follow the repo write policy.
 

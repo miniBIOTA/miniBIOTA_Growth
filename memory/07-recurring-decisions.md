@@ -32,8 +32,8 @@ This file tracks decision areas that recur across Growth sessions. It is not an 
 - Whether an existing web surface is merely a current signal or is ready for an approved conversion workflow.
 - Whether a planned commercial lane is still draft/planned, ready for recommendation, or approved for execution.
 - Whether sponsorships, speaking, audience support, affiliate-backed resources, crowdfunding, or newsletter-driven conversion should be evaluated separately or together.
-- Whether Brain growth brief updates are appropriate at closeout or explicitly deferred.
-- Whether a local docs change should trigger a later Brain mirror sync request.
+- Whether Company report updates are appropriate at closeout or explicitly deferred.
+- Whether a local docs change should trigger Company reporting candidate follow-up or Brain historical/archive lookup review.
 - Whether a proposed commercial plan is still a draft, a recommendation, an approved strategy, or a commitment.
 
 ## Decision Handling

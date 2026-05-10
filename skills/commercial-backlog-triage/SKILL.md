@@ -26,7 +26,7 @@ description: Review commercial systems, backlog items, growth infrastructure, or
 ## Required Docs Or References
 - `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md` when exact backlog items, pipeline fields, cross-functional inputs, completion signals, or source notes are needed.
 - `memory/04-commercial-operating-model.md` for current commercial surfaces, planned lanes, dependencies, and unknowns.
-- Brain `growth_brief.md` when current cross-domain priorities are needed.
+- Company Growth report when current cross-domain priorities are needed.
 
 ## Routing Clarification
 - Use this skill when systems, build priorities, infrastructure, backlog sequencing, or operating workflows are central.
@@ -59,7 +59,7 @@ description: Review commercial systems, backlog items, growth infrastructure, or
 
 ## Write And Approval Rules
 - Documentation edits must follow the repo write policy.
-- Do not create tasks, Planner records, CRM records, partner records, sponsor records, sales records, or durable Brain/domain context without explicit approval.
+- Do not create tasks, Planner records, CRM records, partner records, sponsor records, sales records, or durable Company/domain context without explicit approval.
 - Do not update public surfaces or live systems without approval.
 - Do not convert backlog items into active projects, scheduled work, approved roadmap, owner assignments, or commitments without explicit approval.
 - Planner project/task create, edit, status, done/reopen, archive, delete, project-link, subtask, schedule, or recurrence changes are live Supabase writes and require explicit user approval.

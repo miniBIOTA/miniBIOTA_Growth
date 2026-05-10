@@ -26,7 +26,7 @@ description: Evaluate revenue ideas, sponsorship models, crowdfunding, subscript
 ## Required Docs Or References
 - `skills/revenue-planning/reference/revenue-acceleration-plan.md` when revenue channels, sequencing, historical assumptions, projections, or scenario details are central.
 - `skills/campaign-planning/reference/kickstarter-estuary-campaign.md` when crowdfunding, Kickstarter, campaign funding, reward pricing, or campaign revenue assumptions are in scope.
-- Brain `growth_brief.md` when current strategy-level revenue priorities are needed.
+- Company Growth report when current strategy-level revenue priorities are needed.
 - Supabase only when current structured records are relevant and record access has been approved.
 
 ## Routing Clarification
@@ -56,7 +56,7 @@ description: Evaluate revenue ideas, sponsorship models, crowdfunding, subscript
 - Approval gates and decisions needed.
 
 ## Write And Approval Rules
-- Do not write financial records, CRM records, tasks, durable Brain/domain context, or live revenue records without explicit approval.
+- Do not write financial records, CRM records, tasks, durable Company/domain context, or live revenue records without explicit approval.
 - Do not publish or create public pricing without explicit approval.
 - Documentation edits must follow the repo write policy.
 

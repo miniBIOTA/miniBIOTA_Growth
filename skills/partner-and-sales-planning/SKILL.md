@@ -28,7 +28,7 @@ description: Plan partner categories, outreach strategy, sales materials, relati
 - `memory/04-commercial-operating-model.md` for current commercial surfaces, planned lanes, dependencies, and unknowns.
 - `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md` when pipeline structure or systems are in scope.
 - `skills/revenue-planning/reference/revenue-acceleration-plan.md` when sponsorship or partner revenue assumptions affect planning.
-- Brain `growth_brief.md` when current strategy-level partner context is needed.
+- Company Growth report when current strategy-level partner context is needed.
 - Supabase only when current structured relationship records matter and record access has been approved.
 
 ## Routing Clarification
@@ -64,6 +64,6 @@ description: Plan partner categories, outreach strategy, sales materials, relati
 - Do not invent partner commitments, terms, pricing, obligations, or sponsor benefits.
 - Do not treat a target category as an active relationship.
 - Do not create offers or obligations without explicit approval.
-- Do not move sensitive contact, sponsor, outreach, or pipeline details into Brain summaries unless explicitly requested.
+- Do not move sensitive contact, sponsor, outreach, or pipeline details into manager-facing transition summaries unless explicitly requested.
 - Do not treat outreach strategy as approved outreach execution.
 - Do not create public-facing sales language unless explicitly requested and claim-reviewed.

@@ -1,6 +1,6 @@
 ---
 name: growth-closeout
-description: Close Growth sessions and decide whether Brain growth brief updates, domain follow-ups, structured records, or future tasks are implicated.
+description: Close Growth sessions and decide whether Company report updates, Brain archive boundaries, domain follow-ups, structured records, or future tasks are implicated.
 ---
 # Growth Closeout Skill
 
@@ -22,22 +22,22 @@ description: Close Growth sessions and decide whether Brain growth brief updates
 
 ## Required Docs Or References
 - `_system/codex_session_close.ps1` when command-line closeout context is needed.
-- Brain `growth_brief.md` only when the user has not deferred Brain updates and manager-facing state may have changed.
+- Company Growth report only when the user has not deferred report updates and manager-facing state may have changed.
 
 ## Workflow
 1. Identify changed files and the nature of the session.
 2. Read every new or changed document end to end.
 3. Run `git diff --name-only`.
 4. Run `git status --short --branch`.
-5. Decide whether Brain growth brief updates, domain follow-ups, structured records, Planner records, or future tasks are implicated.
+5. Decide whether Company report updates, Brain archive lookup, domain follow-ups, structured records, Planner records, or future tasks are implicated.
 6. Check whether completed work maps clearly to an open Growth Planner task under `work_domains.key = sales` / `domain_id = 7`.
 7. If a task can be cleared, ask before marking it done unless the user explicitly approved the live Planner update.
-8. If local docs changed and manager-facing strategy state changed, update or flag the Brain growth brief. Brain docs mirrors are retired for Growth and should not be synced or recreated.
+8. If local docs changed and manager-facing strategy state changed, update or flag the Company Growth report. Brain docs mirrors are retired for Growth and should not be synced or recreated.
 9. Confirm that backlog references were not converted into active projects, tasks, approved roadmap, owner assignments, dates, or commitments unless explicitly approved.
 10. Confirm that revenue scenarios were not converted into public offers, prices, campaign promises, sponsor obligations, partner offers, financial commitments, launch dates, approved strategy, active projects, tasks, or revenue commitments unless explicitly approved.
 11. Confirm that campaign references were not converted into public claims, prices, campaign promises, reward promises, stretch-goal promises, fulfillment promises, launch dates, approved strategy, active projects, tasks, or revenue commitments unless explicitly approved.
 12. Confirm that Planner status was not treated as partner commitment, sponsor promise, outreach execution, pricing approval, campaign launch approval, public claim approval, CRM/relationship state, or sales commitment.
-13. Confirm what was not changed: Supabase, Planner records, structured records, app behavior, public site behavior, retired Brain docs mirrors, Brain growth brief, test data, and public/commercial commitments as relevant.
+13. Confirm what was not changed: Supabase, Planner records, structured records, app behavior, public site behavior, retired Brain docs mirrors, Company reports, test data, and public/commercial commitments as relevant.
 14. Give the standard closeout report.
 
 ## Expected Output
@@ -56,8 +56,8 @@ Unresolved questions:
 ```
 
 ## Write And Approval Rules
-- Do not write Brain growth brief updates if the user explicitly deferred them.
-- Do not write records, future tasks, CRM data, durable Brain/domain context, or live structured data without explicit approval.
+- Do not write Company report updates if the user explicitly deferred them.
+- Do not write records, future tasks, CRM data, durable Company/domain context, or live structured data without explicit approval.
 - Do not create, edit, complete, reopen, archive, delete, schedule, relink, recur, or otherwise write App Planner project/task records without explicit approval and readback.
 - Documentation edits must follow the repo write policy.
 

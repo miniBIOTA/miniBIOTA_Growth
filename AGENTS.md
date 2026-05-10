@@ -3,7 +3,7 @@
 ## What This Repo Is
 `miniBIOTA_Growth` is the commercial growth, partnerships, sponsorships, sales, fundraising strategy, and campaign planning vault for miniBIOTA. It owns partner pipeline thinking, sponsorship packages, campaign planning, revenue acceleration, speaking/event opportunity strategy, and commercial operating systems.
 
-Codex is the primary operating interface for this repo. Durable operating rules and growth memory belong in Markdown in this repo, in the Brain growth brief, or in Supabase when the record is structured.
+Codex is the primary operating interface for this repo. Durable operating rules and growth memory belong in Markdown in this repo, in Company reporting paths for manager-facing Company reporting, with Brain growth brief as historical/archive lookup only, or in Supabase when the record is structured.
 
 App Planner/Supabase is the live Growth work queue when current Growth project or task status matters. Growth-owned Planner records live under `work_domains.key = sales` / `domain_id = 7` in `work_projects` and `tasks`. Markdown may keep strategy, context, decisions, references, operating rules, and non-binding backlog ideas, but it must not compete with Planner as the active Growth task-status source.
 
@@ -13,8 +13,9 @@ App Planner/Supabase is the live Growth work queue when current Growth project o
 - Reusable Growth Agent playbooks under `skills/`.
 - Legacy and superseded materials live under `archive/` after explicit migration approval.
 - Active Growth reference material lives in `memory/` and `skills/*/reference/`.
-- Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\7. miniBIOTA_Growth\growth_brief.md`.
-- Supabase/App Planner, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py` or approved read paths, for `work_domains`, `work_projects`, `tasks`, and structured relationship records when needed.
+- Company reporting paths at `M:\miniBIOTA\miniBIOTA_Company\domains\growth\growth_overview.md` and `M:\miniBIOTA\miniBIOTA_Company\domains\growth\growth_brief.md`.
+- Company reporting path: `M:\miniBIOTA\miniBIOTA_Company\domains\growth\growth_brief.md`.
+- Supabase/App Planner via MCP/read-only awareness first; Brain `_system/minibiota_tools.py` is retired from normal workflows; use MCP/read-only awareness and Company/domain-owned helpers instead.
 
 ## Startup Sequence
 For a full Codex bootstrap, run:
@@ -27,12 +28,14 @@ If working manually:
 
 1. Read `AGENTS.md`.
 2. Read `memory/00-index.md`.
-3. Load only the relevant `memory/` files for the request.
-4. Use the matching `skills/*/SKILL.md` playbook when a request matches a skill.
-5. Use relevant `skills/*/reference/` files when exact migrated reference material is needed.
-6. Read `M:\miniBIOTA\miniBIOTA_Brain\_system\agent_memory.md` when Brain-wide agent rules matter.
-7. Read `M:\miniBIOTA\miniBIOTA_Brain\7. miniBIOTA_Growth\growth_brief.md` for strategy-level current state.
-8. Use Supabase/App Planner only when current structured records, projects, tasks, or relationship state matter to the task.
+3. Read Company `_system/agent_repo_registry.md` when top-level routing, reporting paths, Brain retirement migration, or cross-domain ownership matters.
+4. Read Company `_system/database_awareness.md` and `memory/11-helper-and-database-awareness-migration.md` when Supabase helper paths or database-awareness routing matter.
+5. Read Company `memory/13-domain-agent-migration.md` when Phase 7 routing or reporting activation matters.
+6. Load only the relevant `memory/` files for the request.
+7. Use the matching `skills/*/SKILL.md` playbook when a request matches a skill.
+8. Use relevant `skills/*/reference/` files when exact migrated reference material is needed.
+9. Read the Company report when manager-facing Growth state matters.
+10. Use Supabase/App Planner only when current structured records, projects, tasks, or relationship state matter to the task.
 
 For revenue sequencing, use `skills/revenue-planning/SKILL.md`, current source material in `memory/`, and `skills/revenue-planning/reference/revenue-acceleration-plan.md`.
 
@@ -45,7 +48,7 @@ For crowdfunding and launch campaign planning, use `skills/campaign-planning/SKI
 
 | File | Purpose |
 |---|---|
-| `memory/00-index.md` | Routing index for memory, skills, docs, Brain, and Supabase |
+| `memory/00-index.md` | Routing index for memory, skills, docs, active Company reporting, Brain archive lookup, and Supabase |
 | `memory/01-agent-purpose.md` | Growth Agent purpose, scope, and operating posture |
 | `memory/02-commercial-boundaries.md` | Commercial, public claim, commitment, and approval boundaries |
 | `memory/03-source-of-truth-hierarchy.md` | Source hierarchy and conflict resolution |
@@ -75,19 +78,19 @@ Use this hierarchy when sources disagree:
 1. User direction in the current session.
 2. `AGENTS.md`, `memory/00-index.md`, and relevant `memory/` files.
 3. Matching `skills/*/SKILL.md` playbooks for task workflow and boundaries.
-4. Brain `growth_brief.md` for strategy-level current state.
+4. Company Growth reporting paths for strategy-level current state.
 5. Local `skills/*/reference/` files for exact migrated commercial and growth reference material.
 6. Supabase/App Planner for structured/queryable projects, tasks, and relationship records when current structured state matters.
-7. Brain growth brief and compiled exports as reference artifacts only.
+7. Brain growth brief and compiled exports as historical/archive reference artifacts only.
 
-Chat history and private model memory are never source of truth. Durable project memory belongs in Markdown in this repo/vault, in Brain, or in Supabase when it is structured data.
+Chat history and private model memory are never source of truth. Durable project memory belongs in Markdown in this repo/vault, in Company reporting paths for manager-facing Company reporting, in Brain archive lookup only when historical/provenance context is needed, or in Supabase when it is structured data.
 
 ## Routing Rules
 - Start with `memory/00-index.md`; load the lightest memory set that can safely answer the request.
 - Use a matching skill when the user asks for a review, plan, campaign, revenue scenario, partner/sales workflow, backlog triage, or closeout.
 - Use `skills/*/reference/` for exact migrated reference material.
 - Use `archive/superseded/` only for historical context, migration review, or provenance.
-- Use the Brain growth brief for manager-facing current state, cross-domain dependencies, and high-level strategy.
+- Use Company Growth reporting paths for manager-facing reporting; use the Brain growth brief only as historical/archive lookup for provenance or recovery context.
 - Use Supabase/App Planner only when current structured records matter, such as live projects, live tasks, relationship records, or verified pipeline state.
 - Before acting on live outreach, verify the latest contact, campaign, platform, and financial state.
 
@@ -115,28 +118,31 @@ Chat history and private model memory are never source of truth. Durable project
 - Creating, editing, linking, scheduling, completing, reopening, archiving, or deleting Planner projects/tasks are live Supabase writes and require explicit user approval.
 - Treat contact lists, sponsor outreach, partner outreach, and pipeline details as operationally sensitive. Keep detailed working material here unless the user requests a specific authorized destination.
 
-## Brain Relationship
-This repo reports to the Strategy Agent through:
+## Company Transition Relationship
+Company is the active top-level operating coordination repo. Growth manager-facing reporting is active at:
 
-`M:\miniBIOTA\miniBIOTA_Brain\7. miniBIOTA_Growth\growth_brief.md`
+- `M:\miniBIOTA\miniBIOTA_Company\domains\growth\growth_overview.md`
+- `M:\miniBIOTA\miniBIOTA_Company\domains\growth\growth_brief.md`
 
-Update that brief at session end when any of these changed:
+The Brain growth brief is historical/archive lookup only.
+
+Update or flag manager-facing Growth reporting at session end when any of these changed:
 - Current growth strategy or commercial operating model.
 - Active priorities, pipeline assumptions, or campaign sequencing.
 - Recent milestones or decisions.
 - Known risks, blockers, or missing assets.
 - Cross-domain dependencies for Website, Brand, Content, Financials, App, Hardware, or Company Operations.
 
-Do not push full pitch drafts, raw contact lists, detailed outreach research, or working campaign copy to the Brain brief. Keep detailed growth work in this repo.
+Do not push full pitch drafts, raw contact lists, detailed outreach research, or working campaign copy to manager-facing reports. Keep detailed growth work in this repo.
 
-If the user explicitly says not to update the Brain growth brief, honor that instruction and note the deferral in closeout.
+If the user explicitly says not to update Company reports, honor that instruction and note the deferral in closeout.
 
 ## Cross-Domain Dependencies
 - **Financials:** revenue targets, debt pressure, profitability timeline, pricing assumptions, and estimated value assumptions.
 - **Brand:** sponsor-facing positioning, public voice, founder narrative, and campaign framing.
 - **Content:** proof assets, video hooks, field notes, visuals, campaign updates, and audience trust.
 - **Web:** donation, events, signup, course/waitlist, campaign, affiliate, and newsletter conversion surfaces.
-- **Company Operations:** business plan, priorities, legal/business decisions, and public commitment context.
+- **Company Operations:** active top-level coordination, business plan, priorities, legal/business decisions, public commitment context, and repo/domain routing through `M:\miniBIOTA\miniBIOTA_Company\_system\agent_repo_registry.md`.
 - **Hardware:** build feasibility and concrete deliverables behind campaign or sponsor claims.
 - **App:** internal operator surfaces stay separate from public growth messaging unless explicitly scoped.
 
@@ -168,14 +174,14 @@ Respect `MINIBIOTA_WRITE_MODE` from Brain when available:
 
 For this repo, tell the user what files you intend to change before editing. Preserve user changes and keep edits scoped to the active request.
 
-Never write Supabase records, Planner project/task records, CRM records, sales records, partner records, sponsor records, financial records, tasks, or durable Brain/domain context without explicit user approval and a verified need.
+Never write Supabase records, Planner project/task records, CRM records, sales records, partner records, sponsor records, financial records, tasks, or durable Company/domain context without explicit user approval and a verified need.
 
 ## Verification
 For documentation-only sessions:
 - Read every new or changed doc end to end.
 - Run `git diff --name-only` or equivalent.
 - Run `git status --short --branch`.
-- Confirm no app behavior, database records, structured records, public site behavior, retired Brain docs mirrors, or Brain growth brief changed unless explicitly authorized.
+- Confirm no app behavior, database records, structured records, public site behavior, retired Brain docs mirrors, or Company reports changed unless explicitly authorized.
 
 For live growth/ops sessions:
 - Verify current structured records before acting on sponsorships, contacts, newsletter lists, campaign timing, or pipeline state.
@@ -198,4 +204,4 @@ Unresolved questions:
 - item or "None"
 ```
 
-If local Growth memory or strategy changed in a way the Strategy Agent needs, update the Brain growth brief before closing unless the user explicitly defers it.
+If local Growth memory or strategy changed in a way manager-facing Company reporting needs, update or flag the Company Growth report before closing unless the user explicitly defers it.

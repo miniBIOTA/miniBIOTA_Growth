@@ -1,49 +1,46 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Continue"
 
-$repoRoot = Split-Path -Parent $PSScriptRoot
-$brainRoot = "M:\miniBIOTA\miniBIOTA_Brain"
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$repoRoot = Split-Path -Parent $scriptRoot
+$companyRoot = "M:\miniBIOTA\miniBIOTA_Company"
+$companyRegistry = Join-Path $companyRoot "_system\agent_repo_registry.md"
+$companyOverview = Join-Path $companyRoot "domains\growth\growth_overview.md"
+$companyBrief = Join-Path $companyRoot "domains\growth\growth_brief.md"
 
-Write-Host "miniBIOTA Growth Codex startup"
-Write-Host "Repo: $repoRoot"
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$env:PYTHONIOENCODING = "utf-8"
 
-if (Test-Path "$brainRoot\_system\agent_memory.md") {
-    Write-Host "Brain memory: $brainRoot\_system\agent_memory.md"
+Write-Host "== miniBIOTA Growth Codex Session Start =="
+Write-Host "Repo:    $repoRoot"
+Write-Host "Company: $companyRoot"
+Write-Host "Report:  $companyBrief"
+Write-Host ""
+
+Write-Host "[1/3] Write policy"
+if ($env:MINIBIOTA_WRITE_MODE) {
+    Write-Host "MINIBIOTA_WRITE_MODE: $env:MINIBIOTA_WRITE_MODE"
 } else {
-    Write-Host "Brain memory not found at expected path: $brainRoot\_system\agent_memory.md"
+    Write-Host "MINIBIOTA_WRITE_MODE is not set. Follow AGENTS.md and ask before high-impact writes."
 }
+Write-Host "Do not create sponsor obligations, outreach commitments, pricing, public promises, or CRM writes without explicit approval."
+Write-Host ""
 
-if (Test-Path "$brainRoot\7. miniBIOTA_Growth\growth_brief.md") {
-    Write-Host "Growth brief: $brainRoot\7. miniBIOTA_Growth\growth_brief.md"
-} else {
-    Write-Host "Growth brief not found yet at expected path."
-}
-
-if (Test-Path "$brainRoot\_system\minibiota_tools.py") {
-    try {
-        Push-Location $brainRoot
-        python -c "import sys; sys.path.insert(0, r'_system'); import minibiota_tools as tools; print('Supabase tools import: ok')"
-        Pop-Location
-    } catch {
-        Pop-Location
-        Write-Host "Supabase tools import check failed: $($_.Exception.Message)"
-    }
-}
-
-try {
-    Push-Location $repoRoot
+Write-Host "[2/3] Git status"
+Set-Location $repoRoot
+if (Test-Path (Join-Path $repoRoot ".git")) {
     git status --short --branch
-    Pop-Location
-} catch {
-    Pop-Location
-    Write-Host "Git status check failed: $($_.Exception.Message)"
+} else {
+    Write-Host "Git repository not initialized in this folder."
 }
+Write-Host ""
 
-Write-Host "Startup routing:"
-Write-Host "1. Read AGENTS.md for hard Growth operating rules."
-Write-Host "2. Read memory/00-index.md."
-Write-Host "3. Load only the relevant memory files."
-Write-Host "4. Use the matching skills/*/SKILL.md workflow."
-Write-Host "5. Use relevant skills/*/reference/ files for exact migrated references."
-Write-Host "6. Use Brain growth_brief.md only when current strategy-level state matters."
-Write-Host "7. Use Supabase only when current structured records matter and record work is approved."
-Write-Host "Startup complete."
+Write-Host "[3/3] Read these files first:"
+Write-Host "- AGENTS.md"
+Write-Host "- memory/00-index.md"
+Write-Host "- relevant memory files and skills/*/SKILL.md playbooks"
+Write-Host "- Company registry when routing or reporting matters: $companyRegistry"
+Write-Host "- Company report when manager-facing state matters: $companyBrief"
+Write-Host "- Company overview when broad domain context matters: $companyOverview"
+Write-Host "- Brain only for historical, archive, transition, or recovery lookup"
+Write-Host ""
+Write-Host "Startup complete. Normal routing and reporting now go through Company/domain sources, not Brain."

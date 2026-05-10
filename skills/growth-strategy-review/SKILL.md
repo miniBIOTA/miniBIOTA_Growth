@@ -27,7 +27,7 @@ description: Review a growth plan, commercial direction, audience/revenue path, 
 - `skills/revenue-planning/reference/revenue-acceleration-plan.md` when revenue sequencing, monetization assumptions, or financial pressure affect strategic feasibility.
 - `skills/campaign-planning/reference/kickstarter-estuary-campaign.md` when campaign concept, campaign risk, launch sequencing, reward strategy, or estuary Kickstarter positioning affects strategic feasibility.
 - Relevant memory files and `skills/*/reference/` files when exact migrated detail matters.
-- Brain `growth_brief.md` when strategy-level current state is needed.
+- Company Growth report when strategy-level current state is needed.
 - Supabase only when current structured records matter and record access has been approved.
 - `archive/superseded/` only for historical context, migration review, or provenance.
 
@@ -57,8 +57,8 @@ description: Review a growth plan, commercial direction, audience/revenue path, 
 
 ## Write And Approval Rules
 - Documentation edits may proceed only under the repo write policy and after stating intended changes.
-- Do not update Brain, Supabase, structured records, or public surfaces without explicit approval.
-- If the review changes manager-facing strategy, flag that the Brain growth brief may need an update unless the user has deferred it.
+- Do not update Company reports, Supabase, structured records, or public surfaces without explicit approval. Brain reports are historical/archive lookup only.
+- If the review changes manager-facing strategy, flag that the Company Growth report may need an update unless the user has deferred it.
 
 ## Do-Not-Do Boundaries
 - Do not create commitments.

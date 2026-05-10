@@ -6,11 +6,11 @@ Use this order when sources disagree:
 1. User direction in the current session.
 2. `AGENTS.md`, `memory/00-index.md`, and relevant `memory/` files.
 3. Matching `skills/*/SKILL.md` playbooks for workflow and boundaries.
-4. Brain `growth_brief.md` for strategy-level current state.
+4. Company Growth reporting paths for strategy-level current state.
 5. Local `skills/*/reference/` files for exact migrated reference material.
 6. Supabase/App Planner for structured/queryable projects, tasks, and relationship records when current structured state matters.
 7. `archive/superseded/` only for historical context, migration review, or provenance.
-8. Brain growth brief and compiled exports as reference artifacts only.
+8. Brain growth brief and compiled exports as historical/archive reference artifacts only.
 
 ## Non-Sources
 Chat history and private model memory are not durable project truth. Use them only as conversational context, then verify against durable sources before acting.
@@ -29,7 +29,7 @@ Use the final Growth structure this way:
 - `skills/` stores active repeatable workflows.
 - `skills/*/reference/` stores exact migrated reference material for those workflows.
 - `archive/superseded/` stores historical material only.
-- Brain `growth_brief.md` carries manager-facing, strategy-level current state.
+- Company Growth reporting paths are active for manager-facing Growth state; the Brain growth brief is historical/archive lookup only.
 - Supabase/App Planner is used when current structured records, projects, tasks, or relationship state matter.
 - App Planner/Supabase is the live Growth task-status source under `work_domains.key = sales` / `domain_id = 7`.
 - Planner task status does not establish partner commitments, sponsor promises, outreach actions, pricing, campaign launch dates, public claims, CRM/relationship state, sales commitments, or approved commercial strategy.
