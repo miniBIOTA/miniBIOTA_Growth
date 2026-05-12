@@ -14,6 +14,9 @@ target_surface: miniBIOTA App CRM tab
 Growth approved the CRM schema semantics. App created the additive migration `M:\miniBIOTA\miniBIOTA_App\migrations\013_crm_relationship_system.sql`; existing CRM rows were exported to `C:\tmp\miniBIOTA-crm-pre-013-2026-05-12\`; Josue ran the migration in Supabase SQL Editor; App read-only verification confirmed all 33 expanded CRM tables exist, all 33 are empty, and legacy counts remained `crm_contacts = 0`, `crm_activities = 0`, `partner_opportunities = 5`.
 
 App also added the first read-only CRM Relationship view, using the internal main-process secret-key bridge because the new tables have RLS enabled with no policies. No CRM records were created, edited, deleted, archived, migrated, backfilled, or used as test records. The next Growth/App phase is staged runtime UI for People, Organizations, Opportunities, Interactions, Next Actions, Review, Agent Inbox, and reporting; write paths, backfill, RLS policies, outreach, and commitments remain separately gated.
+
+Current cleanup boundary: documentation/runtime cleanup is allowed, but live CRM writes, RLS policies, backfill, seeded data, additional migrations, outreach, and commitments still require separate explicit approval.
+
 ## Purpose
 
 This document scopes the next CRM upgrade for the miniBIOTA App. The work expands the existing App CRM tab from a basic contact, opportunity, and activity tracker into a relationship operating system for Growth.
@@ -33,12 +36,14 @@ Growth owns the CRM semantics in this document: what records mean, what stages m
 
 App owns implementation details: table design, migration files, UI code, Supabase access paths, form components, and runtime behavior inside the existing miniBIOTA App CRM tab.
 
-Before implementation, App should inspect:
+For future App implementation passes, App should inspect or reconfirm:
 
 - Existing CRM source files under `M:\miniBIOTA\miniBIOTA_App\js\crm\`.
 - Existing CRM shell files under `M:\miniBIOTA\miniBIOTA_App\js\shell\crm\`.
 - Existing CRM styles under `M:\miniBIOTA\miniBIOTA_App\css\crm\`.
 - Existing migration `M:\miniBIOTA\miniBIOTA_App\migrations\002_crm_schema.sql`.
+- Live migration `M:\miniBIOTA\miniBIOTA_App\migrations\013_crm_relationship_system.sql`.
+- App implementation note `M:\miniBIOTA\miniBIOTA_App\planning\crm_relationship_system_implementation.md`.
 - Current live Supabase schema through an approved read-only path.
 
 This document should guide what to build, but live schema and App source remain implementation truth during the App build.
@@ -1308,7 +1313,7 @@ Useful report outputs:
 - Newly added records.
 - Closed/no-follow-up records.
 
-## Suggested Database Direction
+## Implemented Database Foundation
 
 This began as a conceptual schema direction. As of 2026-05-12, the App Agent drafted, reviewed, and backed up for the additive schema foundation; Josue applied `M:\miniBIOTA\miniBIOTA_App\migrations\013_crm_relationship_system.sql` in live Supabase SQL Editor; the App Agent then performed read-only verification.
 
@@ -1322,7 +1327,7 @@ Implementation status:
 - No CRM records were migrated, backfilled, created, edited, archived, or deleted during the schema pass.
 - The new CRM tables have RLS enabled with no policies; the next runtime/UI pass should use the App internal main-process secret-key bridge unless a separate approved RLS policy pass is completed.
 
-Potential tables:
+Implemented foundation tables:
 
 - `crm_people`
 - `crm_organizations`
@@ -1414,21 +1419,22 @@ Governance:
 
 - `crm_audit_events`: stage changes, approval changes, merges, archives, and other important history.
 
-Migration strategy to consider:
+Future data/backfill strategy to consider:
 
 1. Preserve current `crm_contacts`, `crm_activities`, and `partner_opportunities` data.
-2. Decide whether to migrate existing contacts into `crm_people`, or keep compatibility views.
+2. Decide whether to migrate existing contacts into `crm_people`, keep compatibility views, or preserve legacy tables beside the new tables for longer.
 3. Decide whether organization-like current contacts become organizations, people, or both.
-4. Decide whether `partner_opportunities` should be replaced by `crm_opportunities` or extended.
+4. Decide whether existing `partner_opportunities` should be copied into `crm_opportunities`, linked from `crm_opportunities`, or preserved as legacy pipeline rows.
 5. Keep old IDs mapped if existing activity/opportunity links matter.
-6. Avoid destructive migration until current live data is inspected and backed up.
-7. Prefer additive tables and compatibility views for the first migration if existing App UI needs a safer transition.
+6. Avoid destructive migration until current live data is re-inspected and backed up.
+7. Prefer additive backfill and compatibility views if existing App UI needs a safer transition.
 8. Preserve `created_at`, `updated_at`, and original source IDs where possible.
 
-## Compatibility Questions For App
+## Compatibility Decisions And Questions
 
-- Should current `crm_contacts` remain and be extended, or should it migrate to `crm_people`?
-- Should `partner_opportunities` remain the opportunity table, or should a new `crm_opportunities` table replace it?
+- Resolved for schema foundation: `crm_contacts`, `crm_activities`, and `partner_opportunities` remain intact; the expanded relationship-system tables now exist beside them.
+- Still open for backfill/runtime: whether current `crm_contacts` should migrate to `crm_people`, remain as legacy compatibility rows, or be bridged by views.
+- Still open for backfill/runtime: whether `partner_opportunities` should migrate into `crm_opportunities`, link to `crm_opportunities`, or remain a legacy pipeline source.
 - Should existing CRM UI routes preserve their current names, or should Contacts become People?
 - Should organizations be editable from a new Organizations view or embedded first inside People detail?
 - Should next actions use CRM-only tables or integrate with App Planner tasks later?
@@ -1725,7 +1731,7 @@ This minimum version would support the Grant/business/aquatics club case and pre
 
 ## Approval And Write Boundaries
 
-Before implementation:
+Before future implementation:
 
 - App schema changes need explicit approval.
 - Supabase migrations need explicit approval.
@@ -1739,11 +1745,11 @@ Before implementation:
 - Agent-created inferred facts must remain labeled as inferred until verified.
 - Imports should not become clean CRM truth until processed.
 
-## Open Questions
+## Runtime And Backfill Questions
 
-- Should the upgraded primary contact table be named `crm_people` or should existing `crm_contacts` be extended?
-- Should organizations be fully separate immediately, or first implemented as an additive layer beside contacts?
-- Should `partner_opportunities` be preserved as-is and extended, or migrated into `crm_opportunities`?
+- How should the UI transition from Contacts to People without losing the legacy CRM affordances?
+- Should Organizations ship as a full editable view first, or as read-only detail links before write paths are approved?
+- Should `partner_opportunities` be preserved as-is, linked from `crm_opportunities`, or migrated into `crm_opportunities` after a reviewed backfill plan?
 - Should next actions remain CRM-only or later connect to App Planner tasks?
 - Should decisions be their own table, or embedded as structured fields on interactions?
 - Should tags be controlled vocabulary, free-form, or both?

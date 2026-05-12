@@ -15,6 +15,12 @@ CRM records describe relationship state and operator follow-through. They are no
 - An opportunity is a possible path, not a deal, obligation, sponsor package, campaign, price, or deliverable.
 - A confirmed stage requires an explicit verified source; it must not be inferred from interest, Planner task status, or old notes.
 
+## Current Implementation Status
+
+As of 2026-05-12, App migration `M:\miniBIOTA\miniBIOTA_App\migrations\013_crm_relationship_system.sql` is live. It created the expanded CRM relationship-system foundation beside the legacy CRM tables. Read-only verification confirmed all 33 new CRM tables exist and are empty, while legacy row counts remained unchanged: `crm_contacts` 0, `crm_activities` 0, and `partner_opportunities` 5.
+
+App also added the first read-only CRM Relationship summary view. The new CRM tables have RLS enabled with no policies, so runtime access currently relies on the App internal main-process secret-key bridge. Growth should treat the next CRM step as a staged cleanup/runtime UI pass only unless Josue separately approves live CRM writes, backfill, RLS policies, seeded data, additional migrations, outreach, or commitments.
+
 ## Core Record Types
 
 ### Contact
@@ -233,7 +239,7 @@ Health signals to track:
 - Whether the relationship depends on risky claims, pricing, legal terms, public promises, or fulfillment capacity.
 
 ## Minimum Useful Operator Workflow
-The first App implementation should be small enough to use daily.
+The first operator-ready App implementation should be small enough to use daily.
 
 1. Capture
    - Add a contact or organization from a conversation, email, event, signup, research note, intro, donor/supporter signal, or public lead.
@@ -308,4 +314,4 @@ App should implement a small internal CRM that lets Growth:
 - Track relationship health without confusing it with priority.
 - Review overdue, high-priority, awaiting-response, needs-approval, and nurture records.
 
-The first version is successful when Growth can open the CRM and immediately answer: who needs attention, why they matter, what the next action is, what approval is missing, and whether any relationship state is confirmed by a verified source.
+The first operator-ready version is successful when Growth can open the CRM and immediately answer: who needs attention, why they matter, what the next action is, what approval is missing, and whether any relationship state is confirmed by a verified source.

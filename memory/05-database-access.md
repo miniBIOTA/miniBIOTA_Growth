@@ -23,6 +23,12 @@ The Growth Agent uses Supabase when current partner, sponsor, CRM, App Planner, 
 
 Explicit user approval is required for raw SQL, migrations, destructive writes, schema changes, service role actions, Planner project/task writes, sponsor commitments, partner record creation, public campaign claims, relationship/CRM state changes, or CRM bulk changes.
 
+## CRM Relationship System Access
+
+As of 2026-05-12, the App database includes the expanded CRM relationship-system tables from migration `013_crm_relationship_system.sql`. These tables are live schema but not live relationship content yet: App read-only verification confirmed all 33 new tables exist and are empty, and legacy CRM counts remain `crm_contacts` 0, `crm_activities` 0, and `partner_opportunities` 5.
+
+The new CRM tables have RLS enabled with no policies. App runtime reads currently use the internal main-process secret-key bridge for the first read-only Relationship summary view. Growth should not request or perform live CRM writes, record backfill, RLS policy changes, seeded data, additional migrations, or CRM relationship-state changes without a separate explicit approval and a verified need.
+
 ## Planner Task Records
 
 Growth work is managed in App Planner through Supabase `work_projects` and `tasks`.
