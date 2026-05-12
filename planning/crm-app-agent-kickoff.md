@@ -1,6 +1,6 @@
----
+﻿---
 title: CRM App Agent Kickoff
-status: schema-foundation-complete
+status: schema-foundation-and-read-only-runtime-complete
 created: 2026-05-12
 owner_domain: Growth
 implementation_domain: App
@@ -19,7 +19,7 @@ The immediate goal is to create the durable database foundation for the expanded
 
 This handoff was completed on 2026-05-12.
 
-The App Agent created `M:\miniBIOTA\miniBIOTA_App\migrations\013_crm_relationship_system.sql` and `M:\miniBIOTA\miniBIOTA_App\planning\crm_relationship_system_implementation.md`, performed approved read-only schema and count checks, exported existing CRM-related rows to `C:\tmp\miniBIOTA-crm-pre-013-2026-05-12\`, and applied the additive schema migration after explicit approval.
+The App Agent created `M:\miniBIOTA\miniBIOTA_App\migrations\013_crm_relationship_system.sql` and `M:\miniBIOTA\miniBIOTA_App\planning\crm_relationship_system_implementation.md`, performed approved read-only schema and count checks, exported existing CRM-related rows to `C:\tmp\miniBIOTA-crm-pre-013-2026-05-12\`, and verified the additive schema migration after Josue ran it in Supabase SQL Editor.
 
 Verified result:
 
@@ -28,7 +28,8 @@ Verified result:
 - Legacy tables still exist: `crm_contacts`, `crm_activities`, and `partner_opportunities`.
 - Legacy counts remained unchanged: `crm_contacts` 0, `crm_activities` 0, `partner_opportunities` 5.
 - No CRM records were created, edited, deleted, archived, migrated, backfilled, or used as test records.
-- The next implementation gate is a staged runtime/UI pass using the App internal main-process secret-key bridge, because the new tables have RLS enabled with no policies.
+- App also added the first read-only CRM Relationship view for table counts and review queues through the internal main-process secret-key bridge.
+- The next implementation gate is expanded staged runtime/UI work for People, Organizations, Opportunities, Interactions, Next Actions, Review, Agent Inbox, search, map/detail, and reporting. Write paths, backfill, RLS policies, outreach, and commitments remain separately gated.
 
 ## App Agent Startup
 
@@ -219,3 +220,4 @@ After the App Agent drafts the migration, Growth should review for:
 - Whether approvals, commitments, outreach, and public claims remain safely separated.
 - Whether the schema can represent Grant, his business, and the aquatics club without flattening relationships.
 - Whether the agent can query follow-ups, stale relationships, missing approvals, missing assets, unprocessed notes, duplicate candidates, and open opportunities.
+

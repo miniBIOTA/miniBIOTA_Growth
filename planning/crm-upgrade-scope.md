@@ -1,6 +1,6 @@
----
+﻿---
 title: CRM Upgrade Scope
-status: schema-foundation-applied
+status: read-only-runtime-foundation-added
 created: 2026-05-12
 owner_domain: Growth
 implementation_domain: App
@@ -9,6 +9,11 @@ target_surface: miniBIOTA App CRM tab
 
 # CRM Upgrade Scope
 
+## App Implementation Status - 2026-05-12
+
+Growth approved the CRM schema semantics. App created the additive migration `M:\miniBIOTA\miniBIOTA_App\migrations\013_crm_relationship_system.sql`; existing CRM rows were exported to `C:\tmp\miniBIOTA-crm-pre-013-2026-05-12\`; Josue ran the migration in Supabase SQL Editor; App read-only verification confirmed all 33 expanded CRM tables exist, all 33 are empty, and legacy counts remained `crm_contacts = 0`, `crm_activities = 0`, `partner_opportunities = 5`.
+
+App also added the first read-only CRM Relationship view, using the internal main-process secret-key bridge because the new tables have RLS enabled with no policies. No CRM records were created, edited, deleted, archived, migrated, backfilled, or used as test records. The next Growth/App phase is staged runtime UI for People, Organizations, Opportunities, Interactions, Next Actions, Review, Agent Inbox, and reporting; write paths, backfill, RLS policies, outreach, and commitments remain separately gated.
 ## Purpose
 
 This document scopes the next CRM upgrade for the miniBIOTA App. The work expands the existing App CRM tab from a basic contact, opportunity, and activity tracker into a relationship operating system for Growth.
@@ -1305,7 +1310,7 @@ Useful report outputs:
 
 ## Suggested Database Direction
 
-This began as a conceptual schema direction. As of 2026-05-12, the App Agent drafted, reviewed, backed up for, and applied the additive schema foundation in live Supabase through `M:\miniBIOTA\miniBIOTA_App\migrations\013_crm_relationship_system.sql`.
+This began as a conceptual schema direction. As of 2026-05-12, the App Agent drafted, reviewed, and backed up for the additive schema foundation; Josue applied `M:\miniBIOTA\miniBIOTA_App\migrations\013_crm_relationship_system.sql` in live Supabase SQL Editor; the App Agent then performed read-only verification.
 
 Implementation status:
 
@@ -1493,7 +1498,7 @@ Done:
 - [x] Backfill was explicitly deferred; no live CRM records were moved.
 - [x] Recovery posture was established through a read-only export before migration.
 - [x] Approval, commitment, sensitive-detail, archive/delete, duplicate/merge, audit/history, recommendation, import, and inbox semantics were represented in the schema direction.
-- [x] All 33 expanded tables were created in live Supabase by the App Agent after approval.
+- [x] All 33 expanded tables were created in live Supabase after Josue ran the approved migration in Supabase SQL Editor; App Agent performed read-only verification.
 
 Left:
 
@@ -1519,11 +1524,11 @@ Left:
 
 Done:
 
-- [ ] Not started.
+- [x] Initial read-only Relationship summary view added for table counts and review queue counts.
 
 Left:
 
-- [ ] All items.
+- [ ] Full runtime/UI surfaces remain: People, Organizations, expanded Opportunities, Interactions, Next Actions, Review Dashboard, Agent Inbox, global search, duplicate review, relationship map/detail, reports/briefs, and populated-state QA.
 
 ### Phase 3: Forms And Record Editing
 
@@ -1638,7 +1643,7 @@ Left:
 - [ ] Migrate current opportunities.
 - [ ] Migrate current activities into interactions and/or next actions, if needed.
 - [ ] Validate links after any future backfill.
-- [ ] Validate UI reads during the staged runtime pass.
+- [ ] Validate UI reads during staged runtime passes.
 - [ ] Validate no unintended data loss after any future data movement.
 - [ ] Validate archived records remain inspectable.
 - [ ] Validate duplicate merge preserves linked history.
@@ -1671,11 +1676,12 @@ Done:
 - [x] Schema-only QA confirmed all 33 expanded CRM tables exist.
 - [x] Schema-only QA confirmed all 33 expanded CRM tables are empty.
 - [x] Schema-only QA confirmed legacy tables still exist and legacy counts remained unchanged.
+- [x] Renderer checks passed for the first read-only Relationship summary view.
 
 Left:
 
-- [ ] All runtime, UI, workflow, populated-state, search, merge, archive, report, and App behavior QA items.
-- [ ] Public site and Planner non-change checks during the runtime/UI pass.
+- [ ] All populated-state, write-path, workflow, search, merge, archive, report, and full App behavior QA items.
+- [ ] Public site and Planner non-change checks during future runtime/UI passes.
 
 ## Minimum Viable Upgrade
 
@@ -1753,7 +1759,7 @@ Before implementation:
 
 ## Current Build Status
 
-Overall status: schema foundation applied; runtime/UI build not started for the expanded CRM.
+Overall status: schema foundation applied and first read-only Relationship view added; expanded CRM write/runtime workflows are not started.
 
 Built:
 
@@ -1766,6 +1772,7 @@ Built:
 - New empty CRM tables for people, organizations, person-organization links, contact methods, addresses, opportunities, interactions, decisions, relationship facts, next actions, tags, segments, assets, campaigns, referrals, consents, external sources, agent recommendations, agent runs, import batches, and audit events.
 - Pre-migration export of legacy CRM rows outside the App git worktree.
 - Post-migration verification that all 33 new tables exist, all 33 are empty, and legacy CRM counts are unchanged.
+- Read-only Relationship summary view for table counts and review queue counts through the App internal main-process secret-key bridge.
 
 Not built yet:
 
@@ -1796,3 +1803,7 @@ Not built yet:
 - Agent recommendations.
 - Agent run/import batch tracking.
 - Reports/briefs.
+
+
+
+
