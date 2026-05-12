@@ -1,6 +1,6 @@
 ---
 title: CRM Upgrade Scope
-status: draft-build-scope
+status: schema-foundation-applied
 created: 2026-05-12
 owner_domain: Growth
 implementation_domain: App
@@ -1305,7 +1305,17 @@ Useful report outputs:
 
 ## Suggested Database Direction
 
-This is a conceptual schema direction, not an approved migration.
+This began as a conceptual schema direction. As of 2026-05-12, the App Agent drafted, reviewed, backed up for, and applied the additive schema foundation in live Supabase through `M:\miniBIOTA\miniBIOTA_App\migrations\013_crm_relationship_system.sql`.
+
+Implementation status:
+
+- All 33 expanded CRM tables listed below now exist in live Supabase.
+- All 33 expanded CRM tables were confirmed empty immediately after migration.
+- Existing legacy tables were preserved: `crm_contacts`, `crm_activities`, and `partner_opportunities`.
+- Legacy row counts remained unchanged after migration: `crm_contacts` 0, `crm_activities` 0, `partner_opportunities` 5.
+- Pre-migration read-only export exists at `C:\tmp\miniBIOTA-crm-pre-013-2026-05-12\`.
+- No CRM records were migrated, backfilled, created, edited, archived, or deleted during the schema pass.
+- The new CRM tables have RLS enabled with no policies; the next runtime/UI pass should use the App internal main-process secret-key bridge unless a separate approved RLS policy pass is completed.
 
 Potential tables:
 
@@ -1444,11 +1454,18 @@ Migration strategy to consider:
 
 Done:
 
-- [ ] Not started.
+- [x] App Agent inspected current live Supabase CRM schema through an approved read-only path.
+- [x] Current CRM data shape was inspected without creating test records.
+- [x] Live legacy table shapes were confirmed for `crm_contacts`, `crm_activities`, and `partner_opportunities`.
+- [x] Current legacy CRM row counts were confirmed before and after migration.
+- [x] Existing CRM-related rows were protected with a pre-migration read-only export.
+- [x] Additive schema-first migration strategy was selected.
+- [x] Legacy CRM tables were preserved.
 
 Left:
 
-- [ ] All items.
+- [ ] None for the schema-foundation pass.
+- [ ] Repeat live checks before any future backfill, record migration, RLS policy, or runtime write work.
 
 ### Phase 1: Data Model Design
 
@@ -1469,11 +1486,20 @@ Left:
 
 Done:
 
-- [ ] Not started.
+- [x] Final expanded table list was drafted and implemented as the additive schema foundation.
+- [x] Field lists, constraints, timestamps, archive fields, source/provenance fields, approval fields, and agent-first fields were drafted in the App migration.
+- [x] Relationship constraints and join tables were drafted for people, organizations, opportunities, interactions, tags, segments, campaigns, and other linked records.
+- [x] Indexes for common views and joins were included in the App migration draft.
+- [x] Backfill was explicitly deferred; no live CRM records were moved.
+- [x] Recovery posture was established through a read-only export before migration.
+- [x] Approval, commitment, sensitive-detail, archive/delete, duplicate/merge, audit/history, recommendation, import, and inbox semantics were represented in the schema direction.
+- [x] All 33 expanded tables were created in live Supabase by the App Agent after approval.
 
 Left:
 
-- [ ] All items.
+- [ ] Runtime/UI-specific refinements after the first staged App implementation pass.
+- [ ] Separate reviewed backfill plan before moving legacy `partner_opportunities` into the new relationship system.
+- [ ] Separate RLS/policy decision if the App should ever access these tables outside the internal main-process secret-key bridge.
 
 ### Phase 2: App Navigation And Views
 
@@ -1601,11 +1627,23 @@ Left:
 
 Done:
 
-- [ ] Not started.
+- [x] Existing CRM-related rows were exported before applying the schema foundation.
+- [x] Additive schema foundation was applied without moving legacy rows.
+- [x] Legacy table existence and row counts were verified after migration.
+- [x] New CRM tables were verified to exist and remain empty after migration.
 
 Left:
 
-- [ ] All items.
+- [ ] Migrate current contacts to new structure, if needed.
+- [ ] Migrate current opportunities.
+- [ ] Migrate current activities into interactions and/or next actions, if needed.
+- [ ] Validate links after any future backfill.
+- [ ] Validate UI reads during the staged runtime pass.
+- [ ] Validate no unintended data loss after any future data movement.
+- [ ] Validate archived records remain inspectable.
+- [ ] Validate duplicate merge preserves linked history.
+- [ ] Validate import batches can be processed without losing source context.
+- [ ] Validate agent recommendations do not change relationship state without approval.
 
 ### Phase 8: QA And Acceptance
 
@@ -1630,11 +1668,14 @@ Left:
 
 Done:
 
-- [ ] Not started.
+- [x] Schema-only QA confirmed all 33 expanded CRM tables exist.
+- [x] Schema-only QA confirmed all 33 expanded CRM tables are empty.
+- [x] Schema-only QA confirmed legacy tables still exist and legacy counts remained unchanged.
 
 Left:
 
-- [ ] All items.
+- [ ] All runtime, UI, workflow, populated-state, search, merge, archive, report, and App behavior QA items.
+- [ ] Public site and Planner non-change checks during the runtime/UI pass.
 
 ## Minimum Viable Upgrade
 
@@ -1712,7 +1753,7 @@ Before implementation:
 
 ## Current Build Status
 
-Overall status: scoped draft.
+Overall status: schema foundation applied; runtime/UI build not started for the expanded CRM.
 
 Built:
 
@@ -1721,6 +1762,10 @@ Built:
 - Existing Pipeline view.
 - Existing Activities view.
 - Existing basic contact/opportunity/activity modals.
+- Additive database foundation for the expanded CRM relationship system.
+- New empty CRM tables for people, organizations, person-organization links, contact methods, addresses, opportunities, interactions, decisions, relationship facts, next actions, tags, segments, assets, campaigns, referrals, consents, external sources, agent recommendations, agent runs, import batches, and audit events.
+- Pre-migration export of legacy CRM rows outside the App git worktree.
+- Post-migration verification that all 33 new tables exist, all 33 are empty, and legacy CRM counts are unchanged.
 
 Not built yet:
 

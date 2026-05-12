@@ -1,6 +1,6 @@
 ---
 title: CRM App Agent Kickoff
-status: handoff-ready
+status: schema-foundation-complete
 created: 2026-05-12
 owner_domain: Growth
 implementation_domain: App
@@ -14,6 +14,21 @@ source_scope: planning/crm-upgrade-scope.md
 This is the execution kickoff packet for the App Agent. Growth has scoped the desired agent-first CRM upgrade in `M:\miniBIOTA\miniBIOTA_Growth\planning\crm-upgrade-scope.md`. The App Agent should now begin implementation in `M:\miniBIOTA\miniBIOTA_App`, starting with schema design and an additive migration draft.
 
 The immediate goal is to create the durable database foundation for the expanded CRM without mutating live CRM data or running migrations until Josue explicitly approves.
+
+## Completion Note
+
+This handoff was completed on 2026-05-12.
+
+The App Agent created `M:\miniBIOTA\miniBIOTA_App\migrations\013_crm_relationship_system.sql` and `M:\miniBIOTA\miniBIOTA_App\planning\crm_relationship_system_implementation.md`, performed approved read-only schema and count checks, exported existing CRM-related rows to `C:\tmp\miniBIOTA-crm-pre-013-2026-05-12\`, and applied the additive schema migration after explicit approval.
+
+Verified result:
+
+- All 33 expanded CRM tables exist in live Supabase.
+- All 33 expanded CRM tables are empty.
+- Legacy tables still exist: `crm_contacts`, `crm_activities`, and `partner_opportunities`.
+- Legacy counts remained unchanged: `crm_contacts` 0, `crm_activities` 0, `partner_opportunities` 5.
+- No CRM records were created, edited, deleted, archived, migrated, backfilled, or used as test records.
+- The next implementation gate is a staged runtime/UI pass using the App internal main-process secret-key bridge, because the new tables have RLS enabled with no policies.
 
 ## App Agent Startup
 
@@ -204,4 +219,3 @@ After the App Agent drafts the migration, Growth should review for:
 - Whether approvals, commitments, outreach, and public claims remain safely separated.
 - Whether the schema can represent Grant, his business, and the aquatics club without flattening relationships.
 - Whether the agent can query follow-ups, stale relationships, missing approvals, missing assets, unprocessed notes, duplicate candidates, and open opportunities.
-
