@@ -40,6 +40,11 @@ Use Planner for actionable work status, blockers, scheduling, task/project links
 | `memory/08-crm-relationship-model.md` | CRM meaning, relationship model, contact types, lifecycle stages, opportunity categories, follow-up rules, fit, health, or App handoff semantics are in scope |
 | `memory/inbox.md` | A note does not yet have a durable home |
 
+## Planning Files
+| File | Load When |
+|---|---|
+| `planning/crm-upgrade-scope.md` | Scoping, implementing, reviewing, or tracking the App CRM upgrade beyond the current basic Contacts/Pipeline/Activities tab |
+
 ## Skill Routing
 | Skill | Trigger |
 |---|---|
