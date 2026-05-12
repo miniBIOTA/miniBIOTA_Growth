@@ -44,6 +44,7 @@ Use Planner for actionable work status, blockers, scheduling, task/project links
 | File | Load When |
 |---|---|
 | `planning/crm-upgrade-scope.md` | Scoping, implementing, reviewing, or tracking the App CRM upgrade beyond the current basic Contacts/Pipeline/Activities tab |
+| `planning/crm-app-agent-kickoff.md` | Handing the CRM upgrade to the App Agent for schema-first implementation work |
 
 ## Skill Routing
 | Skill | Trigger |
