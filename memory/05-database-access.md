@@ -1,4 +1,4 @@
-# Growth Database Access Responsibilities
+﻿# Growth Database Access Responsibilities
 
 The Growth Agent uses Supabase when current partner, sponsor, CRM, App Planner, or task records matter. It should not create new commercial commitments, Planner records, relationship records, or database structures without explicit approval.
 
@@ -34,6 +34,9 @@ Growth work is managed in App Planner through Supabase `work_projects` and `task
   At closeout, offer to update Planner task status when completed work maps clearly to an open Growth task, unless the user already approved that live Planner update.
   Planner status is operational work status. It is not approval for partner commitments, sponsor promises, outreach actions, prices, public claims, campaign launch dates, sales commitments, CRM/relationship state, or structured partner/sponsor records.
   Markdown backlog/reference docs may preserve ideas and operating context, but actionable Growth task status belongs in Planner/Supabase.
+
+## Project-Manager Delegation
+When Josue grants standing Growth project-manager delegation, the Growth Agent may manage ordinary Growth Planner `work_projects` and `tasks` inside `work_domains.key = sales` / `domain_id = 7` through the approved shared Planner/Supabase write path. State intended Planner changes before writing, read changed rows back, and report changed records at closeout. This delegation does not cover CRM/relationship-state writes, partner or sponsor records, outreach execution, prices, public claims, campaign dates, sales commitments, schema/migrations, service-role/admin actions, app behavior, website behavior, or commitments unless separately approved through the relevant Growth workflow.
 
 ## Transition Reporting
 

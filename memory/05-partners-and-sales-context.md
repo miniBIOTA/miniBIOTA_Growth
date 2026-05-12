@@ -7,7 +7,7 @@ It defines how miniBIOTA turns public interest, technical credibility, and story
 
 ## Current State
 - The function is early but not blank.
-- Known needs include a business plan, media kit, sponsorship package, speaking/pitching workflow, and lightweight relationship pipeline.
+- Known needs include a business plan, media kit, sponsorship package, speaking/pitching workflow, and lightweight relationship pipeline implementation. Growth-owned CRM semantics are defined in `memory/08-crm-relationship-model.md`.
 - Website routes and audience capture surfaces provide early commercial signals through donation, events, build/resource, signup, and newsletter paths, but they are not yet a complete commercial operating system.
 - `email_signups` remains capture-only until an external platform sync or downstream workflow is defined.
 
@@ -15,7 +15,7 @@ It defines how miniBIOTA turns public interest, technical credibility, and story
 - Commercial readiness depends on aligning business planning, brand positioning, content proof, and public conversion surfaces.
 - The brand is framed to attract audiences, partners, donors, and media attention.
 - The `/build` route is intended for affiliate-backed hardware and resource content.
-- No partner pipeline, pricing structure, sponsorship tiers, or CRM-style operating cadence is approved here.
+- No live partner pipeline, pricing structure, sponsorship tiers, CRM implementation, or approved outreach cadence is approved here.
 
 ## Priorities
 - Turn scattered commercial signals into a working operating model covering sponsorships, speaking, audience support, and affiliate-backed resources.
@@ -30,7 +30,7 @@ Treat these as priorities and operating needs, not approved outreach execution, 
 - Ownership and sequencing can blur because partner/sales work spans multiple domains.
 
 ## Minimum Pipeline Fields
-When a relationship tracker is eventually authorized, the minimum structure should include:
+The detailed Growth-owned CRM relationship model now lives in `memory/08-crm-relationship-model.md`. When a relationship tracker is implemented, the minimum structure should include:
 - Opportunity or organization name.
 - Opportunity type.
 - Current status.
@@ -39,6 +39,8 @@ When a relationship tracker is eventually authorized, the minimum structure shou
 - Owner.
 - Estimated value or strategic importance.
 - Supporting assets needed.
+
+These fields and the fuller CRM model are internal operator semantics. They do not create CRM records, outreach actions, approvals, sponsor obligations, partner commitments, prices, public claims, legal commitments, financial commitments, campaign dates, launch targets, roadmap commitments, or approved sales commitments.
 
 ## Important Boundaries
 - Do not invent partner commitments, sponsor commitments, package terms, prices, obligations, or next actions.

@@ -25,6 +25,7 @@ This file tracks decision areas that recur across Growth sessions. It is not an 
 - Whether an outreach plan is still draft strategy or approved for execution.
 - Whether a sponsor/partner package idea is internal model language or approved public offer language.
 - Whether a relationship tracker should live in Markdown, Supabase, or another CRM-like system.
+- How App should implement the Growth-owned CRM relationship model defined in `memory/08-crm-relationship-model.md`.
 - Whether newsletter capture should remain capture-only or connect to an external email platform.
 - Whether a commercial systems item is merely backlog, proposed work, active work, approved roadmap, or a commitment.
 - Whether a business plan, media kit, sponsorship package, speaking/pitching workflow, relationship tracker, or newsletter handoff has actually been completed or remains a backlog need.

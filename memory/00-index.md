@@ -37,6 +37,7 @@ Use Planner for actionable work status, blockers, scheduling, task/project links
 | `memory/05-partners-and-sales-context.md` | Partner categories, sponsorships, speaking, sales materials, outreach, or pipeline are in scope |
 | `memory/06-campaign-context.md` | Kickstarter, launch, reward, warmup, campaign messaging, or campaign risk is in scope |
 | `memory/07-recurring-decisions.md` | A session touches repeated Growth choices or unresolved decision points |
+| `memory/08-crm-relationship-model.md` | CRM meaning, relationship model, contact types, lifecycle stages, opportunity categories, follow-up rules, fit, health, or App handoff semantics are in scope |
 | `memory/inbox.md` | A note does not yet have a durable home |
 
 ## Skill Routing

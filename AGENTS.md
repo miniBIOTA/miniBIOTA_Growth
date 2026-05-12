@@ -1,4 +1,4 @@
-# miniBIOTA Growth - Codex Agent Entry Point
+﻿# miniBIOTA Growth - Codex Agent Entry Point
 
 ## What This Repo Is
 `miniBIOTA_Growth` is the commercial growth, partnerships, sponsorships, sales, fundraising strategy, and campaign planning vault for miniBIOTA. It owns partner pipeline thinking, sponsorship packages, campaign planning, revenue acceleration, speaking/event opportunity strategy, and commercial operating systems.
@@ -103,6 +103,10 @@ Chat history and private model memory are never source of truth. Durable project
 - Partner commitments, sponsor promises, outreach actions, prices, public claims, campaign launch dates, and relationship/CRM status remain separate from Planner task status and require their own verified source and explicit approval.
 - Planner project/task create, edit, status, done/reopen, archive, delete, project-link, subtask, schedule, or recurrence changes are live Supabase writes and require explicit user approval.
 - Backlog/reference Markdown may describe candidate commercial work, but Planner owns actionable task status.
+
+### Growth Project-Manager Delegation
+Josue may grant the Growth Agent standing project-manager delegation for ordinary Growth Planner `work_projects` and `tasks` under `work_domains.key = sales` / `domain_id = 7`. When that delegation is active, the Growth Agent may create, edit, schedule, complete, reopen, archive, relink, and reorganize ordinary Growth Planner records through the approved shared Planner/Supabase write path after stating the intended change and reading back changed rows. The Growth Agent does not need its own Supabase key; credentials must remain in App-owned tooling, MCP/OAuth, ignored local environment, or scoped helpers that do not commit secrets. This delegation does not authorize CRM/relationship-state writes, partner/sponsor records, outreach execution, prices, public claims, sponsor promises, partner commitments, campaign launch dates, sales commitments, schema/migration/admin actions, app behavior, website behavior, cross-domain records, or Programs/Operations records unless the relevant Growth workflow and explicit approval cover that action.
+
 
 ## Growth Operating Rules
 - Treat growth as the bridge between public credibility and durable business support.

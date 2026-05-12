@@ -1,4 +1,4 @@
----
+﻿---
 name: growth-closeout
 description: Close Growth sessions and decide whether Company report updates, Brain archive boundaries, domain follow-ups, structured records, or future tasks are implicated.
 ---
@@ -31,7 +31,7 @@ description: Close Growth sessions and decide whether Company report updates, Br
 4. Run `git status --short --branch`.
 5. Decide whether Company report updates, Brain archive lookup, domain follow-ups, structured records, Planner records, or future tasks are implicated.
 6. Check whether completed work maps clearly to an open Growth Planner task under `work_domains.key = sales` / `domain_id = 7`.
-7. If a task can be cleared, ask before marking it done unless the user explicitly approved the live Planner update.
+7. If a task can be cleared, ask before marking it done unless the user explicitly approved the live Planner update or standing Growth project-manager delegation is active.
 8. If local docs changed and manager-facing strategy state changed, update or flag the Company Growth report. Brain docs mirrors are retired for Growth and should not be synced or recreated.
 9. Confirm that backlog references were not converted into active projects, tasks, approved roadmap, owner assignments, dates, or commitments unless explicitly approved.
 10. Confirm that revenue scenarios were not converted into public offers, prices, campaign promises, sponsor obligations, partner offers, financial commitments, launch dates, approved strategy, active projects, tasks, or revenue commitments unless explicitly approved.
@@ -58,7 +58,7 @@ Unresolved questions:
 ## Write And Approval Rules
 - Do not write Company report updates if the user explicitly deferred them.
 - Do not write records, future tasks, CRM data, durable Company/domain context, or live structured data without explicit approval.
-- Do not create, edit, complete, reopen, archive, delete, schedule, relink, recur, or otherwise write App Planner project/task records without explicit approval and readback.
+- Do not create, edit, complete, reopen, archive, delete, schedule, relink, recur, or otherwise write App Planner project/task records without explicit approval or standing Growth project-manager delegation; always read back changed Planner rows.
 - Documentation edits must follow the repo write policy.
 
 ## Do-Not-Do Boundaries

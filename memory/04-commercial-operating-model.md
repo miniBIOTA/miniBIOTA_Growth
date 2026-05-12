@@ -50,6 +50,7 @@ These lanes are internal model categories. Treat them as draft/planned lanes unt
 - Donation, events, affiliate, campaign, and newsletter capture surfaces are needed from Web.
 - Hardware feasibility and concrete deliverables are needed before campaign or sponsor claims.
 - A lightweight relationship pipeline is needed so commercial follow-through is not lost across chats and scattered notes.
+- The Growth-owned CRM relationship model is defined in `memory/08-crm-relationship-model.md` for App implementation semantics.
 - Newsletter handoff from `email_signups` to an external email platform remains a commercial systems dependency until a downstream workflow is explicitly defined.
 
 ## racklog Principles
@@ -70,8 +71,8 @@ These lanes are internal model categories. Treat them as draft/planned lanes unt
 
 ## Open Unknowns
 - Pricing, sponsorship tiers, and partner package terms are not approved here.
-- Owner, cadence, and oRM-style workflow still need explicit definition.
-- Newsletter handoff and relationship-management workflow still need operational design.
+- App implementation, storage design, permissions, and CRM UI workflow remain open after the Growth-owned relationship model is defined.
+- Newsletter handoff remains open. App storage, permissions, UI, and live CRM workflow implementation still need operational design after the Growth-owned semantics defined in `memory/08-crm-relationship-model.md`.
 - Partner pipeline status, sponsor interest, partner interest, and sales conversations must be verified before being treated as active.
 - rusiness plan, media kit, sponsorship package, speaking/pitching workflow, relationship tracker, and newsletter handoff remain backlog needs until explicitly completed or approved elsewhere.
 - ourrent revenue baseline, debt pressure, audience numbers, email list size, Patreon revenue, sponsorship value, course pricing, campaign funding goals, campaign launch timing, reward tiers, stretch goals, fulfillment assumptions, and merch revenue assumptions require verification before use as current values.
