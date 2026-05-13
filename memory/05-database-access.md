@@ -29,6 +29,23 @@ As of 2026-05-12, the App database includes the expanded CRM relationship-system
 
 The new CRM tables have RLS enabled with no policies. App runtime reads currently use the internal main-process secret-key bridge for the first read-only Relationship summary view. Growth should not request or perform live CRM writes, record backfill, RLS policy changes, seeded data, additional migrations, or CRM relationship-state changes without a separate explicit approval and a verified need.
 
+As of 2026-05-13, the legacy CRM contact/activity surface has active relationship content and staged App improvements:
+
+- `crm_contacts.id = 1` stores Grant Eder as a collaborator contact after explicit user approval.
+- `crm_activities.id = 1` stores the Aquatic Club meeting/speaking relationship activity after explicit user approval.
+- App migration `014_crm_contact_links.sql` is live and adds `crm_contact_links` for flexible labeled contact URLs. Grant's YouTube URL was moved into `crm_contact_links` after approval.
+- App migration `015` was verified read-only by the user/App pass: it adds `due_time`, `planner_task_id BIGINT REFERENCES tasks(id)`, and `show_on_planner BOOLEAN DEFAULT false` to `crm_activities`.
+- App source was verified to read/write those fields in CRM and to use the intended Planner dedupe rule: linked CRM activities become context on the linked Planner task, while unlinked CRM activities appear on Planner only when `show_on_planner = true`.
+- Live Supabase verification confirmed the migration 015 columns exist. After explicit user approval, `crm_activities.id = 1` was patched to `due_time = 12:00:00`; it links to `tasks.id = 288` and has `show_on_planner = false`. Task `288` also has `scheduled_time = 12:00:00`.
+
+Growth's preferred scheduling semantics are:
+
+- CRM activities remain CRM records.
+- Planner remains the all-domain master schedule.
+- A CRM activity that maps to an existing Planner task should link to that task and enrich it, not create a duplicate task or duplicate full schedule card.
+- An unlinked CRM activity may appear on Planner only when the App-supported visibility field allows it.
+- CRM Activities calendar should show relationship-only activity context, including linked items, without implying new Planner work or outreach approval.
+
 ## Planner Task Records
 
 Growth work is managed in App Planner through Supabase `work_projects` and `tasks`.

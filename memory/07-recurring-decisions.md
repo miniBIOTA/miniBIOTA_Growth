@@ -28,6 +28,10 @@ This file tracks decision areas that recur across Growth sessions. It is not an 
 - How App should implement the Growth-owned CRM relationship model defined in `memory/08-crm-relationship-model.md`.
 - Whether the next CRM session is cleanup/runtime UI, backfill, an RLS policy pass, or a live relationship-data pass. Cleanup/runtime UI is the current near-term path; live CRM writes, backfill, RLS policies, seeded data, additional migrations, outreach, and commitments need separate explicit approval.
 - Whether the read-only CRM Relationship summary view is enough for review, or whether App should expand People, Organizations, Opportunities, Interactions, Next Actions, Review, Agent Inbox, search, map/detail, and reporting surfaces next.
+- Whether CRM contact links should be modeled as flexible labeled rows or fixed platform-specific fields. Current direction: flexible labeled rows through `crm_contact_links`, so only known links are added.
+- Whether CRM activities with dates/times should appear in Planner, the CRM calendar, or both. Current direction: both, with Planner as the all-domain master schedule and CRM Activities calendar as the relationship-only schedule.
+- Whether a CRM activity that corresponds to an existing Planner task should render separately. Current direction: no; link it to the existing Planner task and show CRM context there to avoid duplicate schedule cards.
+- Whether unlinked CRM activities should appear on Planner by default or by explicit visibility. Current direction and verified App behavior: use explicit App-supported visibility through `show_on_planner`, so CRM-only follow-ups can be hidden from Planner when needed.
 - Whether newsletter capture should remain capture-only or connect to an external email platform.
 - Whether a commercial systems item is merely backlog, proposed work, active work, approved roadmap, or a commitment.
 - Whether a business plan, media kit, sponsorship package, speaking/pitching workflow, relationship tracker, or newsletter handoff has actually been completed or remains a backlog need.

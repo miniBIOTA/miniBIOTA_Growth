@@ -1,6 +1,6 @@
 ﻿---
 title: CRM Upgrade Scope
-status: read-only-runtime-foundation-added
+status: crm-activity-scheduling-coordination-added
 created: 2026-05-12
 owner_domain: Growth
 implementation_domain: App
@@ -8,6 +8,23 @@ target_surface: miniBIOTA App CRM tab
 ---
 
 # CRM Upgrade Scope
+
+## App Implementation Status - 2026-05-13
+
+The practical legacy CRM operator layer now has live relationship content and additional staged App improvements while the expanded relationship-system tables remain a future/backfill path.
+
+Known live/state facts from the 2026-05-13 Growth/App/Company coordination session:
+
+- Grant Eder was added to the legacy CRM as `crm_contacts.id = 1` after explicit user approval.
+- The Aquatic Club speaking/meeting relationship activity was added as `crm_activities.id = 1` after explicit user approval.
+- App migration `014_crm_contact_links.sql` is live; it adds `crm_contact_links` so contacts can have only the labeled links they actually have, such as Website, YouTube, Personal Facebook, or Business Facebook.
+- Grant's YouTube link was moved from CRM notes into `crm_contact_links`, and the user confirmed the contact-link App flow works.
+- Company read-only coordination confirmed Aquatic Club Talk Readiness as `work_programs.id = 3`, with the operational delivery schedule represented by Planner task `tasks.id = 288`.
+- Growth's preferred dedupe rule is that CRM activity `1` should link to Planner task `288` and enrich that task rather than creating a duplicate Planner task or duplicate full schedule card.
+- App migration 015/source/live-schema verification resolved the scheduling implementation question: `crm_activities` now has `due_time`, `planner_task_id`, and `show_on_planner`; App reads/writes those fields; linked CRM activities render as context on Planner tasks; and unlinked CRM activities render on Planner only when `show_on_planner = true`.
+- After explicit user approval, live CRM activity `1` was patched to `due_time = 12:00:00`. It is linked to Planner task `288` with `show_on_planner = false`; task `288` also has `scheduled_time = 12:00:00`.
+
+Current cleanup boundary: the next pass should polish and smoke-check what App built, especially CRM activity calendar behavior, Planner schedule display, linked-task context, and approval-safe language. The known Grant activity `due_time` gap is resolved.
 
 ## App Implementation Status - 2026-05-12
 
@@ -1765,7 +1782,7 @@ Before future implementation:
 
 ## Current Build Status
 
-Overall status: schema foundation applied and first read-only Relationship view added; expanded CRM write/runtime workflows are not started.
+Overall status: expanded CRM schema foundation applied and first read-only Relationship view added; expanded relationship-system write/runtime workflows are not started. The legacy CRM operator layer now has limited live relationship content plus practical improvements for contact links and activity scheduling. App/source/live-schema verification confirmed migration 015 scheduling fields and Planner dedupe behavior, and the Grant activity time/link state is now aligned with Planner task `288`.
 
 Built:
 
@@ -1775,6 +1792,9 @@ Built:
 - Existing Activities view.
 - Existing basic contact/opportunity/activity modals.
 - Additive database foundation for the expanded CRM relationship system.
+- Flexible labeled contact links for legacy CRM contacts through migration 014.
+- User-approved initial legacy CRM contact/activity records for the Aquatic Club relationship context.
+- Verified CRM activity scheduling integration through migration 015 fields, App read/write paths, and Planner dedupe rendering.
 - New empty CRM tables for people, organizations, person-organization links, contact methods, addresses, opportunities, interactions, decisions, relationship facts, next actions, tags, segments, assets, campaigns, referrals, consents, external sources, agent recommendations, agent runs, import batches, and audit events.
 - Pre-migration export of legacy CRM rows outside the App git worktree.
 - Post-migration verification that all 33 new tables exist, all 33 are empty, and legacy CRM counts are unchanged.

@@ -21,6 +21,12 @@ As of 2026-05-12, App migration `M:\miniBIOTA\miniBIOTA_App\migrations\013_crm_r
 
 App also added the first read-only CRM Relationship summary view. The new CRM tables have RLS enabled with no policies, so runtime access currently relies on the App internal main-process secret-key bridge. Growth should treat the next CRM step as a staged cleanup/runtime UI pass only unless Josue separately approves live CRM writes, backfill, RLS policies, seeded data, additional migrations, outreach, or commitments.
 
+As of 2026-05-13, the legacy CRM contact/activity surface is being improved as the practical operator layer while the expanded relationship system remains staged. User-approved live CRM work added Grant Eder as `crm_contacts.id = 1` and `crm_activities.id = 1` for the Aquatic Club speaking relationship context. App migration `014_crm_contact_links.sql` is live and adds flexible labeled contact links through `crm_contact_links`; Grant's YouTube link was moved from notes into that structured link table. The user confirmed the contact-link flow works in the App.
+
+Also on 2026-05-13, Company read-only coordination confirmed that the June 13 Aquatic Club talk belongs to Program `work_programs.id = 3` (`Aquatic Club Talk Readiness`) and that the operational delivery schedule item is Planner task `tasks.id = 288` (`Deliver 45-minute Aquatic Club miniBIOTA talk`) scheduled for 2026-06-13 at 12:00. Growth's CRM activity should link to that Planner task rather than create a duplicate Planner task or duplicate full schedule card.
+
+The App-side migration 015/source/live-schema verification later resolved the implementation uncertainty: `crm_activities` has `due_time`, `planner_task_id`, and `show_on_planner`; App reads/writes those fields; Planner dedupes linked CRM activities by showing them as context on the linked Planner task; and unlinked CRM activities appear on Planner only when `show_on_planner = true`. After explicit user approval, live row `crm_activities.id = 1` was patched to `due_time = 12:00:00`; it is linked to Planner task `288` and hidden from separate Planner rendering.
+
 ## Core Record Types
 
 ### Contact
@@ -80,6 +86,17 @@ Required minimum fields:
 - Follow-up implication, if any.
 - Whether the interaction includes a verified approval, commitment, or only discussion.
 
+### Contact Link
+A labeled website, social, or reference URL attached to a contact. Use flexible labels instead of one field per social platform.
+
+Required minimum fields:
+- Contact.
+- Label, such as Website, YouTube, Personal Facebook, Business Facebook, LinkedIn, or Other.
+- URL.
+- Sort order or display order when the App supports it.
+
+Contact links are identity and reference context. They do not imply outreach permission, public-use permission, endorsement, partner status, sponsor status, or permission to use a name/logo publicly.
+
 ### Next Action
 The smallest useful operator step needed to prevent relationship drift.
 
@@ -94,6 +111,22 @@ Examples:
 - Record response.
 - Move to nurture.
 - Close as not fit.
+
+### CRM Activity Scheduling
+A CRM activity can be both relationship context and calendar context. It should remain a CRM record unless the user explicitly approves creating or changing a Planner task.
+
+Recommended fields for scheduled CRM activities:
+- Due date.
+- Due time when known.
+- Optional linked Planner task ID when the CRM activity corresponds to an existing operational schedule item.
+- Optional show-on-Planner flag for unlinked CRM activities that should appear on the master Planner schedule.
+
+Recommended rendering semantics:
+- CRM Activities calendar should show all CRM activities with due dates and times, linked or unlinked, because that view is relationship-only.
+- Planner should be the master schedule view across domains.
+- If a CRM activity has a linked Planner task, Planner should show CRM context on or inside the linked Planner task instead of rendering a separate duplicate CRM schedule card.
+- If a CRM activity has no linked Planner task and is marked to show on Planner, Planner may render it as a distinct CRM schedule item.
+- Planner task status is operational work state; it does not create CRM relationship state, outreach approval, public claim approval, or commercial commitment.
 
 ## Contact Types
 Contact types are tags, not stages. A record may have multiple types when reality overlaps.
@@ -286,6 +319,7 @@ Minimum useful views:
 - Needs Approval: records blocked by Josue approval or another approval source.
 - Sponsor/Partner Fit: possible sponsors and partners by fit level.
 - Events: event contacts and appearance opportunities by date or deadline.
+- CRM Activities calendar or agenda: relationship-only dated follow-ups, meetings, calls, outreach reminders, and notes, separate from Planner's all-domain schedule.
 - Nurture: warm but inactive relationships.
 - Missing Basics: records without owner, stage, type, next action, or next action date.
 
@@ -295,9 +329,13 @@ App may choose tables, forms, permissions, automations, and UI flows, but should
 Implementation should support:
 - Many-to-many contact types.
 - Contacts linked to organizations.
+- Flexible labeled contact links rather than fixed platform-specific social fields.
 - Multiple opportunities per contact or organization.
 - Interaction history separate from summary notes.
 - One current next action per open contact or opportunity.
+- Due time on CRM activities when the activity is time-specific.
+- Optional CRM activity links to Planner tasks so Growth relationship context can enrich an existing operational schedule item without duplicating it.
+- Optional Planner visibility controls for unlinked CRM activities.
 - Approval metadata separate from notes.
 - Sensitive detail flagging.
 - Auditability for stage changes, approvals, and confirmed commitments.
